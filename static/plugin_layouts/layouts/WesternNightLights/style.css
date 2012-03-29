@@ -1,0 +1,177 @@
+BODY {
+	background-color: #504533;
+	text-align: center;
+	margin: 0;
+	background-image: url(img/bg.jpg);
+	background-repeat: repeat-x;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+img {
+	border: none;
+}
+#container {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+}
+#header {
+	background-image: url(img/header.jpg);
+	height: 120px;
+	width: 800px;
+	text-align: center;
+	margin: 0;
+}
+#header h2 {
+	color: #70A1EB;
+	margin: 0;
+	
+}
+#content {
+	text-align: left;
+	background-color: f2f2f2;
+	height: 480px;
+	border-bottom: 1px solid #A1A1A1;
+	background: url(img/contentbg.jpg) repeat-x top;
+	padding: 10px;
+	color: #FFF9E3;
+}
+#content hr {
+	color: #FFE8B7;
+	height: 1px;
+	width: 300px;
+	text-align: center;
+}
+#content h3 {
+	color: #DFA286;
+	font: bolder italic;
+	margin: 0;
+}
+#content p {
+	font-size: 13px;
+}
+#content a:hover {
+	color: #ABABAB;
+}
+#content a {
+	color: #70A1EB;
+	text-decoration: none;
+}
+#news {
+	background-color: #45290B;
+	color: white;
+	border: 1px dashed yellow;
+	width: 160px;
+	padding: 4px;
+	clear: right;
+	float: right;
+	text-align: left;
+}
+#news .header {
+	color: Yellow;
+	font-weight: bolder;
+	font-size: 14px;
+	border-bottom: thin dotted white;
+}
+#news p {
+	font-size: 11px;
+	margin: 2px 0 2px 0;
+}
+#news .link {
+	text-align:center;
+}
+#news a {
+	color: #ABABAB;
+	text-decoration: none;
+}
+#news a:hover {
+	color: #70A1EB;
+}
+.float-left {
+	clear: left;
+	float: left;
+}
+.float-right {
+	clear: right;
+	float: right;
+}
+
+#footer {
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	color: #F0A830;
+	background-color: #1A1B20;
+	font-size: 12px;
+}
+#footer a {
+	color: #ABABAB;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #70A1EB;
+}
+#navigation {
+        background: #1A1B20;
+        border-bottom: 1px solid #A1A1A1;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+}
+#navigation ul, #navigation ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+}
+#navigation ul {
+        padding: 5px 0 5px;
+        text-align: center;
+}
+#navigation ul li {
+        display: inline;
+}
+#navigation ul li a {
+        background: url(img/tableft.gif) no-repeat left top;
+        color: #FFF;
+        text-decoration: none;
+        padding: 5px 0;
+}
+#navigation ul li span {
+        background: url(img/tabright.gif) no-repeat right top;
+        padding: 5px 7px 5px 3px;
+        margin: 4px 0 4px 4px;
+}
+#navigation ul li a:hover span {
+        text-decoration: none;
+        background-position: 100% -75px;
+}
+#navigation ul li a:hover {
+        background-position: 0 -75px;
+}
+#navigation #current a {
+        background-position: 0 -150px;
+}
+#navigation #current a span {
+        background-position: 100% -150px;
+}
+
+
+/*- Internet Explorer...It's Hacktastic!--------------------------- */
+
+/*\*//*/
+#navigation ul li a {
+        display: inline-block;
+        white-space: nowrap;
+        width: 1px;
+}
+
+#navigation ul {
+        padding-bottom: 0;
+        margin-bottom: -1px;
+}
+/**/
+
+/*\*/
+* html #navigation ul li a {
+        padding: 0;
+}
+/**/

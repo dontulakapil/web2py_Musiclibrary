@@ -1,0 +1,125 @@
+/*Template 110625 CSS by First Light Web Design 2006*/
+
+body {background: #000 url(images/page_background.jpg) top center repeat-y;
+      background-attachment: fixed;
+      color: #FFC557;
+      font-size: 12px;
+      font-family: arial, verdana, sans-serif;
+      margin: 0;}
+
+acronym, abbr {cursor: help;
+               border-bottom: 1px dotted #FFC557;}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;
+                        padding: 5px 0 0 5px;}
+
+ul {list-style-type: disc;}
+
+p {padding: 5px;}
+
+img {border: 0;}
+       
+h1 {font-size: 185%;}
+h2 {font-size: 150%;}
+h3 {font-size: 140%;}
+h4 {font-size: 130%;}
+h5 {font-size: 120%;}
+h6 {font-size: 110%;}
+
+a {color: #F2E76E; text-decoration: underline; background-color: #530C06;}
+a:link {color: #F2E76E; background-color: #530C06;}
+a:visited {color: #F93; background-color: #530C06;}
+a:hover {color: #FFFF8A; text-decoration: none; background-color: #530C06;}
+
+#container {width: 640px;
+            margin: 0 auto;
+            padding: 0;
+            background: #530C06 url(images/main_background.jpg) repeat;
+            color: #FFC557;
+            border: 1px solid #000;}
+
+#container a {background: transparent;}
+
+#header {width: 640px;
+         height: 100px;
+         border-bottom: 1px solid #000;}
+
+#top {width: 640px;
+      height: 75px;}
+
+#welcome {width: 311px;
+          height: 75px;
+          float: right;
+          padding: 0;
+          margin: 0 68px 0 0;}
+
+#logo {float: left;
+       width: 195px;
+       height: 75px;
+       padding: 0;
+       margin: 0;}
+
+#left {float: left;
+       width: 200px;
+       margin: 0;
+       padding: 0;
+       min-height: 540px;}
+
+* html #left {height: 540px} /* IE Min-Height Hack */ 
+
+#left img {margin: 5px 5px 0;}
+
+#content {float: right;
+          width: 437px;
+          margin: 0;
+          padding: 0;
+          min-height: 540px;
+          border-left: 1px solid #000;}
+
+* html #content {height: 540px} /* IE Min-Height Hack */
+
+#menuwrapper {width: 640px;
+              height: 25px;
+              background: #FFC557 url(images/menu_background.jpg) repeat-x;
+              color: #000;}
+
+#menu, #menu ul {display: inline;
+                 margin: 0;
+                 padding: 0;
+                 list-style: none;}
+
+#menu li {display: block;
+          float: left !important;
+          padding: 0;
+          margin: 0;
+          line-height: 25px;
+          position: relative;
+          left: 19px;}
+
+#menu a {height: 25px;
+         width: 85px;
+         background: #FFC557 url(images/button.jpg) no-repeat;
+         color: #000;
+         display: block;
+         font-size: 105%;
+         font-weight: bold; 
+         text-align: center;
+         text-decoration: none;
+         border-left: 1px solid #000;}
+
+#lastbutton {border-right: 1px solid #000;}
+
+#menu a:hover {background-position: 0 -25px;}
+
+#footer {width: 640px;
+         height: 25px;
+         clear: both;
+         padding: 0;
+         margin: 0;
+         font-size: 90%;
+         text-align: center;
+         line-height: 25px;
+         border-top: 1px solid #000;}
+
+#footer p {padding: 0;
+           margin: 0;} 

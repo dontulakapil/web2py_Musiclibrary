@@ -1,0 +1,166 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Elements */
+
+* {
+	color: #808080;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/img01.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h4, h5, h6 {
+}
+
+p, ol, ul, dl, blockquote {
+	margin-top: 0;
+}
+
+a {
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Wrapper */
+
+#wrapper {
+	width: 600px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	background: url(images/img02.gif) repeat-y;
+}
+
+html>body #wrapper {
+	height: auto;
+}
+
+/* Header */
+
+#header {
+	width: 600px;
+	height: 104px;
+	background: url(images/img03.gif) no-repeat;
+}
+
+#header h1 {
+	float: left;
+	padding: 35px 0 0 20px;
+	font-size: 4em;
+	letter-spacing: -2px;
+}
+
+#header h2 {
+	float: right;
+	padding: 68px 20px 0 0;
+	font-size: 1.25em;
+	letter-spacing: -1px;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 600px;
+	height: 35px;
+	padding-top: 13px;
+	background: url(images/img04.gif);
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 112px;
+	height: 19px;
+	padding: 3px 4px 0 4px;
+	text-align: center;
+	text-decoration: none;
+	background: url(images/img05.gif) no-repeat center top;
+}
+
+#menu .active a, #menu a:hover {
+	background-image: url(images/img06.gif);
+	color: #000000;
+}
+
+/* Content */
+
+#content {
+	width: 600px;
+	background: url(images/img07.gif);
+}
+
+#content h2 {
+	margin-bottom: 1em;
+}
+
+#content h3 {
+	margin-bottom: 0;
+}
+
+#colOne {
+	float: right;
+	width: 340px;
+	padding: 20px 20px 0 20px;
+}
+
+#colTwo {
+	float: left;
+	width: 180px;
+	padding: 20px 20px 0 20px;
+}
+
+#colTwo ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+/* Footer */
+
+#footer {
+	width: 600px;
+	background: url(images/img08.gif) no-repeat;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+	font-size: smaller;
+}

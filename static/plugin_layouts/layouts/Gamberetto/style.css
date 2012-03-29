@@ -1,0 +1,335 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/img01.jpg) repeat-x left top;
+	font-size: 13px;
+	text-align: justify;
+	color: #000000;
+}
+
+body, th, td, input, textarea, select, option {
+	font-family: "Trebuchet MS", "Times New Roman", Arial, Times, serif;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #753333;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 3em;
+}
+
+h2 {
+	letter-spacing: -1px;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	line-height: 200%;
+}
+
+blockquote {
+	padding-left: 1em;
+}
+
+blockquote p, blockquote ul, blockquote ol {
+	line-height: normal;
+	font-style: italic;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #000000;
+}
+
+hr {
+	display: none;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 380px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+#header h1, #header p {
+	margin: 0;
+	padding: 0;
+}
+
+#header h1 {
+	float: left;
+	padding: 150px 0 0 420px;
+	font-size: 36px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#header p {
+	float: left;
+	padding: 160px 0 0 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F51F47;
+}
+
+#header a {
+	text-decoration: none;
+	color: #F51F47;
+}
+
+/* Page */
+
+#page {
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 530px;
+	margin: 0;
+	padding: 0;
+	background: url(images/img08.jpg) repeat-y left top;
+}
+
+#content .bgtop {
+	background: url(images/img09.jpg) no-repeat left top;
+}
+
+#content .bgbtm {
+	background: url(images/img10.jpg) no-repeat left bottom;
+}
+
+.post {
+	padding: 40px 30px 0px 30px;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+.title h2 {
+	margin: 0;
+	margin-left: 50px;
+	color: #753333;
+}
+
+.title a {
+	text-decoration: none;
+	color: #753333;
+}
+
+.pagetitle {
+}
+
+.byline {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 15px 0 0 0;
+	color: #646464;
+}
+
+.meta {
+	margin: 0;
+	padding: 18px 0 30px 0;
+	background: url(images/img12.jpg) no-repeat center bottom;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #646464;
+}
+
+.meta .more {
+}
+
+.meta .comments {
+}
+.meta a {
+}
+
+.navigation {
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.posts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+.posts li {
+}
+
+.posts h3 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.posts p {
+	margin: 0;
+	line-height: normal;
+}
+
+.posts a {
+}
+
+.entry {
+}
+
+.last {
+	border: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 230px;
+	margin-bottom: 10px;
+	background: url(images/img04.jpg) repeat-y left top;
+	color: #EEEEEE;
+}
+
+#sidebar .bgtop {
+	background: url(images/img05.jpg) no-repeat left top;
+}
+
+#sidebar .bgbtm {
+	background: url(images/img06.jpg) no-repeat left bottom;
+}
+
+#sidebar ul {
+	margin: 0 0 0 20px;
+	padding: 30px 0 20px 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding: 0px 17px 16px 0px;
+}
+
+#sidebar li li {
+	border-bottom: 1px dotted #E3E3E3;
+	padding: 0 0 10px 0px;
+}
+
+#sidebar h2 {
+	margin: 0;
+	height: 40px;
+	background: url(images/img07.jpg) no-repeat left 45%;
+	padding: 10px 0px 0px 20px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #753333;
+}
+
+#sidebar a {
+	color: #000000;
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+}
+
+/* Search */
+
+#search input {
+	display: none;
+}
+
+#search input#s {
+	display: block;
+	width: 230px;
+	padding: 2px 5px;
+	border: 1px solid #3DD1FF;
+	background: #EEEEEE url(images/img05.gif) repeat-x;
+}
+
+#search br {
+	display: none;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar h2 {
+	margin-bottom: 15px;
+}
+
+#calendar table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#calendar caption {
+	width: 100%;
+	text-align: center;
+}
+
+#next {
+	text-align: right;
+}
+
+#prev {
+	text-align: left;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	height: 140px;
+	background: url(images/img03.jpg) repeat-x left bottom;
+	text-align: center;
+	font-size: smaller;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #D52442;
+}
+
+#footer p {
+	padding-top: 80px;
+	text-transform: uppercase;
+}
+
+#footer p a {
+	color: #F51F47;
+}
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="leftimagewrap">
+  </div>
+  <!-- Start the accessibility helper section -->
+  <div id="helper">
+   <p>
+    <a href="#content">
+     Skip to Content
+    </a>
+   </p>
+  </div>
+  <!-- End the accessibility section -->
+  <div id="outercontainer">
+   <div id="container">
+    <!-- The header above the menu -->
+    <div id="header">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <h3>
+      Your tagline here.
+     </h3>
+    </div>
+    <!-- End the header -->
+    <!-- Start the menu -->
+    <div id="navcontainer">
+     <ul id="navlist">
+      <li id="active">
+       <a href="#" id="current">
+        Item one
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item two
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item three
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item four
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item five
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item six
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- End the menu -->
+    <div id="wrapper">
+     <div id="content">
+      <div class="flash">{{=response.flash or ''}}</div>
+      {{include}}
+     </div>
+    </div>
+    <!-- The left lower box -->
+    <div id="extra">
+     <h3>
+      Section Title
+     </h3>
+     <p>
+      One image is used in this layout. I have repeated the background image in different spots to show possible placement of graphics.
+     </p>
+     <p>
+      This design validates to XHTML 1.0 Strict, uses CSS for layout, contains no hacks, and include skip links for accessibility. It has been tested in Firefox, IE 6 and IE 7 Beta 2, Opera, Konqueror, and Safari.
+     </p>
+    </div>
+    <!-- End the left lower box -->
+    <!-- The right lower box -->
+    <div id="sub">
+     <h3>
+      Section Title
+     </h3>
+     <p>
+      <a href="#">
+       <img src="images/bg_home.jpg" alt="Some test image." style="width: 60%;" />
+      </a>
+     </p>
+    </div>
+    <!-- End the right lower box -->
+    <!-- Start the footer -->
+    <div id="footer">
+     <ul>
+      <li>
+       <a href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Accessibility Statement
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Sitemap
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       Design by
+       <a href="http://www.websitestyle.com">
+        Website Style
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- End the footer -->
+   </div>
+  </div>
+ </body>
+</html>

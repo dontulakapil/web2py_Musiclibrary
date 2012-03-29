@@ -1,0 +1,194 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+a {
+	color: #ccc;
+	
+}
+ a:hover {color: #e9e9e9;}
+
+body {
+	background: #333;
+	color: #fff;
+        Font: normal 13px "Lucida Sans Unicode",sans-serif;
+   
+}
+
+img {border: none;}
+
+h1{
+	
+	color: #99cc33;
+        Font: normal 22px  "Lucida Sans Unicode",sans-serif;
+        margin-top: 5px;
+        margin-bottom: 4px;
+   
+}
+
+h2{
+	
+	color: #b3e156;
+        Font: normal 18px  "Lucida Sans Unicode",sans-serif;
+        margin-top: 5px;
+        margin-bottom: 4px;
+   
+}
+
+h3{
+	
+	color: #b3e156;
+        Font: normal 14px  "Lucida Sans Unicode",sans-serif;
+        margin-top: 5px;
+        margin-bottom: 4px;
+   
+}
+
+#container {
+        background: #222;
+	border: 3px double #444;
+	height:100%;
+        width: 800px;
+          margin: 0 auto;
+        
+}
+
+#header {
+         background:#99cc33 url("img/header.gif") ;
+	height: auto;
+         width: 790px;
+          margin: 0 auto;
+        height: 100px;
+}
+#navigation {
+
+	height: auto;
+        width: 790px;
+        background: #222;
+        height: 36px; 
+}
+  
+   
+#main {
+        background: #3b4041;
+	height:100%;
+        width: 778px;
+        padding:6px;
+          margin: 0 auto;
+        border-top: 1px solid #99cc33;
+        
+       
+}
+#footer {
+        background: #555555;
+	height:200px;
+         width: 778px;
+        padding:6px;
+          margin: 0 auto; 
+        border-top: 1px solid #99cc33;
+        margin-top: 4px;
+}
+#footer2 {
+        background: #515151;
+         width: 778px;
+        padding:6px; color: #333;
+          margin: 0 auto; 
+        
+}
+    
+#footer2 a {
+	color: #ccc; text-decoration:none;
+	
+}
+#footer2 a:hover {color: #333;}     
+
+#footer ul {
+	border-top: 1px solid #4c4c4c;
+	margin: 0;
+}
+#footer li {
+	border-bottom: 1px solid #4c4c4c;
+	list-style: none;
+}
+#footer li a {
+	display: block;
+	line-height: 2em;
+	padding-left: 4%;
+	width: 96%;
+}
+#footer a {color: #333; text-decoration:none;}
+#footer a:hover {
+	color: #77a41c;
+	background: #333;
+}
+
+.f1,.f2 {
+	float: left;
+	width: 31%;
+}
+.f2{margin: 0 3%;}
+
+/* bottom */
+.bottom {
+	color: #666;
+	clear: both;
+	font-size: 1.1em;
+}
+.bottom a {color: #888;}
+       
+/*- Menu Tabs 3--------------------------- */
+
+    #tabs3 {
+      float:left;
+      width:100%;
+      background: #222;
+      font-size:93%;
+      line-height:normal;
+      }
+    #tabs3 ul {
+          margin:0;
+          padding:10px 10px 0 50px;
+          list-style:none;
+      }
+    #tabs3 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #tabs3 a {
+      float:left;
+      background:url("img/tableft3.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+    #tabs3 a span {
+      float:left;
+      display:block;
+      background:url("img/tabright3.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#FFF;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabs3 a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabs3 a:hover span {
+      color:#FFF;
+      }
+    #tabs3 a:hover {
+      background-position:0% -42px;
+      }
+    #tabs3 a:hover span {
+      background-position:100% -42px;
+      }
+
+      #tabs3 #current a {
+              background-position:0% -42px;
+      }
+      #tabs3 #current a span {
+              background-position:100% -42px;
+      }
+-->

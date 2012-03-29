@@ -1,0 +1,17 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'Processing View default/index.html'
+p4
+sS'code'
+p5
+S'{{extend \'default/sai.html\'}}\n<h1 align=\'center\'><u>Welcome {{=firstname[0].first_name}} </u></h1>\n<p align=\'center\'><img src={{=URL(r=request, c=\'default\', f=\'download\', args=[file1[0].file])}}  height="100" width="100"/></p>\n<p align=\'center\'><u>FirstName</u>:{{=firstname[0].first_name}}</p>\n<p align=\'center\'><u>LastName</u>:{{=firstname[0].last_name}}</p>\n<p align=\'center\'><u>Email-id</u>:{{=firstname[0].email}}</p>\n<br />\n<h2><u>My playsits</u></h2>\n{{for i in form:}}\n    <a href={{=URL(r=request,f="playlistsongs",args=i.id)}}>{{=i.name}}</a><br />\n{{pass}}\n'
+p6
+sS'traceback'
+p7
+S'Traceback (most recent call last):\n  File "/home/chiinna/Desktop/linux_web2py/gluon/template.py", line 136, in parse_template\n    fp = open(t, \'rb\')\nIOError: [Errno 2] No such file or directory: \'/home/chiinna/Desktop/linux_web2py/applications/practice/views/default/sai.html\'\n'
+p8
+s.

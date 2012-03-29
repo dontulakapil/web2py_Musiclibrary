@@ -1,0 +1,27 @@
+body { margin:0; padding:0; font-size:0.8em; line-height:20px; font-family: "Trebuchet MS", Arial; border:1px solid #666; background:#000; }
+a { color:#fffd48; text-decoration:none;}
+a:hover { text-decoration:underline;}
+#header { background:url(images/header_bckg.jpg) no-repeat top right #000;}
+#logo { padding:30px 20px 0 40px; height:188px; background:url(images/head_bckg.jpg) no-repeat #14a500; text-align:right;}
+#logo a{ color:#fff; text-decoration:none; font-weight:bold; font-size:20px; text-transform:uppercase; letter-spacing:5px; }
+#logo_text { float:right; width:240px; text-align:left; font-size:12px; color:#fffc00; }
+#menu { background: url(images/menu_bckg.gif) repeat-x #000; height:64px; padding-top:23px;}
+#menu_list {width:550px; margin:0 auto;}
+#menu a { display:block; float:left; color:#f6ff00; font-size:13px; text-transform:uppercase; font-weight:bold; text-decoration:none; margin:0 20px; padding-top:10px;}
+#menu a:hover{padding-top:12px;}
+.splitter { display:block; float:left;}
+
+#text { margin: 0 305px 0 20px; }
+#text p { padding: 0 10px 5px 10px; color:#ccc}
+#text li {list-style:none; padding-left:20px; background:url(images/li.gif) no-repeat 0px 4px; color:#ccc;}
+#sidebar { float:right; width:235px; padding: 0 20px 0 10px; color:#fffd48; font-size:12px;}
+#sidebar a{ font-weight:bold; }
+h1 { margin:0; padding:10px 0 0 10px; text-transform:uppercase; font-size:1.5em; color:#6bc22a;}
+
+#main { float:left; background:url(images/sidebar_bckg.gif) no-repeat top right #1e1e1e; padding:20px 0 0 0;}
+#footer {background:url(images/footer_bckg.gif) repeat-x #000; height:57px; clear:both;  }
+#left_footer { float:left; padding:20px 0 0 30px; background:url(images/c.gif) no-repeat 30px 35px;  color:#fff; font-size:12px;}
+#left_footer a { color:#fff;}
+#left_footer a:hover { text-decoration:none;}
+#right_footer { float:right;  padding:20px 30px 0 0; color:#fff;  font-size:12px; text-align:right;}
+#right_footer a { color:#fff;}

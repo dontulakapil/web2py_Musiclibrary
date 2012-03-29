@@ -1,0 +1,9 @@
+html { background-color: #b0bece; }
+
+#topnav { padding-bottom: 10px; }
+
+#sidebar li a { border-left-width: 0; border-right-width: 0; }
+
+#sidebar li { float: left; clear: both; width: 80%; }
+
+#sidebar a { float: left; clear: both; width: 80%; }

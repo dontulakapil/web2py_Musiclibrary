@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/loadHost/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="header">
+    <div class="link">
+     Quick Link:
+     <a href="#sitemap" title="Sitemap">
+      Sitemap
+     </a>
+     |
+     <a title="CPanel Login" href="#" rel="external">
+      CPanel
+     </a>
+     |
+     <a title="Webmail Login" href="#" rel="external">
+      Webmail
+     </a>
+    </div>
+    <div class="title">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <h2>
+      {{=response.subtitle or '=response.subtitle'}}
+     </h2>
+    </div>
+    <ul class="menu">
+     <li>
+      <a href="#" title="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Domain
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Hosting
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Support
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Portofolio
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="middle">
+    <div class="top">
+     <ul class="menus">
+      <li>
+       <a href="#" title="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        Domain
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        Hosting
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        Support
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        Portofolio
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="#" title="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="foot">
+    </div>
+    <div id="footer">
+     &copy; 2008 YourCompany.com | All Rights Reserved.
+     <br />
+     Design by
+     <a href="http://www.loadfoo.web.id" target="_blank">
+      {LF} LoadFoO
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

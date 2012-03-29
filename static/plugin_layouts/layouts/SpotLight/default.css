@@ -1,0 +1,213 @@
+/*
+Template Design by TheWebhub.com
+http://www.thewebhub.com
+Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines
+*/
+
+/** Common Styles */
+
+body {
+	margin:  0px;
+	padding: 0;
+	background: #000000 url(images/image01.jpg) repeat-x left top;
+	line-height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: justify;
+	color: #A6A6A6;
+}
+
+h1 {
+}
+
+h2, h3 {
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4, h5, h6 {
+}
+
+p, ol, ul, dl, li, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #D413A4;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #3D6CA6;}
+
+/** HEADER */
+
+#header {
+	background: #ADCDEC url(images/image03.jpg) no-repeat left top;
+	width: 970px;
+	height: 142px;
+	margin: 0 auto;
+	padding: 30px 0px 0px 0px;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 46px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	letter-spacing: -1px;
+	color: #000000;
+}
+
+#header h2 {
+	margin: 0px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #333333;
+}
+
+#header a{
+	text-decoration: none;
+	color: #4D7CB2;
+}
+
+#header a:hover {
+	text-decoration: none;
+}
+
+/** MENU */
+
+#menu {
+	width: 970px;
+	height: 99px;
+	margin: 0 auto;
+	background: url(images/image02.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	padding-top: 69px;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	margin: 0 25px 0 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+}
+
+
+/* Content */
+
+#content {
+	width: 840px;
+	margin: 0px auto;
+	padding: 20px 0 0 0;
+	background: #333333;
+}
+
+#colOne {
+	float: left;
+	width: 180px;
+	margin-left: 20px;
+	background: #000000;
+}
+
+#colOne h2 {
+	margin: 0;
+	padding: 10px 10px;
+	background: #B1749F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#colTwo {
+	float: left;
+	width: 400px;
+	padding-left: 20px;
+}
+
+#colTwo h2 {
+	margin: 0;
+	padding: 10px 10px;
+	background: #B1749F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+
+#colThree {
+	float: right;
+	width: 180px;
+	margin-right: 20px;
+	background: #000000;
+}
+
+#colThree h2 {
+	margin: 0;
+	padding: 10px 10px;
+	background: #B1749F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#colThree ul {
+	margin: 0;
+	padding: 0px;
+	line-height: 24px;
+	list-style: none;
+	list-style-position: inside;
+}
+
+#colThree li {
+	margin: 0;
+	padding: 0;
+}
+
+#colThree h3 {
+	padding-top: 20px;
+}
+
+
+.content {
+	padding: 10px 10px;
+}
+
+/* Footer */
+
+#footer {
+	width: 800px;
+	margin: 0px auto;
+	padding: 20px 20px;
+	border: 2px solid #000000;
+	background: #333333;
+}
+
+#footer p {
+	margin: 0px;
+	text-align: center;
+}

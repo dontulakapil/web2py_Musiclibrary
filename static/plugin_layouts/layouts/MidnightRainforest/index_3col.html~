@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Midnight Rainforest</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 1.0.4"/>
+<style type="text/css">
+/* **** NOTES **** */
+/* I have tried to comment this style sheet as much as possible to show you where things take place. 
+There is a large utilization of descendant selectors, so if you are not familiar with those, hopefully the 
+comments will help. 
+*/
+
+/* Global Styles */
+html,body{margin:0;padding:0}
+body{font: 76% Arial, Verdana, serif, sans-serif; background-color:#000;}
+
+/* TEXT STYLES */
+p{padding:0 5px 0px; font-size: 1em; line-height: 1.3em; letter-spacing: 1px;}
+h1 { font-size: 2.5em; margin-top: 0;  text-transform:uppercase; letter-spacing: 1px;}
+h2 { font-size: 2em; color: #79B30B; line-height: 1.3em; letter-spacing: -1px;}
+h3 { font-size: 1.5em; color: #b71;}
+h4 { font-size: 1.25em; color: #452;}
+h5 {font-size: 1em; font-weight:bold;}
+h1,h2,h3,h4,h5 {padding:0 5px 0px;}
+#navigation p, #extra p {color:#fff;}
+a:link { color: #452; text-decoration:none; border-bottom: 1px solid #b71; padding:1px;}
+a:visited {color: #452; text-decoration:none; border-bottom: 1px solid #b71; }
+a:hover {background-color: #79B30B; color:#fff; }
+acronym {border-bottom: 1px dotted #b71; cursor:help; } 
+label.header {font-size:larger; color: #b71; font-weight:bold; text-transform:uppercase; margin-bottom: 0; padding-bottom:0; } 
+   /* label.header is the label for the search box but can be used for other forms by using class="header" in a label */
+form,submit { padding:0; margin:0; } /* removes extraneous padding around the form */
+code { border: 1px dotted #b71; border-left: 3px solid #b71; background-color: #dda; padding: 1em; margin-left: 3ex; color:#742;}
+blockquote { border: 1px solid #b71; background-color: #dda;  margin: 3ex; font-style:italic;}
+
+/* HEADER SECTION */
+div#header {margin:0; padding:0; background: transparent url(images/grass_sm.jpg) no-repeat right center; height:8em;}
+div#header h1 a { height: 3em; min-height:8em; line-height:80px;margin:0; color: #fff; border-bottom: none; padding:0;}
+div#header h1 a:hover {background-color: transparent; border-bottom: none; color: #79B30B}
+div#header p#skip{position: absolute; top: 3px; right: 3px; margin:0; padding: 0;}
+#skip a,#skip a:visited {color:#fff; border-bottom: 1px solid #b71;}
+
+/* CONTENT SECTION */
+div#wrapper{float:left;width:100%;}
+div#content{margin: 0 200px; padding-bottom: 2em; background-color: #fff; color: #000;}
+div#content p{line-height:1.4;}
+div#content h2#topper {background:#dda; color:#742; margin-top:0; padding-top:0;}
+div#content a:visited {color: #452; text-decoration:none; border-bottom: 1px solid #b71; }
+
+/* VERTICAL NAVIGATION */
+div#navigation{float:left; width:200px;margin-left:-100%; color:#fff;}
+.navcontainer { width: 198px; border-right: 1px solid #000; padding:0; margin-bottom: 1em; 
+background-color: transparent;}
+.navcontainer ul { list-style: none; margin: 0; padding: 0; border: none; width: 198px; min-width:198px; }
+.navcontainer li { margin: 0; }
+html>body .navcontainer li a { width: auto;}
+.navcontainer li a,.navcontainer li a:visited { 
+          display: block; padding: 5px 5px 5px 0.5em; border-left: 10px solid #452;
+          border-right: 10px solid #452; background-color: #472; 
+          text-decoration: none; font-weight:bold; width: 167px; min-width:165px; 
+          color: #fff; border-bottom: 1px solid #79B30B; 
+}
+.navcontainer li a:hover,.navcontainer li#active a { 
+          border-left: 10px solid #fff; border-right: 10px solid #fff; 
+          background-color: #79B30B; color: #fff; font-weight:bold;
+}
+.navcontainer li.menutitle {border-left: 10px solid #79B30B ; border-right:10px solid #79B30B;  font-size:larger;
+text-align:center; color: #b71; font-weight:bold; padding-bottom:1ex; border-bottom:none; text-transform:uppercase;}
+.navcontainer li#last a { border-bottom:none;}  /* the last one in the list should get the id of 'last' in the list to remove the bottom border */
+
+/* --- These are the subnavigation for sublinks. --- */
+.navcontainer li ul li { display:none;} /* this hides all sublinks if it is not the currently active link */
+.navcontainer li#active ul li { display: block;} /* this expands all sublinks if it is the currently active link */
+.navcontainer li#active ul li a:link, .navcontainer li#active ul li a:visited { border-left-color:#452; border-right-color: #452; background-color: #000; padding: 5px 0 5px 11px;}
+.navcontainer li#active ul li a:hover { background-color:#fff; color:#b71;}
+
+/* EXTRA SECTION */
+div#extra {float:left;width:198px;margin-left:-200px; background-color: #000; border-left: 2px solid #000;}
+
+/* RIGHT AFFILIATE LINKS BOX */
+ul#affiliate { border:1px solid #79B30B; margin:0; padding:0; margin-right: 20px; margin-left: 5px; padding: 3px 4px 4px 6px; background-color:#452; list-style-type:none; }
+ul#affiliate li { padding: 3px;}
+ul#affiliate li a:link, a:visited { color:#fff;}
+
+/* FOOTER SECTION */
+div#footer{clear:left;width:100%; background-color: #452;color: #FFF}
+div#footer a:link, div#footer a:visited { color:#fff; }
+div#footer ul {list-style-type:none; margin:0; padding:.8em 0; text-align:center;}
+div#footer ul li {display:inline; padding: 0 4px;}
+
+/* General Image Stuff */
+img.sm { width: 160px; }
+
+/* TABLES */ 
+table {border: 2px solid #452; border-collapse:collapse; width:90%; margin-left: 3ex; }td {background-color: #fff; padding:3px; border: 1px solid #fff}
+th {text-align:left;border: 1px solid #fff}
+thead th {color:#fff; font-size:1.5em; background-color: #472 ; padding: 10px 6px}
+tbody th {color:#fff; font-size:1.15em; background-color: #79B30B ; padding: 6px}
+tbody th.sub {font-size: .90em; color:#000; background-color: #dda; padding: 6px}
+
+
+</style>
+</head>
+<body>
+<div id="container">
+<div id="header"><h1><a href="#">Midnight Rainforest</a></h1>
+<p id="skip"><a href="#content">Skip To Content</a></p></div>
+<div id="wrapper"> <!-- Main content section -->
+<div id="content">
+<h2 id="topper">Item One</h2>
+<h3>About This Design</h3>
+<p>Well, this design was made because I wanted to make something that didn't involve hacks for the primary layout.</p>
+<p>The left and right columns are set at 200px, and the center area is fully flexible to whatever size is needed. All fonts will increase appropriately because all are set relative using the base at the 76% universal sizing.</p>
+<p>One image is used through this layout, and is simply repeated in different spots to show possible placement of graphics.</p>
+<p>You can have multiple subsections in your left navigation, but the only ones that will show expanded are the subsections for the &lt;ul&gt; currently marked #active. The subsections for other sections of the menu will remain hidden.</p>
+<p>This website is XHTML 1.0 Strict and has been tested in Firefox, IE 6 and IE 7 Beta 2, Opera, Konqueror, and Safari.</p>
+<h2>Useage</h2>
+<p>I am freeing this template according to the <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>. That license gives you the right to use this template in any way (commercial or non-commercial), make changes to it, create things based on it, etc... so long as an attribution is made to the author. Per this, please leave the link at the bottom of the footer to my site, though you are free to change the text of that link (such as, 'Based on a design by', etc..) to suit your needs. You can also, alternatively, put a link in your 'About' page or other page as appropriate.</p>
+<h1>H1 Heading</h1><h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<p>This is normal paragraph text. This is normal paragraph text. This is normal paragraph text. This is normal paragraph text. This is normal paragraph text. This is normal paragraph text. This is normal paragraph text.</p>
+<p><a href="#">This is a normal link.</a></p>
+<p><acronym>An acronym</acronym></p>
+<p><code>Some text here that is code.</code></p>
+<blockquote><p>A blockquote.</p></blockquote>
+<table>
+ <thead> <tr> <th colspan="3">Table Heading</th> </tr> </thead>
+<tbody>
+<tr>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>Col 3</th>
+</tr>
+<tr>
+<th class="sub">Sub head 1</th>
+<td>Result 1</td>
+<td>Result 2</td>
+</tr>
+<tr>
+<th class="sub">Sub head 2</th>
+<td>Result 1</td>
+<td>Result 2</td>
+</tr><tr>
+<th class="sub">Sub head 3</th>
+<td>Result 1</td>
+<td>Result 2</td>
+</tr>
+</tbody>
+</table>
+			
+
+
+<h3>Color palette:</h3>
+<p>For easy search and replace.</p>
+<ul>
+<li style="color:#000">Regular Black #000</li>
+<li style="color: #452">Dark Green #452</li>
+<li style="color:#472">Rich Green #472</li>
+<li style="color: #79B30B">Lime Green #79B30B</li>
+<li style="color:#b71">Orange Brown #b71</li></ul>
+<h4>Special:</h4>
+<p>Main content background, title, and regular text color of pure #fff white.</p>
+<p style="background-color:#dda; color: #742">The topper of the main content and the code area have a background-color of #dda and text color #742, like so.</p>
+</div>
+</div>
+<div id="navigation"> <!-- Menu section -->
+<div class="navcontainer">
+<ul class="navlist">
+<li class="menutitle">navigation</li>
+<li id="active"><a href="#" id="current">Item one</a>
+<ul><li><a href="#">A sublink</a></li><li><a href="#">A sublink</a></li><li><a href="#">A sublink</a></li></ul></li>
+<li><a href="#">Item two</a><ul><li><a href="#">A sublink</a></li><li><a href="#">A sublink</a></li><li><a href="#">A sublink</a></li></ul></li>
+<li><a href="#">Item three</a></li>
+<li><a href="#">Item four</a></li>
+<li id="last"><a href="#">Item five</a></li>
+</ul>
+</div>
+<h2>A Pitch</h2>
+<p>Something relatively important that you want to put here right below the links. Maybe this is a ad area, or perhaps its a spot to sign up for a free newsletter.</p>
+<p><img src="images/grass_sm.jpg" class="sm" alt="A placer image" /></p>
+</div>
+<div id="extra">
+<label class="header" for="searchbox">Search</label>
+<form id="contactForm" action="some.php">
+<p style="padding:0; margin:0;"><input type="text" style="width: 140px;" id="searchbox" /><input type="submit" value="GO" style="margin-left: 3px; width:40px" /></p>
+</form>
+<p><img src="images/grass_sm.jpg" class="sm" alt="A placer image" /></p>
+<h2>Recent News</h2>
+<p><strong>News Title:</strong> This is a little piece of news you could display on your site.</p>
+<p><strong>News Title:</strong> This is a little piece of news you could display on your site.</p>
+<p><strong>News Title:</strong> This is a little piece of news you could display on your site.</p>
+<h2>Affiliates</h2>
+
+<ul id="affiliate">
+<li><a href="#">Offsite link / image</a></li>
+<li><a href="#">Offsite link / image</a></li>
+<li><a href="#">Offsite link / image</a></li>
+<li><a href="#">Offsite link / image</a></li>
+</ul>
+
+</div>
+<div id="footer">
+<ul><li><a href="#">About</a></li>
+<li><a href="#">Accessibility Statement</a></li>
+<li><a href="#">Sitemap</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li>Design by <a href="http://www.websitestyle.com">Website Style</a></li></ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<h1>Apply a layout to your app</h1>
+
+<ul>
+<li>[<a href="{{=URL(r=request,vars=dict(revert='yes'))}}">revert to original</a>]</li>
+{{for layout in layouts:}}
+<li><a href="{{=URL(r=request,vars=dict(apply=layout))}}">{{=layout}}</a></li>
+{{pass}}
+{{if original:}}
+{{pass}}
+</ul>
+

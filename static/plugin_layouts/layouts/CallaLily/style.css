@@ -1,0 +1,142 @@
+/*
+Theme Name:Calla Lily
+Theme URI: http://www.creativedistortion.com/freetemp.html
+Version: 1.0
+Author: Norrash*/ 
+body {
+    
+    min-width: 760px;
+    background-color: #000000;
+    font-size: 90%;
+    color: #613a68;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align:center;
+ } 
+ 
+    
+#wrapper {
+    width: 760px;
+    text-align : center ;
+    margin-left : auto ;
+    margin-right : auto ;
+    background-color: #613a68;
+}
+	
+ 
+   
+   
+
+#header {
+   
+    text-align: center;
+    background-color: #ad72b8;
+    color: #cde3d0;
+    margin-top: 0;
+}
+
+ 
+
+/**************************** menu ****************************/
+ ul#navlist
+{    margin: 0;
+     padding: 0;
+     text-align: center;
+     border-width: 1px;
+     border-style: solid; 
+     border-color: #000000;
+     list-style-type: none;
+     background-color:#613a68;
+}
+
+
+#navlist li
+{
+   display: inline;
+   list-style-type: none;
+   padding-right: 20px;
+ 
+}
+ 
+ #navlist a, #navlist a:visited {
+     color: #dcc6e0;
+     text-decoration: none;
+     background-color: #613a68;
+}
+
+ #navlist a:hover 
+{
+   list-style-type: none;
+   padding-right: 20px;
+   background-color:#ffc0ff;
+   color:#613a68;
+}
+ 
+  
+  /**************************** content ****************************/
+#main {
+     width: 760px;
+     background-color: #c9a7cf;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0px;
+     border-width: 1px;
+     border-style: solid; 
+     border-color: #000000;
+     font-size:1.0em;
+     font-family: Arial,Helvetica,Sans-Serif;
+     color: #613a68;
+     text-align: center;
+     line-height: 1.8em;
+     }
+
+ p {
+     padding: 10px;
+     font-family: Arial,Helvetica,Sans-Serif;  
+     font-size: 1.0em;
+     color:#613a68;
+     background-color: #c9a7cf;
+}
+ 
+h1{ 
+font-family: Arial,Helvetica,Sans-Serif;
+font-size: 1.1em;
+ color:#613a68;
+ background-color: #c9a7cf;
+}
+/**************************** footer ****************************/
+
+
+ #footer{
+background-color: #c9a7cf;
+padding: 5px;
+margin: 0;
+text-align:center;
+font-family: Arial,Helvetica,Sans-Serif;
+font-size: 0.8em;
+color:#613a68;
+}
+ 
+ 
+/****************************the 'Horizontal Rule****************************/
+.rule { 
+       border-top-width: 1px;
+       border-top-style: solid;
+       border-color: #784981; 
+       margin: 2%;}
+/****************************Links****************************/
+a:link {
+     color: #dcc6e0;
+    text-decoration: none;
+     background-color: #c9a7cf;
+}
+a:visited {
+    color: #613a68;
+    text-decoration: none;
+     background-color: #a787ad;
+}
+a:hover {
+    color: #613a68;
+    text-decoration: none;
+    cursor: e-resize;
+    background-color:#ffc0ff;
+}

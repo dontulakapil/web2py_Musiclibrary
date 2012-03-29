@@ -1,0 +1,358 @@
+/* singapore design by uli sobers::                        www.free-templates-sobers.de */
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* allgemeine formatierungen                                                            */
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+html {
+  scrollbar-face-color:           #808080;
+  scrollbar-highlight-color:      #808080;
+  scrollbar-3dlight-color:        #707070;
+  scrollbar-darkshadow-color:     #808080;
+  scrollbar-shadow-color:         #7e7e7e;
+  scrollbar-arrow-color:          #ffffff;
+  scrollbar-track-color:          #505050;
+  }
+
+
+html, body, #topnav ul, #topnav li, #sidelinks ul, #contactcube ul, #archives ul, #overall-footer, #content ul {
+  margin:                         0 0 0 0;
+  padding:                        0 0 0 0;
+  }
+
+
+body {
+  background:                     url(./grafics/bgrl.gif) repeat-x;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  font-size:                      1.0em;
+  }
+
+
+#sidelinks ul, #contactcube ul, #archives ul, #content ul {
+	list-style-type:                none;
+}
+
+/* container formattings                                                                */
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+#overall {
+  width:                          860px;
+  height:                         auto;
+  background-color:               #ffffff;
+  margin-left:                    100px;
+  border-left:                    solid 6px gray;
+  }
+
+
+#head {
+  width:                          auto;
+  height:                         250px;
+  background:                     url(./grafics/singapore.gif) no-repeat;
+  background-position:            top right;
+  }
+
+
+/* top navigation ///////////////////////////////////////////////////////////////////// */
+#topnav {
+  margin:                         0 0 0 8px;
+}
+
+#topnav a {
+  display:                        block;
+  float:                          left;
+  color:                          #708491;
+  font-size:                      0.6em;
+  line-height:                    14px;
+  font-weight:                    bold;
+  padding:                        8px 7px 6px 7px;
+  text-decoration:                none;
+  border-bottom:                  1px solid #9fb1bc;
+  }
+
+#topnav a:hover {
+  color:                          #000000;
+  background:                     url(./grafics/circle.gif) no-repeat bottom center;
+  }
+
+
+/* anylinks navigation //////////////////////////////////////////////////////////////// */
+#anyline {
+  width:                          auto;
+  height:                         20px;
+  background:                     url(./grafics/singaporem.gif) no-repeat top right;
+  z-index:                        0;
+  border-top:                     solid 1px gray;
+  border-bottom:                  solid 8px gray;
+  }
+
+
+#anybgr {
+  width:                          auto;
+  height:                         20px;
+  background:                     url(./grafics/anybgr.png) repeat-x;
+  z-index:                        1;
+  opacity:                        0.74;
+  -moz-opacity:                   0.74;
+  -khtml-opacity:                 0.74;
+  filter:                         progid:dximagetransform.microsoft.alpha(opacity=80);
+  }
+
+
+#anylink {
+  position:                       relative;
+  top:                           -20px;
+  width:                          auto;
+  height:                         20px;
+  z-index:                        2;
+  }
+
+#anylink a {
+  display:                        block;
+  float:                          right;
+  color:                          #ffffff;
+  font-size:                      0.6em;
+  line-height:                    20px;
+  font-weight:                    bold;
+  padding:                        0 7px 0 7px;
+  text-decoration:                none;
+  }
+
+#anylink a:hover {
+  color:                          #080808;
+  z-index:                        3;
+  background:                     url(./grafics/anybgrdrk.png) repeat-x;
+  }
+
+
+/* title grafic bottom //////////////////////////////////////////////////////////////// */
+#tgbtm {
+  width:                          auto;
+  height:                         127px;
+  background:                     url(./grafics/singaporeb.gif) no-repeat top right;
+  z-index:                        5;
+  }
+
+
+/* homepage title ///////////////////////////////////////////////////////////////////// */
+#title-shadow {
+  position:                       absolute;
+  top:                            267px;
+  left:                           104px;
+  width:                          auto;
+  height:                         auto;
+  color:                          #cacaca;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      51px;
+  font-weight:                    bold;
+  z-index:                        6;
+  }
+
+
+#title {
+  position:                       absolute;
+  top:                            265px;
+  left:                           102px;
+  width:                          auto;
+  height:                         auto;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      51px;
+  font-weight:                    bold;
+  z-index:                        7;
+  }
+
+
+/* sidebar & text container /////////////////////////////////////////////////////////// */
+#sidebar {
+  float:                          left;
+  position:                       relative;
+  top:                           -30px;
+  width:                          210px;
+  height:                         auto;
+}
+
+/* left navigation //////////////////////////////////////////////////////////////////// */
+#sidelinks {
+	width:                          200px;
+  background:                     url(./grafics/h1.gif)  no-repeat 179px 22px;
+	padding:                        16px 0 0 10px;
+  border-right:                   1px dotted #dcdcdc;
+}
+
+#sidelinks h1 {
+  display:                        inline;
+  height:                         40px;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      1.8em;
+  font-weight:                    bold;
+  text-transform:                 lowercase;
+}
+
+#sidelinks li {
+	padding:                        2px 0 2px 19px;
+	background:                     url(grafics/rarrow.gif) no-repeat 8px 8px;
+	border-top:                     1px dotted #dcdcdc;
+}
+
+#sidelinks a {
+  color:                          gray;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  font-size:                      0.9em;
+  text-decoration:                none;
+}
+
+#sidelinks a:hover {
+	border-bottom:                  1px dotted #666666;
+}
+
+/* contact cube /////////////////////////////////////////////////////////////////////// */
+#contactcube {
+	clear:                          both;
+  width:                          200px;
+  background:                     url(./grafics/h2.gif)  no-repeat  179px 36px;
+  padding:                        30px 0 0 10px;
+	border-right:                   1px dotted #dcdcdc;
+}
+
+#contactcube h1 {
+  display:                        inline;
+  height:                         40px;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      1.8em;
+  font-weight:                    bold;
+  text-transform:                 lowercase;
+}
+
+#contactcube li {
+	height:                         80px;
+	border-top:                     1px dotted #dcdcdc;
+}
+
+/* calendar cube ////////////////////////////////////////////////////////////////////// */
+/* for calendar formattings see ./calendar/calendar.css /////////////////////////////// */
+#calendarcube {
+	clear:                          both;
+  width:                          200px;
+  background:                     url(./grafics/h3.gif) no-repeat  179px 40px;
+  padding:                        34px 0 0 10px;
+	border-right:                   1px dotted #dcdcdc;
+}
+
+#calendarcube h1 {
+  display:                        inline;
+  height:                         40px;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      1.8em;
+  font-weight:                    bold;
+  text-transform:                 lowercase;
+}
+
+/* archives links ///////////////////////////////////////////////////////////////////// */
+#archives {
+	clear:                          both;
+  width:                          200px;
+  background:                     url(./grafics/h4.gif) no-repeat  179px 46px;
+  padding:                        40px 0 0 10px;
+	border-right:                   1px dotted #dcdcdc;
+}
+
+#archives h1 {
+  display:                        inline;
+  height:                         40px;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      1.8em;
+  font-weight:                    bold;
+  text-transform:                 lowercase;
+}
+
+#archives li {
+	padding:                        2px 0 2px 19px;
+	background:                     url(grafics/garrow.gif) no-repeat 8px 8px;
+	border-top:                     1px dotted #dcdcdc;
+}
+
+#archives a {
+  color:                          gray;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  font-size:                      0.9em;
+  text-decoration:                none;
+}
+
+#archives a:hover {
+	border-bottom:                  1px dotted #666666;
+}
+
+/* content container ////////////////////////////////////////////////////////////////// */
+#content {
+  width:                          auto;
+  height:                         auto;
+  color:                          gray;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  font-size:                      0.9em;
+  text-align:                     justify;
+  padding:                        0 0 48px 0;
+  margin-left:                    280px;
+}
+
+#content h2 {
+  display:                        inline;
+  color:                          gray;
+  font-family:                   'trebuchet ms', verdana, arial, helvetica, sans-serif;
+  font-size:                      28px;
+  font-weight:                    bold;
+	background:                     url(grafics/headline.gif) no-repeat 0px 9px;
+  padding-left:                   22px;
+  text-transform:                 uppercase;
+}
+
+#content li {
+  list-style-type:                none;
+  background:                     url(grafics/list.gif) no-repeat 15px 5px;
+  text-indent:                    26px;
+}
+
+#content a {
+	color:                          #00a55d;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  text-decoration:                none;
+}
+
+#content a:hover {
+	color:                          #dcdcdc;
+  background-color:               gray;
+}
+
+/* footer lines ///////////////////////////////////////////////////////////////////// */
+#overall-footer {
+	clear:                          both;
+  width:                          auto;
+  height:                         84px;
+  background:                     url(./grafics/fbgr.gif) repeat-x top left;
+}
+
+#footer {
+  width:                          860px;
+  height:                         84px;
+  color:                          gray;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  font-size:                      0.6em;
+  text-align:                     center;
+  padding:                        12px 0 0 0;
+  margin-left:                    100px;
+  border-left:                    solid 6px gray;
+}
+
+#footer a {
+  color:                          gray;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  text-decoration:                none;
+}
+
+#footer a:hover {
+	color:                          #00a55d;
+}
+
+

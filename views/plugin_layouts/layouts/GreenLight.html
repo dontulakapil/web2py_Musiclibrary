@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/GreenLight/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+   <!-- Begin Header -->
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+   </div>
+   <!-- End Header -->
+   <!-- Begin Strap -->
+   <div id="strap">
+    <b>
+     GreenLight
+    </b>
+    &raquo; HomePage
+   </div>
+   <!-- End Strap -->
+   <!-- Begin Navigation -->
+   <div id="navigation">
+    <ul id="menu">
+     <li>
+      <a href="#">
+       HomePage
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Downloads
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Staff
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Links
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- End Navigation -->
+   <!-- Begin Content-->
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <!-- End Content -->
+   <!-- Start Footer -->
+   <div id="footer">
+    <p>
+     &copy; 2008 SiteName.All right Reserved.
+    </p>
+   </div>
+   <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+ </body>
+</html>

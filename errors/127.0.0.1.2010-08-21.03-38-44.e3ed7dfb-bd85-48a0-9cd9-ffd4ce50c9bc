@@ -1,0 +1,17 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'/home/chiinna/Desktop/linux_web2py/applications/practice/views/default/playlistsongs.html'
+p4
+sS'code'
+p5
+S'response.write(\'<h1>This is the playlistsongs.html template</h1>\\n\',escape=False)\nfor i in row:\n    response.write(\'\\n\',escape=False)\n    for j in song1:\n        response.write(\'\\n\',escape=False)\n        if i.songid == j.id:\n            response.write(\'\\n\',escape=False)\n            response.write(i.songid)\n            response.write(\'\\n<audio  controls="controls">\\n<source src="\',escape=False)\n            response.write(URL(r=request, f=\'download\', args=[i.file]))\n            response.write(\'" >\\n</audio>\\n\',escape=False)\n            pass\n        response.write(\'\\n\',escape=False)\n        pass\n    response.write(\'\\n\',escape=False)\n    pass\nresponse.write(\'\\n\',escape=False)'
+p6
+sS'traceback'
+p7
+S'Traceback (most recent call last):\n  File "/home/chiinna/Desktop/linux_web2py/gluon/restricted.py", line 173, in restricted\n    exec ccode in environment\n  File "/home/chiinna/Desktop/linux_web2py/applications/practice/views/default/playlistsongs.html", line 10, in <module>\n    {{pass}}\n  File "/home/chiinna/Desktop/linux_web2py/gluon/sql.py", line 664, in __getattr__\n    return dict.__getitem__(self,key)\nKeyError: \'file\'\n'
+p8
+s.

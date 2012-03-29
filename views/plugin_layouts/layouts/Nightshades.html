@@ -1,0 +1,224 @@
+<!-- Nightshade by James Morris of MyWebResource (contact@MyWebResource.com) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Nightshades/favicon.ico'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Nightshades/style.css'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Nightshades/rss.xml'))}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+  {{include 'web2py_ajax.html'}}
+ </head>
+ <body>
+  <div id="logo">
+   <div id="sitename">
+    Your Website Name
+   </div>
+   <div id="pagetitle">
+    <h1>
+     Current Page Title
+    </h1>
+   </div>
+  </div>
+  <div id="navigation">
+   <div class="blocktitle">
+    <h2>
+     Navigation
+    </h2>
+   </div>
+   <div class="blockcontent">
+    <ul class="nav">
+     <li class="nav">
+      <a href="index.html" title="Homepage" accesskey="1">
+       Homepage
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="2">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="3">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="4">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="5">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="6">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="7">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="8">
+       Link Text
+      </a>
+     </li>
+     <li class="nav">
+      <a href="#" title="Link Title" accesskey="9">
+       Link Text
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="blocktitle">
+    <h2>
+     Block Title
+    </h2>
+   </div>
+   <div class="blockcontent">
+    Nulla et nisl. Fusce nonummy pharetra urna. Nam vel nisl eget est pretium consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ultrices lobortis lectus. Aliquam vitae tellus. Cras dignissim quam volutpat tellus.
+    <a href="#" title="Aliquam varius">
+     Aliquam varius
+    </a>
+    , nunc sed semper porttitor, odio ipsum gravida nibh, ut molestie nulla ligula id lorem. Morbi accumsan. In hac habitasse platea dictumst.
+   </div>
+   <div class="blocktitle">
+    <h2>
+     Block Title
+    </h2>
+   </div>
+   <div class="blockcontent">
+    <ul>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+     <li>
+      <a href="#" title="Item Text">
+       Item Text
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="main-body">
+   <div class="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div class="content">
+    <div class="blocktitle">
+     <h2>
+      Block Title
+     </h2>
+    </div>
+    <div class="blockcontent">
+     Lorem ipsum dolor sit amet,
+     <a href="#" title="consectetuer adipiscing">
+      consectetuer adipiscing
+     </a>
+     elit. Phasellus eleifend diam vitae magna. In hac habitasse platea dictumst. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+     <div class="spotlight-right">
+      <div class="blocktitle">
+       <h2>
+        Right Spotlight Title
+       </h2>
+      </div>
+      <div class="blockcontent">
+       Lorem ipsum dolor sit amet,
+       <a href="#" title="consectetuer adipiscing">
+        consectetuer adipiscing
+       </a>
+       elit. Phasellus eleifend diam vitae magna. In hac habitasse platea dictumst. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus tincidunt nibh quis nunc. Nam adipiscing.
+      </div>
+     </div>
+     Phasellus tincidunt nibh quis nunc. Nam adipiscing. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nonummy sollicitudin nisi. Maecenas tincidunt auctor magna. Donec massa. Quisque malesuada, nisi eget aliquam interdum, velit mi facilisis felis, id aliquam leo ipsum et leo. Morbi eget erat vel enim dapibus suscipit. Vestibulum laoreet elit eu eros. In hac habitasse platea dictumst. Etiam risus nisl, laoreet nec, pretium nec, commodo ac, enim. Vivamus ac lectus. Quisque massa massa, condimentum vel, viverra et, pretium ut, arcu.
+     <br />
+     <br />
+     Nulla et nisl. Fusce nonummy pharetra urna. Nam vel nisl eget est pretium consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ultrices lobortis lectus. Aliquam vitae tellus. Cras dignissim quam volutpat tellus.
+     <a href="#" title="Aliquam varius">
+      Aliquam varius
+     </a>
+     , nunc sed semper porttitor, odio ipsum gravida nibh, ut molestie nulla ligula id lorem. Morbi accumsan. In hac habitasse platea dictumst. Maecenas ipsum. Fusce vitae nisl non massa convallis pulvinar. Integer sit amet dolor. Praesent tincidunt pretium arcu. Nam ut tellus. Fusce justo dui, vestibulum eu, ornare sit amet, facilisis id, elit. Suspendisse urna. Ut auctor mauris id nulla.
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   Copyright &copy; 2006 Your Company | All rights Reserved
+   <br />
+   Design by
+   <a href="http://mywebresource.com" title="MyWebResource: Webmaster Articles, Webmaster News, Webmaster Resources">
+    MyWebResource
+   </a>
+  </div>
+ </body>
+</html>
+<!-- Nightshade by James Morris of MyWebResource (contact@MyWebResource.com) -->

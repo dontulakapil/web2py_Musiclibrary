@@ -1,0 +1,271 @@
+* { margin: 0; padding: 0; }
+
+html
+{
+	color: #cfcfcf;
+	background-color: #2e2f3d;
+	border-top: 10px solid #17181f;
+	font: normal 12px "Trebuchet MS", "Lucida Grande", Verdana, Tahoma, Sans-Serif;
+}
+
+/* Links */
+
+a { text-decoration: none; font-weight: bold; border-bottom: 1px dotted #aaaaaa; }
+
+a:link { color: #999dcf; border-bottom-color: #999dcf;  }
+
+a:visited { color: #8f93c4; border-bottom-color: #8f93c4; }
+
+a:hover, a:active { color: #f2bc00; border-bottom-style: solid; border-bottom-color: #f2bc00; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 10px 0 15px; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: normal; border-bottom-width: 0; }
+
+h1 { font-size: 32px; }
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 24px; }
+
+h4, h5, h6 { font-size: 20px; }
+
+/* Lists */
+
+ul, ol, dl
+{
+	margin: 15px 25px; 
+	line-height: 2.0em;
+}
+
+ol { margin-left: 30px; }
+
+ul { list-style-type: square; }
+
+/* Other Html Elements */
+
+blockquote, pre 
+{ 
+	padding: 10px;
+	color: #bbbbbb;
+	margin: 20px 30px; 
+	background-color: #44465a; 
+	border: 1px solid #21222d;
+}
+
+code { font-family: Consolas, Monaco, Verdana, "Courier New"; font-size: .93em; }
+
+abbr, acronym, cite { border-bottom: 1px dotted #cfcfcf; cursor: help; }
+
+hr { visibility: hidden; height: 1px; clear: both; }
+
+/* Structure */
+
+body
+{
+	clear: both;
+	width: 800px;
+}
+
+#wrapper
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	min-height: 170px;
+	background: #565873 url(images/wrapper_bg.png) top left repeat-y;
+}
+
+#content
+{
+	width: 55%;
+	float: left;
+	overflow: hidden;
+}
+
+#navigation
+{
+	float: left;
+	clear: both;
+	width: 100%;
+	background-color: #494a60;
+}
+
+#logo
+{
+	width: 5%;
+	float: left;
+	overflow: hidden;
+	background: transparent url(images/logo.png) top center no-repeat;
+}
+
+#sidenotes
+{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+
+#footer
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	background-color: #3e3f53;
+}
+
+#meta
+{
+	width: 60%; 
+	float: left;
+	overflow: hidden;
+}
+
+#flickr
+{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+
+/* Navigation */
+
+#navigation ul { margin: 0; list-style-type: none; float: left; }
+
+#navigation li { float: left; }
+
+#navigation a
+{
+	float: left;
+	display: block;
+	color: #cacbe4;
+	padding: 5px 8px;
+	border-bottom-width: 0;
+}
+
+#navigation a:hover, #navigation a:active
+{
+	color: #f2bc00;
+	background-color: #565873;
+}
+
+#navigation li.active a { color: #ffffff; background-color: #565873; }
+
+/* Content */
+
+.post { padding: 10px 20px; line-height: 1.6em; clear: both; }
+
+.post-content p { margin-top: 10px; margin-bottom: 10px; }
+
+p.post-footer
+{
+	background-color: #44465a;
+	margin-bottom: 10px; 
+	margin-top: 25px;
+	padding: 5px 10px; 
+	color: #44465a;
+}
+
+p.post-footer strong { color: #bbbbbb; padding-right: 10px; border-right: 1px solid #777777; }
+
+p.post-footer em { font-style: normal; padding-right: 10px; border-right: 1px solid #777777; }
+
+p.post-footer a { border-bottom-width: 0; }
+
+a.more { border-bottom-width: 0; }
+
+/* Logo */
+
+#logo img { visibility: hidden; }
+
+/* Sidenotes */
+
+#sidenotes h3 { margin-left: 10px; margin-top: 5px; }
+
+#sidenotes ul { margin: 10px 0 0; padding: 0; list-style-type: none; }
+
+#sidenotes a
+{
+	display: block;
+	color: #bbbbbb;
+	margin-top: -1px;
+	padding: 5px 10px;
+	font-weight: normal;
+	border-top: 1px dotted #32333e;
+	border-bottom: 1px dotted #32333e;
+}
+
+#sidenotes a:hover { background-color: #44465a; color: #cfcfcf; }
+
+#sidenotes a strong
+{
+	color: #c4902a;
+	display: block;
+	padding-left: 20px; 
+	background: transparent url(images/pushpin.gif) 0 25% no-repeat;
+}
+
+#sidenotes a em
+{
+	display: block;
+}
+
+/* Meta */
+
+.cats, .date
+{
+	padding: 0;
+	width: 35%;
+	float: left;
+	margin: 10px 0;
+}
+
+.cats { margin-left: 40px; margin-right: 20px; }
+
+.date { margin-right: 40px; margin-left: 20px; }
+
+.cats li,
+.date li
+{
+	list-style-image: url(images/pushpin.gif);
+}
+
+.cats a,
+.date a
+{
+	display: block;
+	padding: 3px 8px;
+	border-bottom-color: #5b5c78;
+}
+
+.cats a:hover, .cats a:active,
+.date a:hover, .date a:active
+{
+	background-color: #4d4e66;
+}
+
+#copyright
+{
+	clear: both;
+	padding: 10px; 
+	background-color: #303140;
+}
+
+/* Flickr */
+
+#flickr h3 { display: none; }
+
+#flickr img
+{
+	margin: 10px;
+	padding: 3px;
+	background-color: #44465a; 
+}
+
+#flickr img:hover 
+{
+	background-color: #55576b;
+	border-color: #222438;
+}

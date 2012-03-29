@@ -1,0 +1,345 @@
+body {
+  padding:0;
+  margin:0;
+  font:12px Verdana, sans-serif;
+  line-height: 18px;
+  background:#ECF1B1; 
+  color: #55523F; 
+}
+
+abbr { 
+  border-bottom: 1px solid #999; 
+}
+
+abbr:hover {
+  border-bottom-color: #9c0;
+  color: #666;
+}
+
+a, a:link, a:visited{
+  color:#333;
+  text-decoration: underline;
+  background:none;
+}
+
+a:active {
+  color: #333;
+  background: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#333;
+  text-decoration:none;
+}
+
+p {
+  margin:0;
+  padding-top:2px;
+  
+}
+
+h1 { 
+  font-weight:bold; 
+  font-size:20px; 
+  padding:10px 0 4px 0px; 
+  margin: 0 0 10px 0; 
+  color:#333; 
+  background:none; 
+}
+
+h2 { 
+  font-size:12px; 
+  padding:10px 0 4px 0px; 
+  margin: 0 0 10px 0; 
+  color:#333; 
+  background:none; 
+}
+
+ul { 
+  padding:0 0 20px 0; 
+  margin:10px 35px 0 13px; 
+  list-style: square; 
+  font-size: 1em;
+}
+
+li { 
+  margin:0; 
+  padding:0 0 4px 0; 
+}
+
+img { 
+  border: 0;
+}
+
+h4 {
+  font: 30px 'HelveticaNeue-CondensedBold', 'Arial Narrow', Helvetica, Arial, sans-serif; 
+  margin:0 20px 0 0;
+}
+
+#wrapper {
+  margin:2px auto;
+  width:900px;
+  padding:0; 
+  background:transparent;
+}
+
+#header {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_04.gif) no-repeat center;
+  margin: 10px 0 0 18px;
+  height: 280px;
+}
+
+#header .link {
+  font-size: 0.9em;
+  text-align: right;
+  padding: 8px 30px 0 0;
+  color: #CCD293;
+}
+
+#header .link a {
+  color: #CCD293;
+}
+
+#header .title a {
+  color: #CCD293;
+  text-decoration: none;
+}
+
+#header .title h1 {
+  float:left;
+  padding-top: 70px;
+  padding-left: 50px;
+  color: #eee;
+  font-size: 30px;
+  font-weight: normal;
+  height: 22px;
+  width: 280px;
+}
+
+#header .title h2 {
+  padding-top: 95px;
+  padding-left: 60px;
+  color: #eee;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#header .menu { 
+  float: left;
+  width: 700px;
+  padding-top: 86px;
+  padding-right:5px;  
+  text-align:left; 
+  font:14px Verdana, sans-serif;
+}
+
+#header .menu li { 
+  display:inline; 
+  margin:0 0 0 7px; 
+}
+
+#header .menu li a {
+  color:#FFF6C1; 
+  text-decoration:none; 
+  padding:1px 5px 1px 5px; 
+  height:38px; 
+  background:none;
+}
+
+#header .menu li a:hover { 
+  background: transparent;
+  color:#FFF6C1; 
+  text-decoration:underline;
+} 
+
+#content {
+margin:0;
+}
+
+#content .top {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_07.gif) no-repeat center;
+  margin: 10px 0 0 18px;
+  height: 28px; 
+}
+
+#content .isi {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_08.gif) repeat-y center;
+  margin: 0 0px 0 14px;
+  padding: 0 0 0 50px;
+  width: 840px;
+}
+
+#content .isi p {
+  padding-bottom:18px;
+  margin: 0 35px 0 0;
+  font-size: 1em;
+}
+
+#content .isi h1 {
+  background: url(images/loadfoo_layoutv2_cut_10.gif) no-repeat left top;
+  font-size: 28px;
+  font-weight: normal;
+  height: 56px;
+  margin: 0 0 0 0;
+  padding: 18px 0 0 10px;
+}
+
+#content .foot {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_23.gif) no-repeat center;
+  height: 23px;
+  margin: 0 0 0 18px;
+}
+
+#middle {
+margin:0;
+}
+
+#middle .top {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_25.gif) no-repeat center;
+  height: 43px;
+  margin: 10px 0 0 18px;
+}
+
+#middle .menus { 
+  float: left;
+  width: 845px;
+  margin: 16px 0 0 9px;
+  text-align:center; 
+  font:12px Verdana, sans-serif;
+}
+
+#middle .menus li { 
+  display:inline; 
+  margin:0 0 0 7px; 
+}
+
+#middle .menus li a {
+  color:#55523F; 
+  text-decoration:none; 
+  padding:1px 5px 1px 5px; 
+  height:38px; 
+  background:none;
+}
+
+#middle .menus li a:hover { 
+  background: transparent;
+  color:#55523F; 
+  text-decoration:underline;
+} 
+
+#middle .middles {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_27.gif) repeat-x center;
+  height: 5px;
+  margin: 0 0 0 18px;
+}
+
+#middle .foot {
+  background: #ECF1B1 url(images/loadfoo_layoutv2_cut_28.jpg) no-repeat center;
+  height: 169px;
+  margin: 0 0 0 18px;
+}
+
+#footer {
+  text-align: right;
+  font-size: 10px;
+  margin: 0 13px 0 0;
+}
+
+/* Optimal Set */
+table {
+	border-collapse:collapse;
+	background:transparent;
+	font-size:10px;
+	color: #333;
+	word-spacing: -1px;
+	width: 94%;
+	margin:0px 0px 0px 0px;
+	border-collapse:collapse;
+}
+
+caption {
+	padding: 10px 0 19px 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-transform: capitalize;
+	word-spacing: -1px;
+	letter-spacing: -1px;
+	color: #022B59;
+	background-color: transparent;
+	margin-bottom: -23px;
+	line-height: 63px;
+}
+
+thead  {
+	border-bottom: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+}
+
+thead th, tfoot th, tfoot td {
+	background: #CCD293;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: -1px;
+	word-spacing: 2px;
+	color: #55523F;
+	text-align: center;
+}
+
+tfoot td {
+	text-align:center;
+}
+
+tfoot td a {
+	text-align:center;
+}
+
+tfoot td a:hover {
+	color: #fff;
+}
+
+tbody th, tbody td {
+	border-bottom: solid 1px #ECF1B1;
+	line-height: 11px;
+	letter-spacing: 0.5px;
+	word-spacing: -1px;
+	padding: 5px 0px 5px 5px;
+	margin: 5px 0px 5px 5px;
+	text-align: center;
+}
+
+tbody th {
+	white-space: nowrap;
+	margin: 5px 0px 5px 0px;
+	text-align: left;
+}
+
+tbody th a:hover {
+	color:#fff;
+}
+
+.odd {}
+
+tbody tr:hover {
+	background:#ECF1B1;
+}
+
+fieldset { border:0;margin:0;padding:0; }
+form label { display:block; }
+form input.text,form textarea { width:80%; font:bold 12px/12px "courier new",courier,monospace;color:#333;padding:3px;margin:1px 0;border:1px solid #ccc; background-color: #F3F3F3;}
+form input.text:hover, form textarea:hover{	background:#fff;	}
+form input.text:focus, form textarea:focus{ color:#666; background:#fff; }
+input.submit { padding:2px 5px; font:bold 12px/12px verdana,arial,sans-serif; background:#631e19; color:#ffffff; border: none; }
+* html form input.text,
+* html form textarea{	color:#333; }
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; padding-right: 10px; }
+.float-left { float: left; }
+.float-right {	float: right; padding-right: 10px; }
+.clear { clear:both; overflow:hidden; margin:0; padding-bottom:10px; height:1px; }

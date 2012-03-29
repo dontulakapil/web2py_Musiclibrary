@@ -1,0 +1,195 @@
+/*
+(C) Ossoba Design Studio
+===============================
+*/
+
+/* Overall style */
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333333;
+}
+body {
+	background-color: #EDEFF3;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.container {
+    width:770px;
+    margin:0 auto;
+    text-align:left;
+    position:relative;
+}
+h1 {
+	font: bold 12pt Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+a {
+    text-decoration:none;
+}
+a:link {
+	color: #065C87;
+}
+a:visited {
+	color: #425666;
+}
+a:hover {
+	color: #000000;
+	border-bottom: 1px dotted #999999;
+}
+a:active {
+	color: #FFCC00;
+}
+#leftBgr {
+	background: url(images/leftBgr.gif) repeat-y left 2px;
+}
+/* End Overall style */
+
+/* Navigation */
+#navigation {
+    position:absolute; 
+	top:92px;
+	display:block; 
+	width:355px; 
+	height:16px;
+	right: 10px;	
+}
+
+#navigation a {
+    font-family:"HandelGothic BT", Arial, "Arial Black";
+    font-size:12px;
+	display:block;
+	width:70px;
+	height:15px;
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap;
+	border: 0;	   
+}
+#navigation a:link {
+	color: #573535;   
+}
+#navigation a:hover {
+	color:#A67171;
+	background: #EBEBEB;
+}
+#navigation a:active {
+	color:#FFA25B;
+}
+#navigation a:visited {
+	color:#573535;
+}
+/* End navigation */
+
+/* Page content */
+#content {
+    position:static; 
+	margin-top:5px; 
+	margin-left:10px; 
+	margin-right:10px;
+}
+/* End Page content */
+
+/* Titles */
+#title {
+	position:absolute;
+	left:518px;
+	top:17px;
+	width:211px;
+	height:25px;
+	font: bold 22px "Calligraph421 BT", Arial;
+	color: #000000;
+	white-space: nowrap;
+}
+#slogan {
+	position:absolute;
+	left:518px;
+	top:46px;
+	width:212px;
+	height:20px;
+	font: bold normal 11px Verdana;
+	color: #666666;
+	white-space:nowrap;
+}
+/* End titles */
+
+/* Left panel */
+#leftPan {
+	position:absolute;
+	left:81px;
+	top:277px;
+	width:125px;
+	height:21px;
+	z-index: 3;
+	list-style-position: outside;
+	list-style-image: url(images/bullet.gif);	
+}
+#leftPan li {    
+    height:20px;
+	width: 60px;
+    text-indent: 5px;
+	margin-top: 4px;	
+}
+#leftPan a{
+	text-decoration:none;
+	font-weight: bold;
+	border: 0;
+}
+#leftPan a:link {
+	color: #072C2C;
+}
+#leftPan a:visited {
+	color: #425666;
+}
+#leftPan a:hover {
+	color: #157373;
+}
+#leftPan a:active {
+	color: #844747;
+}
+/* End Left panel */
+
+/* Footer */
+#ossobaLink {	
+    font: normal 8pt Arial, Helvetica, sans-serif;
+	color: #072E2E;
+	position:absolute;
+	white-space:nowrap;
+	margin-top:-10px;	
+	z-index:3;
+	left: 10px;
+	bottom: 10px;
+}
+#ossobaLink a:link {
+    color:#072E2E;
+}
+#ossobaLink a:visited {
+    color:#0B4646;
+}
+#copyright {	
+    font: normal 8pt Arial, Helvetica, sans-serif;
+	color: #072E2E;
+	white-space:nowrap;
+	position:absolute;
+	margin-top:-10px;	
+	z-index:3;
+	right: 10px;
+	bottom: 10px;
+}
+#bottom {
+	position: absolute;
+	margin-top:-20px;	
+	width:102px;
+	height:116px;
+	z-index:2;
+	left: 1px;
+	bottom: 1px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/circles.png');
+}
+#bottom img{ 
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); 	 
+}
+/* End Footer */
+

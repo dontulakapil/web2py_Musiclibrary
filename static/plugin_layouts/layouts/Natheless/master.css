@@ -1,0 +1,346 @@
+* { margin: 0; padding: 0; }
+
+html
+{
+	color: #333333;
+	background-color: #f9f9f9;
+	font: normal 80%/1.6 "Lucida Grande", "Trebuchet MS", Verdana, Sans-Serif;
+}
+
+/* Links */
+
+a
+{
+	color: #333333;
+	padding: 0 2px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link
+{
+	color: #990022;
+}
+
+a:visited
+{
+	color: #000000;
+}
+
+a:hover, a:active
+{
+	border-bottom: 1px solid #990022;	
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #3f4d23;
+	line-height: 1.5em; 
+	padding: 10px 0 0;
+}
+
+h1 { font-size: 2.0em; }
+
+h2 { font-size: 1.8em; }
+
+h3 { font-size: 1.6em; }
+
+h4, h5, h6
+{
+	font-size: 1.0em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* Lists */
+
+ul
+{
+	margin: 25px 30px;
+	line-height: 2.0em;
+	list-style-type: square;
+}
+
+ol
+{
+	margin: 25px 35px;
+	line-height: 2.0em;
+}
+
+/* Other Html Elements */
+
+hr
+{
+	height: 1px;
+	clear: both;
+	visibility: hidden;
+}
+
+p
+{
+	margin: 10px 0;	
+}
+
+abbr, acronym, cite, kbd, dfn
+{
+	cursor: help;
+	font-style: normal;
+	border-bottom: 1px dotted #333333;
+}
+
+.strike
+{
+	text-decoration: line-through;
+}
+
+/* Structure */
+
+#header
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	background: #6d6b34 url(images/header.png) bottom left repeat-x;
+}
+
+#navigation
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	background-color: #9f9e67;
+}
+
+#wrapper
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 0 auto;
+}
+
+#footer
+{
+	clear: both;
+}
+
+#content
+{
+	width: 60%;
+	float: left;
+}
+
+#news
+{
+	width: 40%;
+	float: left;
+	padding-top: 10px;
+}
+
+#footer
+{
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+#meta
+{
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #59572a;
+}
+
+/* Header */
+
+#header a
+{
+	color: #ffffff;
+}
+
+#header a:hover, #header a:active
+{
+	border-bottom-color: #ffffff;
+}
+
+#header h1, #header h2
+{
+	padding: 0;
+	float: left;
+	display: inline;
+}
+
+#header h1
+{
+	margin: 10px 5px;
+}
+
+#header h2
+{
+	margin: 15px 5px 10px;
+	color: #c6cf6f;
+	font-size: 1.3em;
+	line-height: 2.0em;
+	padding-left: 10px;
+	border-left: 1px solid #c6cf6f;
+}
+
+/* Navigation */
+
+#navigation ul
+{
+	margin: 0;
+	float: left;
+	width: 100%;
+	list-style-type: none;
+	background: url(images/menu_bg.png) top left repeat-x;
+}
+
+#navigation li
+{
+	float: left;
+}
+
+#navigation a
+{
+	float: left;
+	color: #29280b;
+	display: block;
+	padding: 5px 8px;
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
+	border-bottom-width: 0;
+	text-transform: uppercase;
+}
+
+#navigation a:hover, #navigation a:active
+{
+	background: #cccc99 url(images/menu_hover_bg.png) top left repeat-x;
+}
+
+#navigation li.active a
+{
+	color: #ffffff;
+	background: #6d6b34 url(images/menu_active_bg.png) top left repeat-x;
+}
+
+/* Content */
+
+.post
+{
+	padding: 10px 25px 10px 50px;
+}
+
+.post-content a
+{
+	padding-right: 20px;
+	background: url(images/tick.png) center right no-repeat;
+}
+
+.post-footer
+{
+	color: #777777;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+/* News */
+
+.item
+{
+	padding: 10px 0;
+	margin: 0 50px 0 25px;
+	border-bottom: 1px dotted #999999;
+}
+
+.item a
+{
+	padding-left: 17px;
+	background: url(images/tick.png) center left no-repeat;
+}
+
+.item h4
+{
+	padding: 0 0 2px;
+	text-transform: none;
+}
+
+.item em
+{
+	color: #777777;
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+.item p
+{
+	font-size: 1.0em;
+	margin: 0;
+}
+
+/* Meta */
+
+#meta div
+{
+	width: 30%;
+	float: left;
+	margin: 0 15px; 
+}
+
+#meta h3
+{
+	color: #cccc99;
+}
+
+#meta ul
+{
+	margin: 0;
+	list-style-type: none;
+}
+
+#meta a
+{
+	display: block;
+	color: #cccc99;
+	padding: 5px 8px;
+	margin-top: -1px;
+	border-top: 1px dotted #aaaa77;
+	border-bottom: 1px dotted #aaaa77;
+}
+
+#meta a:hover, #meta a:active
+{
+	color: #29280b;
+	background-color: #7b794c;
+}
+
+.popular
+{
+	padding-left: 10px;
+}
+
+/* Copyright */
+
+p#copyright
+{
+	margin: 0;
+	clear: both;
+	padding: 10px;
+	color: #7b794c;
+	background-color: #3a391c;
+}
+
+#copyright a
+{
+	color: #9d9b6e;
+	padding-left: 18px;
+	background: url(images/accept.png) left center no-repeat;
+}
+
+#copyright a:hover, #copyright a:active
+{
+	border-bottom-color: #9d9b6e;
+}

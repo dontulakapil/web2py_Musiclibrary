@@ -1,0 +1,30 @@
+(dp1
+S'info'
+p2
+S'TEXT'
+p3
+sS'name'
+p4
+S'CHAR(512)'
+p5
+sS'language'
+p6
+S'REFERENCES languages(id) ON DELETE CASCADE'
+p7
+sS'image'
+p8
+S'CHAR(512)'
+p9
+sS'artistname'
+p10
+S'CHAR(512)'
+p11
+sS'duration'
+p12
+S'INTEGER'
+p13
+sS'id'
+p14
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p15
+s.

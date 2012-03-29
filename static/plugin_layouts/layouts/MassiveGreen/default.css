@@ -1,0 +1,221 @@
+
+/* Code by Mattheus Roriz */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #759971;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #35F812;
+}
+
+body {
+	background: url(background.jpg);
+	color: #95FE81;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+	margin: 3% 0;	
+}
+
+p,ul {
+	padding-bottom: 1em;
+}
+
+ul {
+	margin-left: 1.2em;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.main li {
+	list-style-image: url(li.jpg);
+}
+
+h1 {
+	font-size: 1.2em;
+}
+
+blockquote {
+	background: #575757;
+	border-left: 3px solid #8CEF3A;
+	color: #8CEF3A;
+	display: block;
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+	padding: 6px 12px;
+}
+blockquote p {
+	padding: 3px 0;
+}
+
+h1,h2,h3 {
+	color: #8CEF3A;
+}
+
+.clear {
+	clear: both;
+}
+.main_right .padded {
+	background: #575757;
+	padding: 16px 6px 6px 6px;
+	border: 3px solid #8CEF3A;
+	margin-top: 160px;
+	text-decoration: none;
+}
+
+.main .padded {
+	padding: 18px 24px;
+	}
+
+.main .padded h1{
+	border: 1px solid #8CEF3A;
+	padding-left: 10px;
+}
+
+.date {
+	font-size: 0.8em; 
+	color: #D7FDB0;
+	padding-top: 10px ;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+.container {
+	font-size: 1.2em;
+	background: black;
+	margin: 0 auto;
+	width: 840px;
+	border: 12px solid #222;
+}
+
+
+.header {
+	float: left;
+	width: 640px;
+	background: url(head.jpg) no-repeat;
+	font: normal 2.4em Verdana,sans-serif;
+	line-height: 150px;
+	text-align: right;	
+}
+.link_top{
+	float: top;
+	font: normal 0.8em Verdana, sans-serif;
+	color: black;
+	text-align: center;
+}
+
+.link_top ul {
+	margin: 0; padding: 0;
+}
+
+.link_top li {
+	list-style-image: url(li2.jpg);
+}
+
+.link_top li a{
+	background:#8CEF3A;
+	color: black;
+	display: block;
+	width: 48px;
+	text-decoration: none;
+}
+
+.link_top li a:hover{
+	background: #D7FDB0;
+	color: purple;
+}
+
+
+.top {
+	background: #222;
+	color: #DDD;
+	float: left;
+	font: normal 1.4em Verdana;
+	height: 50px;
+	text-align: center;
+	width: 639px;
+}
+.menu_right {
+	float: left;
+	width: 160px;
+}
+
+.main {
+	float: left;
+	width: 480px;
+}
+
+.main_right {
+	float: right;
+	width: 200px;
+	color: #CCC;
+}
+
+
+.menu_right h1 {
+	background: #222;
+	border: 1px solid #8CEF3A;
+	color: #35F812;
+	font: bold 1.1em Verdana,sans-serif;
+	line-height: 24px;
+	padding-left: 8px;
+	text-align:center;
+}
+.menu_right ul {
+	margin: 0; padding: 0;
+}
+.menu_right li {
+	border-bottom: 1px solid #71A67B;
+	list-style: none;
+}
+.menu_right li a {
+	background: #D7FDB0;	
+	color: #111;
+	display: block;
+	font: bold 1em Verdana;
+	padding: 8px 0 8px 12px;
+	width: 148px;
+	text-decoration: none;
+}
+.menu_right li a:hover {
+	background: #8CEF3A;
+	color: #000;
+}
+
+
+.footpg {
+	background: url(footer.jpg) repeat-x;
+	color: black;
+	font-size: 0.9em;
+	line-height: 39px;
+	width: 100%;
+	text-align: center;
+}
+
+.footpg .left{
+	padding-top: 0px;
+	}
+
+.footpg a {
+	color: #D1FCB8;
+}
+
+.footpg a:hover {
+	color: #FAFCB0;
+}

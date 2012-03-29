@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Template by TemplateFusion.org
+http://templatefusion.org
+Creative Commons Attribution 2.5 Canada License
+
+Name        : Sleek
+Description : A nice sleek, clean design.
+Notes       : Based off of "splatter" by freecsstemplates.org
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Sleek/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- start header -->
+  <div id="header">
+   <div id="logo">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <p>
+     Brought to you by
+     <a href="http://fusiontemplates.org">
+      Template Fusion
+     </a>
+    </p>
+   </div>
+   <div id="search">
+    <form method="get" action="">
+     <fieldset>
+      <input id="s" type="text" name="s" value="" />
+      <input id="x" type="submit" value="Search" />
+     </fieldset>
+    </form>
+   </div>
+  </div>
+  <!-- end header -->
+  <!-- start page -->
+  <div id="page">
+   <!-- start content -->
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <!-- end content -->
+   <!-- start sidebar -->
+   <div id="sidebar">
+    <ul>
+     <li>
+      <h2>
+       Updates:
+      </h2>
+      <ul>
+       <li>
+        <a href="#">
+         Wow my site looks good!
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         New Template up!
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Found one
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Looking for a nice template
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Site Finished
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Site Launched
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <h2>
+       Cool Links!
+      </h2>
+      <ul>
+       <li>
+        <a href="http://templatefusion.org">
+         Template Fusion
+        </a>
+       </li>
+       <li>
+        <a href="http://sean-pollock.com">
+         Sean Pollock
+        </a>
+       </li>
+       <li>
+        <a href="http://learn-poetry.com">
+         Learn How to Write Poetry
+        </a>
+       </li>
+       <li>
+        <a href="http://whois-it.info">
+         Whois-it.info
+        </a>
+       </li>
+       <li>
+        <a href="http://tutorialfusion.org">
+         Tutorial Fusion
+        </a>
+       </li>
+       <li>
+        <a href="http://pcsafetycenter.com">
+         PC: Safety Center
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <!-- end sidebar -->
+  </div>
+  <!-- end page -->
+  <div id="footer">
+   <p>
+    &copy;2007 All Rights Reserved. &nbsp;&bull;&nbsp; Design by
+    <a href="http://templatefusion.org">
+     TemplateFusion
+    </a>
+    &nbsp;&bull;&nbsp; Icons by
+    <a href="http://www.famfamfam.com/">
+     FAMFAMFAM
+    </a>
+    .
+   </p>
+  </div>
+ </body>
+</html>

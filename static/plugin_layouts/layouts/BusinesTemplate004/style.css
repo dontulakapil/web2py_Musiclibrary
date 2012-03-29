@@ -1,0 +1,229 @@
+* { 
+padding : 0;
+margin : 0;
+} 
+body { 
+font-family : Arial, Helvetica, sans-serif;
+font-size : 13px;
+background-image : url(images/bg.jpg);
+background-repeat : repeat-x;
+background-color : #486688;
+} 
+#wrapper { 
+margin : 0 auto;
+width : 922px;
+} 
+#header { 
+width : 900px;
+height : 130px;
+color : #333;
+height : 130px;
+margin : 10px 0 0 0;
+background : #fff url(images/head.jpg);
+border-bottom : 2px solid #696969;
+} 
+.logo h1#lineone { 
+font-size : 1.7em;
+font-weight : lighter;
+font-family : helvetica, arial, sans-serif;
+padding-top : 20px;
+padding-left : 55px;
+color : #385e85;
+border : none;
+top : 0;
+left : 14px;
+letter-spacing : -1px;
+} 
+.logo h1#lineone span { 
+color : #7bc927;
+} 
+.logo h2#linetwo { 
+padding-left : 85px;
+font-size : 0.9em;
+font-family : helvetica, arial, sans-serif;
+text-transform : none;
+top : 25px;
+left : 14px;
+color : #7bc927;
+} 
+.logo a { 
+color : #7bc927;
+text-decoration : none;
+} 
+#navigation { 
+width : 900px;
+color : #333;
+margin : 0 0 0 0;
+background : #fff url(images/bbg.jpg) repeat-y;
+position : relative;
+top : 31px;
+} 
+#navigation ul { 
+margin : auto;
+padding : 0;
+list-style : none;
+width : 678px;
+} 
+#navigation ul li { 
+float : left;
+background : url(images/tab-right.gif) no-repeat top right;
+margin-right : 1px;
+} 
+#navigation li a { 
+display : block;
+padding : 0 2em;
+line-height : 3em;
+background : url(images/tab-left.gif) no-repeat top left;
+font-weight : bold;
+color : #fffff1;
+} 
+#navigation ul a:hover { 
+color : #669acc;
+} 
+#content { 
+width : 880px;
+color : #333;
+background : #f6f6ea url(images/bbg.jpg);
+margin : 0 0 0 0;
+min-height : 585px;
+padding-top : 10px;
+padding-left : 20px;
+} 
+#boxes { 
+height : 200px;
+width : 850px;
+} 
+#boxes a { 
+color : #669acc;
+} 
+#box1 { 
+width : 226px;
+height : 200px;
+float : left;
+text-align : left;
+} 
+#box2 { 
+width : 226px;
+height : 200px;
+text-align : left;
+margin : 0 auto;
+} 
+#box3 { 
+width : 226px;
+height : 200px;
+float : right;
+text-align : left;
+} 
+#box1 h2, #box2 h2, #box3 h2 { 
+padding-left : 70px;
+padding-bottom : 20px;
+padding-top : 30px;
+font-size : 1.5em;
+color : #df7111;
+font-weight : lighter;
+display : block;
+text-transform : uppercase;
+font-size : 1.1em;
+font-weight : bolder;
+} 
+#box1 h3, #box2 h3, #box3 h3 { 
+padding-left : 10px;
+font-size : 1em;
+color : #070707;
+font-weight : lighter;
+text-align : justify;
+} 
+#boxes p { 
+padding-left : 10px;
+text-align : justify;
+font-size : 1em;
+} 
+#doublebox { 
+margin-top : 5px;
+margin-bottom : 10px;
+width : 870px;
+} 
+.content_right { 
+margin : 0 auto;
+display : inline;
+float : right;
+width : 395px;
+height : 180px;
+text-align : justify;
+background-color : #deebf2;
+margin-right : 15px;
+padding-left : 5px;
+padding-bottom : 5px;
+padding-right : 5px;
+padding-top : 2px;
+} 
+.content_left { 
+margin : 0 auto;
+padding : 5px;
+display : inline;
+float : left;
+width : 395px;
+height : 180px;
+background-color : #deebf2;
+margin-left : 15px;
+text-align : justify;
+} 
+.content_left h3 { 
+padding-left : 5px;
+font-size : 1em;
+margin-bottom : 5px;
+} 
+.content_right h3 { 
+font-size : 1em;
+margin-bottom : 2px;
+margin-top : 5px;
+} 
+.clear { 
+clear : both;
+} 
+#bluebox { 
+width : 870px;
+min-height : 136px;
+background : url(images/bluebox.gif) no-repeat;
+font-size : 0.75em;
+color : #e1e1e1;
+padding : 0;
+float : left;
+display : inline;
+margin-top : 20px;
+margin-left : 10px;
+} 
+#blueboxbottom { 
+height : 11px;
+width : 870px;
+background : url(images/bluebox2.gif) no-repeat 0 -10px;
+float : left;
+display : inline;
+margin-left : 10px;
+} 
+.col { 
+width : 160px;
+float : left;
+padding : 18px 0 8px 24px;
+margin-left : 2em;
+} 
+.col p { 
+margin : 11px 0 0 0;
+padding : 0;
+} 
+#footer { 
+width : 900px;
+color : #333;
+background : #feedff url(images/footer.jpg);
+margin : 0 0 10px 0;
+height : 35px;
+border-top : 1px solid #6c6c6c;
+} 
+#footer p { 
+text-align : center;
+padding-top : 5px;
+font-size : 0.9em;
+} 
+#footer a { 
+color : #486687;
+}

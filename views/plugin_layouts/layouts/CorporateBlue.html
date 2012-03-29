@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/CorporateBlue/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+   </div>
+   <div id="main-menu">
+    <ul>
+     <li class="first">
+      <a href="#" id="main-menu1" accesskey="1" title="">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#" id="main-menu2" accesskey="2" title="">
+       Products
+      </a>
+     </li>
+     <li>
+      <a href="#" id="main-menu3" accesskey="3" title="">
+       Services
+      </a>
+     </li>
+     <li>
+      <a href="#" id="main-menu4" accesskey="4" title="">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a href="#" id="main-menu5" accesskey="5" title="">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="right">
+    <h2>
+     Lorem Ipsum Dolor
+    </h2>
+    <h3>
+     June 09, 2006
+    </h3>
+    <p>
+     <img src="images/homepage04.jpg" alt="" width="72" height="56" class="img1" />
+     Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci.
+     <a href="#">
+      Read more&#8230;
+     </a>
+    </p>
+    <hr class="hr1" />
+    <h3>
+     June 06, 2006
+    </h3>
+    <p>
+     <img src="images/homepage04.jpg" alt="" width="72" height="56" class="img1" />
+     Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci.
+     <a href="#">
+      Read more&#8230;
+     </a>
+    </p>
+    <hr class="hr1" />
+    <h3>
+     June 02, 2006
+    </h3>
+    <p>
+     <img src="images/homepage04.jpg" alt="" width="72" height="56" class="img1" />
+     Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci.
+     <a href="#">
+      Read more&#8230;
+     </a>
+    </p>
+   </div>
+   <div class="hr1">
+    <hr />
+   </div>
+   <div id="footer">
+    <ul>
+     <li>
+      <a href="#" title="">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#" title="">
+       Products
+      </a>
+     </li>
+     <li>
+      <a href="#" title="">
+       Services
+      </a>
+     </li>
+     <li>
+      <a href="#" title="">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a href="#" title="">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+    <p>
+     Copyright &copy; 2006 Sitename.com. Designed by
+     <a href="http://www.freecsstemplates.org" class="link1">
+      Free CSS Templates
+     </a>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

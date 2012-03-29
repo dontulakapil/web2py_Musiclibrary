@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Surreal/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrap">
+   <div id="header">
+    <h1 id="sitename">
+     {{=response.title or request.application}}
+    </h1>
+   </div>
+   <div id="page">
+    <div id="menu">
+     {{=MENU(response.menu)}}
+    </div>
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <div class="clear">
+    </div>
+    <div id="browse">
+     <h2 class="subhead">
+      Browse
+     </h2>
+     <div class="browsecat">
+      <h2 class="categoryhead">
+       Categories
+      </h2>
+      <ul>
+       <li>
+        <a href="#">
+         Web Designing
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Music &amp; Entertainment
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Electronics &amp; Gadgets
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Computer Science
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Educations
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         News
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Charity
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Paranormal Science
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         and more..
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="browsecat">
+      <h2 class="categoryhead">
+       Archives
+      </h2>
+      <ul>
+       <li>
+        <a href="#">
+         January 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         February 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         March 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         April 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         May 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         June 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         July 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         August 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         September 2007
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="browsecat">
+      <h2 class="categoryhead">
+       Links
+      </h2>
+      <ul>
+       <li>
+        <a href="http://opendesigns.org">
+         The Open Designs Community
+        </a>
+       </li>
+       <li>
+        <a href="http://ramblingsoul.com">
+         Rambling Soul - Free CSS Templates
+        </a>
+       </li>
+       <li>
+        <a href="http://cssfreebies.com">
+         CSS Freebies
+        </a>
+       </li>
+       <li>
+        <a href="http://google.com">
+         Google.com
+        </a>
+       </li>
+       <li>
+        <a href="http://alistapart.com">
+         A List Apart
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+   </div>
+   <div id="footer">
+    <div id="footercontent">
+     <p>
+      Yoursitename.com &copy; All Rights Reserved
+     </p>
+     <p>
+      <a href="#">
+       Put
+      </a>
+      |
+      <a href="#">
+       Some
+      </a>
+      |
+      <a href="#">
+       Links
+      </a>
+      |
+      <a href="#">
+       Here
+      </a>
+     </p>
+     <p id="credit">
+      <a href="http://ramblingsoul.com">
+       CSS Template
+      </a>
+      by Ramblingsoul
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

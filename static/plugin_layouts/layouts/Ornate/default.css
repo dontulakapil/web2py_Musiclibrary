@@ -1,0 +1,354 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFFFFF url(images/img01.gif) repeat-y;
+	font: normal small Georgia, "Times New Roman", Times, serif;
+	color: #333333;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2em;
+	color: #9E0000;
+}
+
+h3 {
+}
+
+p, blockquote, ul, ol {
+	margin-bottom: 1.5em;
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 3em;
+	font-style: italic;
+}
+
+ul {
+	margin-left: 3em;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	color: #9E0000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: .35em 1em 1em 0;
+}
+
+img.right {
+	float: right;
+	margin: .35em 0 1em 1em;
+}
+
+/* Boxed Style */
+
+.boxed {
+	margin-bottom: 20px;
+	padding: 25px 0 0 0;
+	background: url(images/img03.gif) no-repeat;
+}
+
+.boxed .title {
+	padding-left: 15px;
+	background: #A91313;
+	border-left: 1px solid #CB7575;
+	border-right: 1px solid #CB7575;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #E8C0C0;
+}
+
+.boxed .content {
+	padding: 15px;
+	background: #A91313 url(images/img04.gif) no-repeat 100% 100%;
+	border: 1px solid #CB7575;
+	border-top: none;
+}
+
+/* Post */
+
+.post {
+	padding: 2em 0 0 0;
+}
+
+.post .title {
+}
+
+.post .date {
+	margin: -1.4em 0 1em 0;
+	text-align: right;
+	font-size: 1em;
+}
+
+.post .date .month {
+}
+
+.post .date .day {
+}
+
+.post .date .year {
+}
+
+.post .meta {
+	padding: 1em;
+	background: #FFEDED;
+	border-left: 1px solid #9E0000;
+	font-size: .8em;
+}
+
+.post .meta p {
+	margin: 0;
+}
+
+.post .story {
+	padding: 1em;
+}
+
+.post .story p, .post .story blockquote, .post .story ul, .post .story ol {
+	line-height: 180%;
+}
+
+/* Breadcrumb */
+
+#breadcrumb {
+	width: 715px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 15px 0 0 25px;
+	background: #40ACC7 url(images/img01.gif) no-repeat;
+	color: #FFFFFF;
+}
+
+/* Logo */
+
+#logo {
+	padding: 70px 0 20px 0;
+	background: url(images/img02.gif) no-repeat center top;
+	text-align: center;
+}
+
+#logo h1 {
+	text-transform: lowercase;
+	font-size: 2.6em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#logo h2 {
+	text-transform: lowercase;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+}
+
+#extra {
+}
+
+/* Content > Main */
+
+#main {
+	margin: 0 220px 0 260px;
+}
+
+#main a {
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+}
+
+/* Content > Main > Example */
+
+#example {
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 200px;
+	padding: 20px;
+}
+
+#sidebar h3 {
+	color: #FFFFFF;
+}
+
+#sidebar a {
+	color: #FFFFFF;
+}
+
+/* Content > Sidebar > Login */
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#login input {
+	margin-bottom: 5px;
+	padding: 2px 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputtext1, #inputtext2 {
+}
+
+#inputsubmit1 {
+	font-size: x-small;
+}
+
+/* Content > Sidebar > Menu */
+
+#menu {
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: block;
+	padding: 5px 0;
+}
+
+#menu a {
+	display: block;
+	padding: 0 0 0 17px;
+	background: url(images/img05.gif) no-repeat left center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#menu a:hover, #menu .active a {
+}
+
+/* Content > Sidebar > Updates*/
+
+#updates {
+}
+
+#updates ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	font-size: small;
+}
+
+#updates p {
+	font-size: x-small;
+}
+
+/* Ads */
+
+#ads {
+	float: right;
+	width: 160px;
+	padding: 20px;
+}
+
+/* Support */
+
+#support {
+	width: 150px;
+	height: 60px;
+	margin: 0 0 20px 0;
+	padding: 60px 0 0 10px;
+	background: url(images/img08.gif) no-repeat;
+}
+
+#support h2 {
+	font-size: 1.4em;
+}
+
+#support h3 {
+	font-size: 1em;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	padding: 20px;
+}
+
+#footer p {
+	margin: 0;
+	text-align: right;
+	font-size: x-small;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}

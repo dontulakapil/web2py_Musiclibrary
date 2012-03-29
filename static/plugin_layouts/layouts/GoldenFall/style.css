@@ -1,0 +1,125 @@
+/*
+Author:		Donny Burnside
+Website:	http://www.ginger-ninja.net/
+*/
+
+/* Misc. */
+
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#efefef;
+	background-color:#D7AC5E;
+	background-image:url(images/background.gif);
+	background-repeat:repeat-x;
+	}
+a {
+	color:#E7DE3A;
+	font-weight:bold;
+	text-decoration:none;
+	}
+a:hover {
+	color:#ECE45E;
+	}
+img {
+	border:0;
+	}
+p {
+	margin-bottom:20px;
+	line-height:20px;
+	}
+
+/* Structure */
+
+#wrapper {
+	width:760px;
+	margin:0 auto;
+	background-image:url(images/background-wrapper.png);
+	background-repeat:no-repeat;
+	}
+#header {
+	height:130px;
+	line-height:130px;
+	margin-bottom:5px;
+	padding-left:10px;
+	}
+#body {
+	
+	}
+#sidebar {
+	float:left;
+	width:170px;
+	padding:5px 10px;
+	}		
+#content {
+	padding:5px 10px;
+	text-align:justify;
+	min-height:500px;
+	margin-left:180px;
+	}
+#footer {
+	text-align:center;
+	}
+
+/* Sidebar */
+
+#sidebar ul {
+	list-style-type:none;
+	margin-bottom:20px;
+	}
+#sidebar a {
+	color:#efefef;
+	}
+#sidebar a:hover {
+	color:#ECE45E;
+	}
+
+/* Headings */
+
+h1 {
+	font-size:24px;
+	color:#f9f9f9;
+	letter-spacing:-1px;
+	}
+h1 a {
+	color:#E7DE3A;
+	text-decoration:none;
+	font-weight:normal;
+	}
+h1 a:hover {
+	color:#ECE45E;
+	}
+
+h2 {
+	font-size:20px;
+	color:#E7DE3A;
+	font-weight:normal;
+	}
+
+h3 {
+	font-size:38px;
+	color:#f9f9f9;
+	letter-spacing:-2px;
+	}
+h3 a {
+	color:#E7DE3A;
+	text-decoration:none;
+	font-weight:normal;
+	}
+h3 a:hover {
+	color:#ECE45E;
+	}
+
+/* Extra's */
+
+#footer a {
+	color:#E7DE3A;
+	text-decoration:none;
+	}
+#footer a:hover {
+	color:#ECE45E;
+	}

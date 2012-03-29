@@ -1,0 +1,4 @@
+
+{{extend 'layout.html'}}
+<h1>This is the plugin_layout/layouts.html template</h1>
+{{=BEAUTIFY(response._vars)}}

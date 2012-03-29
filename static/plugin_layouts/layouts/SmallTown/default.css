@@ -1,0 +1,188 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 20px 0;
+	padding: 0;
+	background: #FFFFFF;
+	font: normal small "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #857267;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+
+h2 {
+	letter-spacing: -2px;
+	font-size: 2.6em;
+}
+
+a {
+	color: #457EE9;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+/* Header */
+
+#header {
+	width: 700px;
+	height: 140px;
+	margin: 0 auto 2em auto;
+	background: #4D7ACF url(images/img1.jpg);
+}
+
+#header * {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	padding: 80px 0 0 20px;
+	letter-spacing: -2px;
+	font-size: 3em;
+}
+
+#header h2 {
+	float: left;
+	padding: 100px 0 0 10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* Content */
+
+#content {
+	width: 660px;
+	margin: 0 auto;
+}
+
+/* Column One */
+
+#colOne {
+	float: left;
+	width: 420px;
+}
+
+#colOne .post {
+}
+
+#colOne .title {
+}
+
+#colOne .posted {
+	border-top: 1px solid #457EE9;
+	font-size: x-small;
+}
+
+#colOne .story {
+	padding: 0 20px;
+	text-align: justify;
+}
+
+#colOne .meta {
+	margin: 0 0 3em 0;
+	padding: 5px 10px;
+	background: #FFFFFF url(images/img3.gif) repeat-x;
+	border-top: 1px solid #457EE9;
+	font-size: x-small;
+}
+
+#colOne .meta p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Column Two */
+
+#colTwo {
+	float: right;
+	width: 200px;
+}
+
+#colTwo ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#colTwo li {
+}
+
+#colTwo li li {
+	height: 23px;
+	padding: 7px 0 0 20px;
+	background: #FFFFFF url(images/img3.gif) repeat-x;
+}
+
+#colTwo h2 {
+	height: 30px;
+	padding: 5px 0 0 10px;
+	background: #457EE9 url(images/img2.gif) repeat-x;
+	letter-spacing: normal;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#colTwo a {
+	text-decoration: none;
+}
+
+#colTwo a:hover {
+	text-decoration: underline;
+}
+
+#colTwo form {
+	margin: 0;
+	padding: 20px 10px;
+}
+
+#colTwo #textfield1 {
+	width: 170px;
+	border: 1px solid #457EE9;
+}
+
+#colTwo #submit1 {
+	display: none;
+}
+
+/* Footer */
+
+#footer {
+	width: 700px;
+	height: 26px;
+	margin: 0 auto;
+	padding: 10px 0 0 10px;
+	background: #457EE9 url(images/img2.gif) repeat-x;
+	letter-spacing: normal;
+	text-align: center;
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#footer p {
+	margin: 0;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

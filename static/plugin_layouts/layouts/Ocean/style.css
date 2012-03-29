@@ -1,0 +1,33 @@
+body { margin:40px; font-size:0.9em; line-height:14px; font-family:Tahoma, Arial; font-size:11px; border:1px solid #000; background: url(images/bckg.jpg) repeat-x #0A8FDE; }
+a { color:#10639a; text-decoration:none;}
+a:hover { text-decoration:underline;}
+p { padding: 0 10px 5px 10px; }
+h1 { font-family: "Myriad Pro", "Trebuchet MS", Arial; margin:0; padding:10px 0 0 10px; text-transform:uppercase; font-size:18px; color:#10639a; }
+
+#header { background:url(images/header_bckg.jpg) no-repeat top right #0EA5FE;}
+#logo { padding:50px 60px 0 40px; height:130px; background:url(images/head_bckg.jpg) no-repeat #0EA5FE; }
+#logo a{ font-family: "Myriad Pro", "Trebuchet MS", Arial; color:#fff; text-decoration:none; font-weight:bold; font-size:20px; text-transform:uppercase; letter-spacing:5px; }
+#logo_text { float:right; width:200px; font-size:10px; color:#fff; line-height:12px; padding-top:5px;  }
+#menu { background: url(images/menu_bckg.gif) repeat-x #fff; height:40px; padding-top:10px;}
+#menu_list {width:600px; margin:0 auto;}
+#menu a { display:block; color:#000000; float:left; font-size:14px; text-transform:uppercase; font-weight:bold; text-decoration:none; margin:0 20px; padding-top:12px; font-family: "Myriad Pro", "Trebuchet MS", Arial;}
+#menu a:hover{ color:#078DE2;}
+.splitter { display:block; float:left;}
+.item img { background-color:#FFFFFF; padding:6px; border:1px solid #d0d0d0;}
+.item a { display:block; float:left; font-size:12px; color:#bd131d;}
+.description { display:block; float:right; width:220px; padding: 10px 20px 30px 0; line-height:12px;}
+p.additional { margin:0 10px; color:#9c9c9c; font-size:10px; line-height:12px; border-top:1px solid #bdbdbd; padding: 10px 0; font-weight:normal;}
+
+#text { margin: 0 292px 0 0; background:url(images/content.gif); padding:10px;}
+#text li {list-style:none; padding-left:20px; background:url(images/li.gif) no-repeat 0px 4px;line-height:18px;}
+#sidebar { float:right; width:245px; padding: 20px 20px 0 30px; font-size:10px; }
+#sidebar a{ font-weight:bold; }
+#sidebar h1 { font-family: "Myriad Pro", "Trebuchet MS", Arial; margin:0; padding:0 0 20px 0; text-transform:uppercase; color:#000;}
+
+#main { float:left; background:url(images/sidebar_bckg.gif) no-repeat top right #fff; }
+#footer {font-family: "Myriad Pro", "Trebuchet MS", Arial; background:url(images/footer_bckg.gif) repeat-x #000; height:55px; clear:both;  }
+#left_footer { float:left; padding:20px 0 0 30px; color:#fff; font-size:12px;}
+#left_footer a { color:#fff;}
+#left_footer a:hover { text-decoration:none;}
+#right_footer { float:right;  padding:20px 30px 0 0; color:#fff;  font-size:12px; text-align:right;}
+#right_footer a { color:#fff;}

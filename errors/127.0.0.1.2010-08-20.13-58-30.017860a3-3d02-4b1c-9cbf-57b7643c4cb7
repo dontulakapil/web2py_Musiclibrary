@@ -1,0 +1,17 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'/home/chiinna/Desktop/linux_web2py/applications/practice/views/default/rating.html'
+p4
+sS'code'
+p5
+S'response.write(\'<a href="\',escape=False)\nresponse.write(URL(r=request,f="rating1")\nresponse.write(\'">1</a>\\n\',escape=False)'
+p6
+sS'traceback'
+p7
+S'Traceback (most recent call last):\n  File "/home/chiinna/Desktop/linux_web2py/gluon/restricted.py", line 171, in restricted\n    ccode = compile(code.replace(\'\\r\\n\', \'\\n\'), layer, \'exec\')\n  File "/home/chiinna/Desktop/linux_web2py/applications/practice/views/default/rating.html", line 3\n    response.write(\'">1</a>\\n\',escape=False)\n           ^\nSyntaxError: invalid syntax\n'
+p8
+s.

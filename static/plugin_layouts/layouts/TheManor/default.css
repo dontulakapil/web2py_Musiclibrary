@@ -1,0 +1,280 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FBE8E8 url(images/img01.jpg);
+	text-align: justify;
+}
+
+body, input, textarea, select {
+	font: normal small Georgia, "Times New Roman", Times, serif;
+	color: #662C14;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1em;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p, blockquote, ul, ol, form {
+	margin-bottom: 1.5em;
+}
+
+blockquote, ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-right: 3em;
+	font-style: italic;
+}
+
+ul {
+	list-style-type: square;
+}
+
+a {
+	color: #662C14;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr {
+	display: none;
+}
+
+.hr {
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+/* Wrapper */
+
+#wrapper {
+	padding: 20px 0;
+	background: url(images/img02.jpg) repeat-x;
+}
+
+/* Header */
+
+#header {
+	width: 700px;
+	height: 160px;
+	margin: 0 auto;
+	background: url(images/img03.gif) no-repeat;
+}
+
+#header h1, #header h2 {
+	margin: 0;
+}
+
+#header h1 {
+	padding-top: 40px;
+	text-align: center;
+	font-size: 4em;
+}
+
+#header h2 {
+	text-align: center;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+/* Content */
+
+#content {
+	width: 700px;
+	margin: 0 auto;
+	background: #FBE8E8 url(images/img04.gif) repeat-y;
+}
+
+/* Blog */
+
+#blog {
+	float: right;
+	width: 424px;
+	padding: 50px 20px 0px 16px;
+	background: url(images/img06.gif) no-repeat;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background: url(images/img08.gif) no-repeat center bottom;
+}
+
+.post .title {
+	margin-bottom: 15px;
+	padding-left: 15px;
+	border-bottom: 1px solid #D3B6AF;
+	text-transform: uppercase;
+	font-size: small;
+	font-weight: bold;
+}
+
+.post .title a {
+	text-decoration: none;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+.post .date {
+	margin-top: -30px;
+	padding-right: 15px;
+	text-align: right;
+	font-size: x-small;
+}
+
+.post .entry {
+	padding: 20px 15px 10px 15px;
+	line-height: 1.8em;
+}
+
+.post .meta {
+	margin-bottom: 2em;
+	padding: 0 15px;
+	text-align: right;
+	font-size: x-small;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 204px;
+	padding: 50px 16px 0px 20px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+#sidebar ul {
+	margin: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin-bottom: 20px;
+}
+
+#sidebar li ul {
+	padding-left: 5px;
+	line-height: 1.4em;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding-left: 12px;
+	background: url(images/img07.gif) no-repeat left center;
+}
+
+#sidebar h2 {
+	margin-bottom: 15px;
+	padding-left: 5px;
+	border-bottom: 1px solid #D3B6AF;
+	text-transform: uppercase;
+	font-size: small;
+	font-weight: bold;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Search */
+
+#search {
+}
+
+#search h2 {
+}
+
+#search form {
+}
+
+#search #inputtext1 {
+}
+
+#search #inputsubmit1 {
+}
+
+/* Archives */
+
+#archives {
+}
+
+/* Categories */
+
+#categories {
+}
+
+/* Blogroll */
+
+#blogroll {
+}
+
+/* Meta */
+
+#meta {
+}
+
+/* Footer */
+
+#footer {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 43px;
+	background: url(images/img09.gif) no-repeat;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	font-size: x-small;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

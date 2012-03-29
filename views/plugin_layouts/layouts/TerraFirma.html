@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+	terrafirma1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+
+-->
+<html>
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/TerraFirma/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="outer">
+   <div id="upbg">
+   </div>
+   <div id="inner">
+    <div id="header">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <h2>
+      {{=response.subtitle or '=response.subtitle'}}
+     </h2>
+    </div>
+    <div id="splash">
+    </div>
+    <div id="menu">
+     {{=MENU(response.menu)}}
+    </div>
+    <div id="primarycontent">
+     <!-- primary content start -->
+     <div class="post">
+      <div class="header">
+       <h3>
+        TerraFirma
+        <sup>
+         1.0
+        </sup>
+        by NodeThirtyThree
+       </h3>
+       <div class="date">
+        August 1, 2006
+       </div>
+      </div>
+      <div class="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+      <div class="footer">
+       <ul>
+        <li class="printerfriendly">
+         <a href="#">
+          Printer Friendly
+         </a>
+        </li>
+        <li class="comments">
+         <a href="#">
+          Comments (18)
+         </a>
+        </li>
+        <li class="readmore">
+         <a href="#">
+          Read more
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="post">
+      <div class="header">
+       <h3>
+        Vivamus tortor sed aenean
+       </h3>
+       <div class="date">
+        July 31, 2006
+       </div>
+      </div>
+      <div class="content">
+       <p>
+        Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.
+       </p>
+       <p>
+        Fermentum at, varius pretium, elit. Mauris egestas scelerisque nunc. Mauris non ligula quis wisi laoreet malesuada. In commodo. Maecenas lobortis cursus dolor.
+       </p>
+      </div>
+      <div class="footer">
+       <ul>
+        <li class="printerfriendly">
+         <a href="#">
+          Printer Friendly
+         </a>
+        </li>
+        <li class="comments">
+         <a href="#">
+          Comments (18)
+         </a>
+        </li>
+        <li class="readmore">
+         <a href="#">
+          Read more
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="post">
+      <div class="header">
+       <h3>
+        Vivamus tortor sed aenean
+       </h3>
+       <div class="date">
+        July 31, 2006
+       </div>
+      </div>
+      <div class="content">
+       <p>
+        Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.
+       </p>
+       <p>
+        Fermentum at, varius pretium, elit. Mauris egestas scelerisque nunc. Mauris non ligula quis wisi laoreet malesuada. In commodo. Maecenas lobortis cursus dolor.
+       </p>
+      </div>
+      <div class="footer">
+       <ul>
+        <li class="printerfriendly">
+         <a href="#">
+          Printer Friendly
+         </a>
+        </li>
+        <li class="comments">
+         <a href="#">
+          Comments (18)
+         </a>
+        </li>
+        <li class="readmore">
+         <a href="#">
+          Read more
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- primary content end -->
+    </div>
+    <div id="secondarycontent">
+     <!-- secondary content start -->
+     <h3>
+      About Me
+     </h3>
+     <div class="content">
+      <img src="images/pic2.jpg" class="picB" alt="" />
+      <p>
+       <strong>
+        Nullam turpis
+       </strong>
+       vestibulum et sed dolore. Nulla facilisi. Sed tortor. lobortis commodo.
+       <a href="#">
+        More ...
+       </a>
+      </p>
+     </div>
+     <h3>
+      Topics
+     </h3>
+     <div class="content">
+      <ul class="linklist">
+       <li class="first">
+        <a href="#">
+         Accumsan congue (32)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Dignissim nec augue (14)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Nunc ante elit nulla (83)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Aliquam suscipit (74)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Cursus sed arcu sed (14)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Eu ante cras at risus (24)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Donec mollis dolore (39)
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Aliquam suscipit (74)
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- secondary content end -->
+    </div>
+    <div id="footer">
+     &copy; My Website. All rights reserved. Design by
+     <a href="http://www.nodethirtythree.com/">
+      NodeThirtyThree
+     </a>
+     .
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

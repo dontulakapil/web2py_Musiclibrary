@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : External
+Version    : 1.0
+Released   : 200800204
+Description: Three-column blog design with the third column allocated for ads. Features Web 2.0 design ideal for 1024x768 resolutions.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/External/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- start header -->
+  <div id="wrapper">
+   <div id="header">
+    <div id="logo">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <p>
+      <a href="http://www.freecsstemplates.org/">
+       By Free CSS Templates
+      </a>
+     </p>
+    </div>
+    <div id="rss">
+     <a href="#">
+      Subscribe to RSS Feed
+     </a>
+    </div>
+    <div id="search">
+     <form id="searchform" method="get" action="">
+      <fieldset>
+       <input type="text" name="s" id="s" size="15" value="" />
+       <input type="submit" id="x" value="Search" />
+      </fieldset>
+     </form>
+    </div>
+   </div>
+   <!-- end header -->
+   <!-- star menu -->
+   <div id="menu">
+    {{=MENU(response.menu)}}
+   </div>
+   <!-- end menu -->
+   <!-- start page -->
+   <div id="page">
+    <!-- start ads -->
+    <div id="ads">
+     <a href="#">
+      <img src="images/ad160x600.gif" alt="" width="160" height="600" />
+     </a>
+    </div>
+    <!-- end ads -->
+    <!-- start content -->
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <!-- end content -->
+    <!-- start sidebar -->
+    <div id="sidebar">
+     <ul>
+      <li id="categories">
+       <h2>
+        Categories
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Lorem Ipsum
+         </a>
+         (1)
+        </li>
+        <li>
+         <a href="#">
+          Uncategorized
+         </a>
+         (4)
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Lorem Ipsum Dolor
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Nulla luctus eleifend purus
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Praesent  scelerisque erat
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Ut nonummy rutrum semuot
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Pellentesque  quam quis nulla
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Fusce ultrices fringilla metus
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Praesent  condimentum nisl
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Ultrices Fringilla Metus
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Nulla luctus eleifend purus
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Praesent  scelerisque erat
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Ut nonummy rutrum semuot
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Pellentesque  quam quis nulla
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Fusce ultrices fringilla metus
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Praesent  condimentum nisl
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </div>
+    <!-- end sidebar -->
+   </div>
+   <!-- end page -->
+   <!-- start footer -->
+   <div id="footer">
+    <p class="legal">
+     &copy;2007
+     <a href="#">
+      External
+     </a>
+     &nbsp;&nbsp;&nbsp;All Rights Reserved.
+		&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+		Design by
+     <a href="http://www.freecsstemplates.org/">
+      Free CSS Templates
+     </a>
+     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+		Icons by
+     <a href="http://famfamfam.com/">
+      FAMFAMFAM
+     </a>
+    </p>
+   </div>
+  </div>
+  <!-- end footer -->
+ </body>
+</html>

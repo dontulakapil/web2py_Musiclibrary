@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/yournewtemplate/1.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div id="banner">
+    <div class="logo-1">
+     Y
+    </div>
+    <div class="logo-2">
+     N
+    </div>
+    <div class="logo-3">
+     T
+    </div>
+    <div class="banner-text">
+     Youre New Template
+    </div>
+   </div>
+   <div id="left">
+    <div class="nav-box">
+     <div class="s1">
+     </div>
+     <div class="s2">
+     </div>
+     <div class="nav-box-text">
+      <span style="font-family:geneva,arial;color:#B8A07A;font-size:14px;font-weight:bold;padding-left:1px;">
+       <a href="#">
+        ABOUT US
+       </a>
+      </span>
+      <br />
+      <span style="font-family:geneva,arial;color:#6CA2BE;font-size:10px;font-weight:bold; font-style: italic;
+ letter-spacing: 2px;
+ padding-left:1px;">
+       who we are
+      </span>
+     </div>
+    </div>
+    <div class="nav-box">
+     <div class="s1">
+     </div>
+     <div class="s2">
+     </div>
+     <div class="nav-box-text">
+      <span style="font-family:geneva,arial;color:#B8A07A;font-size:14px;font-weight:bold;padding-left:1px;">
+       <a href="#">
+        SERVICES
+       </a>
+      </span>
+      <br />
+      <span style="font-family:geneva,arial;color:#6CA2BE;font-size:10px;font-weight:bold;  letter-spacing: 2px;
+ padding-left:1px;">
+       We can help
+      </span>
+     </div>
+    </div>
+    <div class="nav-box">
+     <div class="s1">
+     </div>
+     <div class="s2">
+     </div>
+     <div class="nav-box-text">
+      <span style="font-family:geneva,arial;color:#B8A07A;font-size:14px;font-weight:bold;padding-left:1px;">
+       <a href="#">
+        PRODUCTS
+       </a>
+      </span>
+      <span style="font-family:geneva,arial;color:#6CA2BE;font-size:10px;font-weight:bold;  letter-spacing: 2px;
+ padding-left:1px;">
+       visit our store
+      </span>
+     </div>
+    </div>
+    <div class="nav-box">
+     <div class="s1">
+     </div>
+     <div class="s2">
+     </div>
+     <div class="nav-box-text">
+      <span style="font-family:geneva,arial;color:#B8A07A;font-size:14px;font-weight:bold;padding-left:1px;">
+       <a href="#">
+        CONTACT US
+       </a>
+      </span>
+      <span style="font-family:geneva,arial;color:#6CA2BE;font-size:10px;font-weight:bold;  letter-spacing: 2px;
+ padding-left:1px;">
+       Get in touch
+      </span>
+     </div>
+    </div>
+    <div class="nav-box">
+     <div class="s1">
+     </div>
+     <div class="s2">
+     </div>
+     <div class="nav-box-text">
+      <span style="font-family:geneva,arial;color:#B8A07A;font-size:14px;font-weight:bold;padding-left:1px;">
+       <a href="#">
+        PORTFOLIO
+       </a>
+      </span>
+      <span style="font-family:geneva,arial;color:#6CA2BE;font-size:10px;font-weight:bold;  letter-spacing: 2px;
+ padding-left:1px;">
+       our work
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+  </div>
+  <br />
+  <div align="center">
+   <span style="font-family:geneva,arial;color:#000;font-size:14px;font-weight:bold;">
+    By Coollew
+   </span>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+	bookish1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+	hope you enjoy it :)
+
+-->
+<html>
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Bookish/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="outer">
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <div id="menu">
+     {{=MENU(response.menu)}}
+    </div>
+   </div>
+   <div id="inner">
+    <div id="main">
+     <div id="xbgA">
+     </div>
+     <div id="main_inner">
+      <!-- Main start -->
+      <h2>
+       {{=response.subtitle or '=response.subtitle'}}
+      </h2>
+      <div class="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+      <div class="foot">
+      </div>
+      <div class="divider">
+      </div>
+      <h3>
+       <strong>
+        demonstration
+       </strong>
+       of tabulated data
+      </h3>
+      <div class="content">
+       <table>
+        <tr>
+         <th class="first">
+          <strong>
+           post
+          </strong>
+          date
+         </th>
+         <th>
+          <strong>
+           author
+          </strong>
+          name
+         </th>
+         <th>
+          <strong>
+           entry
+          </strong>
+          title
+         </th>
+        </tr>
+        <tr class="rowA">
+         <td class="first">
+          <span class="date">
+           05.31.2006
+          </span>
+         </td>
+         <td>
+          <a href="#">
+           Sam Jackson
+          </a>
+         </td>
+         <td>
+          <em>
+           <a href="#">
+            Lobortis commodo metus vestibulum
+           </a>
+          </em>
+         </td>
+        </tr>
+        <tr class="rowB">
+         <td class="first">
+          <span class="date">
+           05.31.2006
+          </span>
+         </td>
+         <td>
+          <a href="#">
+           Daniel Carter
+          </a>
+         </td>
+         <td>
+          <em>
+           <a href="#">
+            Purus in eget odio in sapien
+           </a>
+          </em>
+         </td>
+        </tr>
+        <tr class="rowA">
+         <td class="first">
+          <span class="date">
+           05.31.2006
+          </span>
+         </td>
+         <td>
+          <a href="#">
+           Trent O'Neill
+          </a>
+         </td>
+         <td>
+          <em>
+           <a href="#">
+            Adipiscing blandit quisque eros
+           </a>
+          </em>
+         </td>
+        </tr>
+        <tr class="rowB">
+         <td class="first">
+          <span class="date">
+           05.31.2006
+          </span>
+         </td>
+         <td>
+          <a href="#">
+           Jack Reznor
+          </a>
+         </td>
+         <td>
+          <em>
+           <a href="#">
+            Cras lobortis commodo metus lorem
+           </a>
+          </em>
+         </td>
+        </tr>
+       </table>
+      </div>
+      <div class="divider">
+      </div>
+      <div id="ccol1">
+       <h3>
+        <strong>
+         nullam
+        </strong>
+        sit amet
+       </h3>
+       <div class="content">
+        <p>
+         <strong>
+          Quisque eros cras
+         </strong>
+         lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque eros. Cras lobortis commodo metus lorem ipsum dolor sit amet nullam sed veroeros etiam augue nunc ante aliquam. Quisque augue tortor, facilisis sit etiam.
+         <a href="#">
+          Continued ...
+         </a>
+        </p>
+       </div>
+      </div>
+      <div id="ccol2">
+       <h3>
+        <strong>
+         nullam
+        </strong>
+        sit amet
+       </h3>
+       <div class="content">
+        <p>
+         Vestibulum vel purus. In eget odio in ante aliquam quisque etiam.
+        </p>
+        <ul>
+         <li>
+          <a href="#">
+           Lorem ipsum dolor sit
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           Amet nullam sed
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           Veroeros etiam augue
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           Nunc ante aliquam quisque
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           Augue tortor facilisis sit
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           More ...
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- Main End -->
+      <div class="foot">
+      </div>
+     </div>
+    </div>
+    <div id="side">
+     <!-- Side start -->
+     <h3>
+      <strong>
+       lorem
+      </strong>
+      ipsum dolor
+     </h3>
+     <div class="content">
+      <p>
+       Vestibulum vel purus. In eget dolor nulla
+       <a href="#">
+        veroeros et nullam sed
+       </a>
+       veroeros etiam augue nunc ante aliquam. Quisque augue.
+      </p>
+      <div class="divider">
+      </div>
+      <p>
+       In eget dolor nulla
+       <a href="#">
+        nullam sed etiam dolore sed
+       </a>
+       eroeros etiam augue nunc ante aliquam.
+      </p>
+      <div class="divider">
+      </div>
+      <p>
+       Purus etiam in eget dolor nulla
+       <a href="#">
+        lorem ipsum dolor
+       </a>
+       augue nunc ante aliquam sed dolore nullam. Lorem ipsum dolor et sed etiam augue.
+      </p>
+     </div>
+     <h3>
+      <strong>
+       lorem
+      </strong>
+      ipsum dolor
+     </h3>
+     <div class="content">
+      <ul>
+       <li class="first">
+        <a href="#">
+         Lorem ipsum dolor sit
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Amet nullam sed etiam
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Veroeros etiam augue
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Nunc ante aliquam quisque
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Augue tortor facilisis sit
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Veroeros etiam augue
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Lorem ipsum dolor sit
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Nunc ante aliquam quisque
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Amet nullam sed etiam
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Side end -->
+    </div>
+    <div id="xbgB" class="foot">
+    </div>
+   </div>
+  </div>
+  <div id="outer2">
+  </div>
+  <div id="footer">
+   &copy; 2006 MyWebsiteName. Design by
+   <a href="http://www.nodethirtythree.com">
+    NodeThirtyThree
+   </a>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Sea2/tm07f.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <table class="border" width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+     <td colspan="2">
+      <a href="index.html" target="_top">
+       <img src="images/header.jpg" width="900" height="100" border="0" alt="site name" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="index.html" target="_top">
+       <img src="images/home.jpg" width="239" height="44" border="0" alt="home" />
+      </a>
+     </td>
+     <td rowspan="7">
+      <img src="images/body.jpg" width="661" height="372" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="about.html" target="_top">
+       <img src="images/aboutus.jpg" width="239" height="36" border="0" alt="abou us" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="blog.html" target="_top">
+       <img src="images/blog.jpg" width="239" height="35" border="0" alt="blog" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="gallery.html" target="_top">
+       <img src="images/gallery.jpg" width="239" height="39" border="0" alt="gallery" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="contacts.html" target="_top">
+       <img src="images/contacts.jpg" width="239" height="42" border="0" alt="contacts" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td class="search">
+      <div class="searchDiv">
+       <form method="post" action="">
+        <input type="text" name="textfield" />
+        <input type="button" align="right" alt="Search" class="button" />
+       </form>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <img src="images/left.jpg" width="239" height="123" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img src="images/bottom.jpg" width="900" height="175" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img src="images/footer.jpg" width="900" height="54" alt="" />
+     </td>
+    </tr>
+   </table>
+   <div class="bottom">
+    Copyright &copy; 200X Your Company Name
+    <br />
+    <img src="images/button_w3c_xhtml.gif" alt="Valid XHTML 1.0" width="80" height="15" />
+   </div>
+   <div class="designed">
+    Designed by
+    <a href="http://www.ossoba.com" target="_blank">
+     Ossoba Studio
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

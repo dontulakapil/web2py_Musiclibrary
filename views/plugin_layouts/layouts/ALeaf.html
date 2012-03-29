@@ -1,0 +1,124 @@
+<!--
+'A Leaf' design by Greg Smith - http://gregdev.net
+Please leave the 'designed by' link intact and visible; that's all I ask!
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/ALeaf/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrap">
+   <div id="title">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+   </div>
+   <div id="side">
+    <ul>
+     <li>
+      <a class="item" href="#">
+       A Section
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       A Page
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       Another Page
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       A Page Again
+      </a>
+     </li>
+     <li>
+      <a class="item" href="#">
+       A Section Again
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       Look, a Page
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       This is a Page
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       Also a Page
+      </a>
+     </li>
+     <li>
+      <a class="item" href="#">
+       A Third Section
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       Pages Galore
+      </a>
+     </li>
+     <li>
+      <a class="itemsub" href="#">
+       Page of Blah
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="footer">
+   </div>
+  </div>
+  <div id="bottom">
+   <p>
+    &copy; 2007 Your Name Here
+   </p>
+   <p>
+    <a href="http://gregdev.net">
+     Designed by Greg Smith
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

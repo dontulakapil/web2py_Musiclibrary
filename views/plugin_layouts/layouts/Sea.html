@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Sea/tm06f.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body bgcolor="#ffffff" onload="MM_preloadImages('images/home_f2.jpg','images/aboutus_f2.jpg','images/activities_f2.jpg','images/services_f2.jpg','images/gallery_f2.jpg','images/links_f2.jpg');">
+  <div class="container">
+   <div class="sitename">
+    <img src="images/site_name.png" alt="Site name" />
+   </div>
+   <div class="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+     <td>
+      <img src="images/spacer.gif" width="224" height="1" border="0" alt="" />
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="576" height="1" border="0" alt="" />
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="1" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img name="top" src="images/top.jpg" width="800" height="125" border="0" id="top" alt="Top" />
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="125" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','images/home_f2.jpg',1);">
+       <img name="home" src="images/home.jpg" width="224" height="77" border="0" id="home" alt="Home" />
+      </a>
+     </td>
+     <td rowspan="6">
+      <img name="content" src="images/content.jpg" width="576" height="422" border="0" id="content" alt="" />
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="77" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="about.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('aboutus','','images/aboutus_f2.jpg',1);">
+       <img name="aboutus" src="images/aboutus.jpg" width="224" height="71" border="0" id="aboutus" alt="About us" />
+      </a>
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="71" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="activities.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('activities','','images/activities_f2.jpg',1);">
+       <img name="activities" src="images/activities.jpg" width="224" height="72" border="0" id="activities" alt="Activities" />
+      </a>
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="72" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="services.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('services','','images/services_f2.jpg',1);">
+       <img name="services" src="images/services.jpg" width="224" height="64" border="0" id="services" alt="Services" />
+      </a>
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="64" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="gallery.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('gallery','','images/gallery_f2.jpg',1);">
+       <img name="gallery" src="images/gallery.jpg" width="224" height="53" border="0" id="gallery" alt="Gallery" />
+      </a>
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="53" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <a href="links.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('links','','images/links_f2.jpg',1);">
+       <img name="links" src="images/links.jpg" width="224" height="85" border="0" id="links" alt="Links" />
+      </a>
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="85" border="0" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img name="footer" src="images/footer.jpg" width="800" height="53" border="0" id="footer" alt="b" />
+     </td>
+     <td>
+      <img src="images/spacer.gif" width="1" height="53" border="0" alt="" />
+     </td>
+    </tr>
+   </table>
+   <div class="bottom">
+    Copyright &copy; 200X Your Company Name
+    <br />
+    Design by
+    <a href="http://www.ossoba.com" target="_blank" class="copy">
+     Ossoba Studio
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

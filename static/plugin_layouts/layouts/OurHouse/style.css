@@ -1,0 +1,31 @@
+* {margin: 0; padding: 0;}
+
+body {margin: 0 0 20px 0; font: 90% Verdana, sans-serif; color: #e8e8e8; background-color: #6a816f;}
+a, a:visited { text-decoration: underline; color: #44ccdd; }
+a:hover, a:active { text-decoration: none; color: #63C91E; }
+
+#container {width: 760px; margin: 0 auto; background: #e8e8e8 url(images/bg.png) repeat-y; color: #333;}
+
+#header {width: 760px; height:170px; background: transparent url(images/header.png) no-repeat; margin: 0 auto;}
+#header h1 {width: 285px; height: 170px; background: url(images/callout.gif) no-repeat; position: absolute; top: 15px; left: auto; margin-left: 10px; font-size: 1.80em; color: #333; padding: 55px 0 0 0; text-align: center;}
+#header span { position: absolute; top: 110px; left: auto; text-align: center; width: 285px; }
+
+#main { float:left; padding: 20px 10px; width: 530px; font-size: 0.95em; }
+#main h1 { font-size: 1.4em; color: #63C91E; padding-bottom: 10px; }
+#main h2 { font-size: 1.1em; color: #63C91E; padding-bottom: 10px; }
+#main p {padding-bottom: 10px;}
+blockquote { margin: 10px 10px; padding: 10px; background: #C7DEB6; color: #333; border-right: 2px solid #63C91E; border-left: 2px solid #63C91E; font-size: 0.85em; }
+
+#right {float:left; padding: 20px 10px; width: 180px; font-size: 0.85em;}
+#right h2 { font-size: 1.2em; color: #63C91E; padding-bottom: 10px; }
+#nav {width : 180px; margin : 0 0 10px 0;}
+ul#menu {margin-left : 0; padding-left : 0; list-style-type : none;}
+#menu a {display : block; padding : 3px; width : 169px; margin-bottom : 1px; background : #63C91E; color : #e8e8e8; border-left: 4px solid #44ccdd; font-weight: normal !important;}
+#menu a:link, #menu a:visited {color : #e8e8e8; background : #63C91E; text-decoration : none; }
+#menu a:hover, #menu a:active { background : #44ccdd; color : #333; border-left: 4px solid #63C91E;}
+#current { background : #C7DEB6 !important; color : #333 !important; border-left: 4px solid #63C91E !important;} 
+
+#footer { clear:both; width: 760px; height: 60px; font-size: 0.75em; margin: 0 auto; background: transparent url(images/footer.png) no-repeat; text-align: center; }
+#footer p { padding: 10px; }
+
+img {float: left; margin: 5px; padding: 2px; border: 1px solid #C7DEB6;}

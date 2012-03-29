@@ -1,0 +1,253 @@
+html, body {
+	background-image: url(images/bg.jpg);
+	background-color: #81A9E6;
+	background-repeat: repeat;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+#wrap #content blockquote {
+	background-repeat: no-repeat;	background-position: 5px 5px;
+	background-color: #777777;	margin: 15px;
+	background-image: url(images/quote.png);	padding-top: 15px;
+	padding-right: 15px;	padding-bottom: 15px;
+	padding-left: 35px;	border: 1px solid #FFFFFF;
+	color: #CCCCCC;
+}
+#wrap #content h1 {
+	font-size: 24px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #6E9DE1;	font-weight: bold;
+}
+#wrap .subnav h2 {
+	font-size: 12px;	color: #000000;
+	display: block;	background-color: #F4F4F4;
+	padding-top: 2px;	padding-right: 2px;
+	padding-bottom: 2px;	padding-left: 5px;
+	margin-top: 5px;	margin-right: 0px;
+	margin-bottom: 5px;	margin-left: 0px;
+}
+#wrap .subnav .cats a {
+	color: #6E9DE1;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	float: left;
+	clear: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#wrap .subnav ul {
+	list-style-image: none;	list-style-type: none;
+	padding: 0px;	margin: 0px;
+}
+#wrap .subnav .cats {
+	list-style-image: none;	list-style-type: none;
+	padding: 0px;	margin: 0px;
+}
+
+#wrap .subnav .cats li {
+	font-size: 10px;
+	text-align: right;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E4E4C2;
+}
+#wrap .subnav li {
+	font-size: 10px;
+}
+#wrap .subnav a {
+	color: #6E9DE1;
+	text-decoration: none;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E4E4C2;
+}
+#wrap {
+	background-image: url(images/contentbg.jpg);
+	width: 800px;	margin-right: auto;
+	margin-left: auto;	margin-top: 0px;
+}
+#wrap #header {
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 132px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px;
+}
+
+
+.spacer {
+	clear: both;	font-size: 2px;
+}
+#wrap .subnav {
+	float: left;	width: 168px;	margin-left: 70px;	padding-top: 5px;
+	padding-right: 3px;	padding-bottom: 5px;	padding-left: 6px;
+}
+#wrap #header #topnav {
+	margin-left: 250px;
+}
+#wrap #header #topnav ul {
+	list-style-type: none;	margin: 0px;	padding: 0px;
+}
+#wrap #header #topnav li {
+	display: inline;
+}
+#wrap #header #topnav a {
+	display: block;	float: left;
+	background-image: url(images/topmnu2.png);	height: 21px;
+	width: 95px;	padding-top: 2px;	padding-right: 5px;
+	padding-left: 5px;	background-repeat: no-repeat;
+	font-size: 10px;	color: #B2B4BF;
+	text-decoration: none;	text-align: center;
+	margin-right: 3px;	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#wrap #content {
+	margin-left: 255px;	padding: 5px;
+	margin-right: 45px;
+}
+#wrap #footer {
+	background-image: url(images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 43px;
+	padding-top: 32px;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-bottom: 0px;
+	font-size: 10px;
+	color: #999999;
+}
+#wrap #footer a {
+	color: #FFFFFF;
+}
+#wrap #header #topnav a:active,visited {
+	display: block;	float: left;
+	background-image: url(images/topmnu2.png);	height: 21px;
+	width: 95px;	padding-top: 2px;	padding-right: 5px;
+	padding-left: 5px;	background-repeat: no-repeat;
+	font-size: 10px;	color: #B2B4BF;
+	text-decoration: none;	text-align: center;
+	margin-right: 3px;	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#wrap #header #topnav a:hover {
+
+	display: block;	float: left;
+	background-image: url(images/topmnu1.png);
+	height: 21px;	width: 95px;
+	padding-top: 2px;	padding-right: 5px;
+	padding-left: 5px;	background-repeat: no-repeat;
+	font-size: 10px;	color: #B2B4BF;
+	text-decoration: none;	text-align: center;
+	margin-right: 3px;	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#wrap .subnav a:active,visited {
+
+	color: #6E9DE1;	text-decoration: none;
+	display: block;	border-bottom-width: 1px;
+	border-bottom-style: solid;	border-bottom-color: #E4E4C2;
+}
+#wrap .subnav a:hover {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E4E4C2;
+	background-color: #F2F2F2;
+}
+#wrap #content blockquote p {
+	margin: 0px;
+}
+#wrap #header #topnav .active a:link, active {
+
+	display: block;	float: left;	background-image: url(images/topmnu2.png);
+	height: 21px;	width: 95px;	padding-top: 2px;	padding-right: 5px;
+	padding-left: 5px;	background-repeat: no-repeat;	font-size: 10px;	color: #FFFFFF;
+	text-decoration: none;	text-align: center;
+	margin-right: 3px;	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#wrap #header h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding-left: 200px;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: normal;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	text-align: center;
+	margin-top: 55px;
+	margin-right: 20px;
+	margin-left: 20px;
+	float: right;
+}
+#wrap #header h1 a {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+#wrap #footer a:visited,active {
+	color: #CCCCCC;
+}
+#wrap #footer a:hover {
+	color: #FF6600;
+	text-decoration: none;
+}
+#wrap #header h1 a:visited,active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#wrap #header h1 a:hover {
+	color: #FFCC33;
+	text-decoration: none;
+}
+#wrap #content a {
+	color: #0099CC;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #0099CC;
+}
+#wrap #content a:visited,active {
+	color: #0099CC;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #0099CC;
+}
+#wrap #content a:hover {
+	color: #000000;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #000000;
+	background-color: #FFFFCC;
+}
+#wrap #content h2 {
+	color: #666666;
+	font-size: 18px;
+}
+#wrap #content h3 {
+	font-size: 16px;
+	color: #666666;
+}
+#wrap #content img {
+	background-color: #FFFFCC;
+	display: block;
+	padding: 5px;
+	border: 1px solid #FFCC99;
+	margin: 5px;
+	float: left;
+}

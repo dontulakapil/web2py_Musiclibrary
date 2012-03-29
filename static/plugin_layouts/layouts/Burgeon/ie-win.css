@@ -1,0 +1,13 @@
+#wrapper { background-image: url(images/wrapper_bg.gif); }
+
+#logo { background-image: url(images/logo.gif); margin-top: 20px; }
+
+#footer { background-color: #3e3f53; }
+
+.cats, .date { margin: 10px; padding-left: 25px; }
+
+.cats li, .date li { background: transparent url(images/dots.gif) bottom left repeat-x; }
+
+.cats a, .date a { padding: 5px; width: 95%; border-bottom-width: 0; }
+
+#copyright a { background: transparent url(images/dots.gif) bottom left repeat-x; border-bottom-width: 0; }

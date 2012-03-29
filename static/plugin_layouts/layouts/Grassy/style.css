@@ -1,0 +1,184 @@
+/*
+Author:		Donny Burnside
+Website:	http://www.ginger-ninja.net/
+*/
+
+/* Misc. */
+
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#2D302C;
+	background-image:url(images/bg-body.gif);
+	color:#222222;
+	}
+a {
+	color:#222222;
+	text-decoration:none;
+	}
+a:hover {
+	color:#CCDE8D;
+	}
+img {
+	border:0;
+	}
+p {
+	margin-bottom:20px;
+	line-height:20px;
+	}
+
+/* Structure */
+
+#wrapper {
+	margin:0 auto;
+	width:780px;
+	background-color:#454943;
+	background-image:url(images/bg-wrapper.gif);
+	background-repeat:repeat-y;
+	background-position:right;
+	border-left:1px solid #CCDE8D;
+	border-right:1px solid #CCDE8D;
+	}
+#header {
+	height:120px;
+	background-image:url(images/header.jpg);
+	background-repeat:no-repeat;
+	padding:0 10px;
+	}
+#nav {
+	height:35px;
+	line-height:35px;
+	background-image:url(images/bg-navigation-bar.gif);
+	background-repeat:repeat-x;
+	padding:0 10px;
+	}
+#sidebar {
+	float:right;
+	width:180px;
+	background-color:#ffffff;
+	min-height:800px;
+	border:1px solid #2D302C;
+	margin:10px 10px 0 10px;
+	padding:5px;
+	min-height:800px;
+	}
+#content {
+	width:545px;
+	background-color:#ffffff;
+	min-height:800px;
+	border:1px solid #2D302C;
+	margin:10px 10px 0 10px;
+	padding:5px;
+	}
+#footer {
+	clear:both;
+	text-align:right;
+	padding:10px;
+	margin-top:-10px;
+	color:#ffffff;
+	font-size:11px;
+	line-height:15px;
+	}
+#footer-links {
+	float:left;
+	line-height:30px;
+	}
+
+/* Navigation */
+
+#nav ul {
+	list-style-type:none;
+	}
+#nav li {
+	float:left;
+	text-align:center;
+	margin-right:10px;
+	text-transform:uppercase;
+	}
+#nav li a {
+	display:block;
+	padding:0 15px;
+	font-size:10px;
+	color:#ffffff;
+	text-decoration:none;
+	}
+#nav li a:hover {
+	background-image:url(images/bg-navigation-bar-hover.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#222222;
+	}
+
+/* Sidebar */
+
+#sidebar ul {
+	list-style-type:none;
+	margin-bottom:20px;
+	}
+#sidebar li {
+	
+	}
+
+/* Headings */
+
+h1 a {
+	color:#A6C639;
+	text-decoration:none;
+	font-weight:normal;
+	font-size:24px;
+	}
+h2 {
+	color:#A6C639;
+	text-decoration:none;
+	font-weight:normal;
+	font-size:20px;
+	}
+h3 a {
+	font-size:30px;
+	font-weight:normal;
+	letter-spacing:-1px;
+	color:#ffffff;
+	text-decoration:none;
+	}
+
+/* Extra's */
+
+.title1 {
+	color:#ffffff;
+	}
+.title2 {
+	color:#222222;
+	font-style:italic;
+	}
+.description {
+	font-size:12px;
+	font-style:italic;
+	color:#ffffff;
+	padding-left:20px;
+	}
+.meta {
+	color:#777777;
+	border-bottom:1px dashed #777777;
+	padding-bottom:2px;
+	margin-bottom:8px;
+	}
+.comments {
+	margin-top:-10px;
+	text-align:right;
+	margin-bottom:20px;
+	}
+.comments a {
+	text-decoration:underline;
+	}
+#footer-links a {
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	}
+#footer-links a:hover {
+	color:#CCDE8D;
+	}

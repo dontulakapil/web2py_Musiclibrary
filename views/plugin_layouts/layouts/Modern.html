@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Title begin -->
+   <div id="title">
+    <img src="images/logo.gif" alt="Logo" />
+    Company Name
+   </div>
+   <div id="slogan">
+    Your Company's slogan here...
+   </div>
+   <!-- Title end -->
+   <table width="770" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr valign="top">
+     <td colspan="2">
+      <img src="images/mo05f_01.gif" width="770" height="93" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <img src="images/mo05f_02.gif" width="289" height="15" alt="" />
+     </td>
+     <td width="481" height="15">
+      <!-- Navigation begin -->
+      <div id="navigation">
+       <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td>
+          <a href="index.html" title="Home">
+           Home
+          </a>
+         </td>
+         <td>
+          <a href="about.html" title="About Us">
+           About
+          </a>
+         </td>
+         <td>
+          <a href="services.html" title="Services">
+           Services
+          </a>
+         </td>
+         <td>
+          <a href="news.html" title="News">
+           News
+          </a>
+         </td>
+         <td>
+          <a href="contact.html" title="Contact">
+           Contact
+          </a>
+         </td>
+        </tr>
+       </table>
+      </div>
+      <!-- Navigation end -->
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <img src="images/mo05f_04.gif" width="289" height="29" alt="" />
+     </td>
+     <td valign="top">
+      <img src="images/mo05f_05.gif" width="481" height="29" alt="" />
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" id="leftBgr">
+      <img src="images/mo05f_06.gif" width="289" height="404" alt="" />
+      <!-- Left Panel begin -->
+      <div id="leftPan">
+       <ul>
+        <li>
+         <a href="#">
+          Solutions
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Partners
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Advantages
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- Left Panel end -->
+     </td>
+     <td width="481" height="404" align="left" valign="top">
+      <!-- Main content begin -->
+      <div id="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+      <!-- Main content end -->
+      <div id="bottom">
+       <img src="images/circles.png" width="102" height="116" alt="" />
+      </div>
+      <!-- Copyright Texts begin -->
+      <div id="ossobaLink">
+       <a href="http://www.ossoba.com">
+        Designed by Ossoba Studio
+       </a>
+      </div>
+      <div id="copyright">
+       Copyright &copy; 200X Your Company
+      </div>
+      <!-- Copyright Texts end -->
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img src="images/mo05f_08.gif" width="770" height="9" alt="" />
+     </td>
+    </tr>
+   </table>
+  </div>
+ </body>
+</html>

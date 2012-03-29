@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/FreeCSSTemplate57/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+   <div id="logo">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+   </div>
+   <!-- Begin Navigation -->
+   <div id="navigation">
+    <ul>
+     <li style="margin-left: 1px">
+      <a href="http://www.getcsstemplates.com" title="free css business templates">
+       Free CSS Templates
+      </a>
+     </li>
+     <li>
+      <a href="http://moneyearnersonline.blogspot.com.com" title="make money online">
+       Make Money Online
+      </a>
+     </li>
+     <li id="current">
+      <a href="#" title="#">
+       Link  Three
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Link Four
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Link Five
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Link Six
+      </a>
+     </li>
+     <li>
+      <a href="#" title="#">
+       Link Seven
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="navigationmenuline">
+    &nbsp;
+   </div>
+   <!-- End Navigation -->
+   <!-- Begin Header -->
+   <div id="header">
+    <div class="icons">
+     <a href="#">
+      <img src="images/home.gif" alt="Home" />
+     </a>
+     <a href="#">
+      <img src="images/contact.gif" alt="Contact" />
+     </a>
+     <a href="#">
+      <img src="images/sitemap.gif" alt="Sitemap" />
+     </a>
+    </div>
+   </div>
+   <!-- End Header -->
+   <!-- Begin Left Column -->
+   <div id="leftcolumn">
+    <h3>
+     Free CSS Website Template
+    </h3>
+    <blockquote>
+     <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum neque eu nisl. Morbi eget felis. Vestibulum feugiat lectus ut magna. Ut interdum ipsum nec metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+      <a href="#">
+       Ut eget augue
+      </a>
+      in velit elementum bibendum.
+     </p>
+    </blockquote>
+    <div id="boxes">
+     <div class="box">
+      <h4>
+       Lorem Ipsum
+      </h4>
+      <img src="images/img1.jpg" class="floatTL" alt="health" />
+      <p>
+       Lorem ipsum dolor sit amet, conse adipisin elit. Donec rutrum neque eu nisl. Morbi eget felis.
+      </p>
+      <a href="#">
+       read more
+      </a>
+      <img src="images/img1.jpg" class="floatTL" alt="health" />
+      <p>
+       Lorem ipsum dolor sit amet, conse adipisin elit. Donec rutrum neque eu nisl. Morbi eget felis.
+      </p>
+      <a href="#">
+       read more
+      </a>
+     </div>
+     <div class="box">
+      <h4>
+       Lorem Ipsum
+      </h4>
+      <img src="images/img1.jpg" class="floatTL" alt="health" />
+      <p>
+       Lorem ipsum dolor sit amet, conse adipisin elit. Donec rutrum neque eu nisl. Morbi eget felis.
+      </p>
+      <a href="#">
+       read more
+      </a>
+      <img src="images/img1.jpg" class="floatTL" alt="health" />
+      <p>
+       Lorem ipsum dolor sit amet, conse adipisin elit. Donec rutrum neque eu nisl. Morbi eget felis.
+      </p>
+      <a href="#">
+       read more
+      </a>
+     </div>
+    </div>
+    <div class="clear">
+    </div>
+    <h3>
+     Lorem Ipsum Dolor Sit Amet
+    </h3>
+    <p>
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum neque eu nisl. Morbi eget felis. Vestibulum feugiat lectus ut magna. Ut interdum ipsum nec metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+    </p>
+    <p>
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum neque eu nisl. Morbi eget felis.
+    </p>
+   </div>
+   <!-- End Left Column -->
+   <!-- Begin Content Column -->
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <!-- End Content Column -->
+   <!-- Begin Right Column -->
+   <div id="rightcolumn">
+    <h4>
+     More Links Here
+    </h4>
+    <div class="linksbar">
+     <ul>
+      <li>
+       <h2>
+        Lorem Ipsum
+       </h2>
+      </li>
+      <li>
+       <ul>
+        <li>
+         <a href="http://www.getcsstemplates.com" title="free website templates and layouts">
+          Free Website Templates
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Two
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Three
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Four
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Dolor Sit
+       </h2>
+      </li>
+      <li>
+       <ul>
+        <li>
+         <a href="#">
+          More Links
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Five
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Six
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Link Seven
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Lorem Ipsum
+       </h2>
+      </li>
+      <li>
+       <ul>
+        <li>
+         <a href="#">
+          More Links ...
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          More Links ...
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          More Links ...
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="news">
+     <h2>
+      News and Events
+     </h2>
+     <h3>
+      Sep.16.07.
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum ...
+     </p>
+     <a href="#">
+      read more
+     </a>
+     <div class="clear">
+     </div>
+     <h3>
+      Aug.31.07.
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum ...
+     </p>
+     <a href="#">
+      read more
+     </a>
+    </div>
+   </div>
+   <!-- End Right Column -->
+  </div>
+  <!-- End Wrapper -->
+  <!-- Begin Footer -->
+  <div id="footer">
+   <a href="http://validator.w3.org/">
+    Valid XHTML
+   </a>
+   |
+   <a href="http://jigsaw.w3.org/css-validator/#validate-by-upload">
+    Valid CSS
+   </a>
+   <br />
+   Copyright &copy; 2007  All Rights Reserved.
+   <br />
+   Template Designed By
+   <a href="http://www.getcsstemplates.com/free-css-template-57.html">
+    Free CSS Templates
+   </a>
+   | Template Sponsored By
+   <a href="http://moneyearnersonline.blogspot.com/">
+    Make Money Online
+   </a>
+   .
+  </div>
+  <!-- End Footer -->
+ </body>
+</html>

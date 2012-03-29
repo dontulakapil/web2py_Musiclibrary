@@ -1,0 +1,191 @@
+/* CSS Document */
+body { 
+background:url(../img/background.jpg) repeat-y #e7e4e4;
+font-family: "Lucida grande",Lucida,Helvetica,Arial,Verdana,sans-serif;
+padding:0px;
+margin:0px;
+}
+
+* {margin: 0px; padding: 0px;}
+/* ........................................ recent changes .......................................................... */
+
+.header {
+display: block;
+margin: 0px 0px 0px 20px;
+padding: 0px;
+}
+
+img.knot {
+margin: 118px 0px 0px 0px;
+}
+
+. {
+float: left;
+display: inline;
+margin: 0px 10px 0px 0px;;
+}
+
+
+p.text {
+padding: 0px;
+margin: 0px;
+font-family: "Lucida grande",Lucida,Helvetica,Arial,Verdana,sans-serif;
+font-size: 10px;
+color: #757576;
+}
+
+p.text {
+padding: 0px;
+margin: 10px 30px 10px 30px;
+font-family: "Lucida grande",Lucida,Helvetica,Arial,Verdana,sans-serif;
+font-size: 12px;
+line-height: 20px;
+text-align: left;
+color: #59595A;
+}
+
+#wrapper {
+margin: 0px;
+padding: 0px; height:152px;
+background:#B05614;
+}
+#wrapper h2 { color:#CCCCCC; text-align:center; padding-top:25px;}
+
+.box {
+float: left;
+display: inline;
+width: 561px;
+text-align: left;
+margin: 0px 0px 0px 20px;
+padding: 5px;
+background-color: #DBD8DA;
+}
+
+.lightbox {
+float: left;
+display: inline;
+width: 571px;
+text-align: left;
+margin: 0px 0px 0px 20px;
+padding: 0px;
+background-color: #EDEBEC;
+}
+
+/* ........................................ layout .......................................................... */
+
+div#leftmenu {
+position: absolute;
+width: 150px;
+background-color: transparent;
+margin-top: 0px;
+margin-bottom:0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+#leftmenu ul { margin-left:0px;padding-top:73px; width:150px;}
+#leftmenu li { line-height:25px; background:url(../img/navi.gif) left no-repeat; padding-top:10px; list-style:none; float:left;
+width:150px; font-weight:bold;
+height:31px;
+margin-top:8px;
+border:0px solid; color:#FFFFFF;
+font:normal 13px verdana,sans-serif;
+text-align:center;
+padding: 0px 0px 0px 0px;}
+
+div#main {
+position: absolute;
+width: 611px;
+background-color: transparent;
+margin-top: 0px;
+margin-bottom:0px;
+margin-left: 150px;
+margin-right: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-bottom: 0px;
+ padding-right: 0px;
+}
+
+div#rightmenu {
+position: absolute;
+width: 191px;
+background-color: transparent;
+margin-top: 0px;
+margin-bottom:0px;
+margin-left: 761px;
+margin-right: 0px;
+}
+
+
+#centerfull {
+float: left;
+width: 571px;
+text-align: left;
+margin: 0px 0px 0px 20px;
+padding: 0px 0px 0px 0px;
+}
+
+/* ........................................ images .......................................................... */
+
+img {
+margin: 26px 0px 0px 20px;
+}
+
+img.recentarrow {
+margin: 0px 5px 0px 0px;
+}
+
+
+/* ........................................ texts .......................................................... */
+
+
+
+/* ........................................ forms .......................................................... */
+
+
+/* ........................................... Links in the left column ............................................................... */
+.deus {
+float:left;
+width:150px;
+height:31px;
+margin-top:73px;
+border:0px solid;
+font:normal 10px verdana,sans-serif;
+text-align:center;
+padding: 0px 0px 0px 0px;
+background: url(http://www.deus62.com/gui/rolldeusoff.gif) no-repeat 0 0px;
+}
+
+
+.count {
+float:left;
+width:150px;
+height:31px;
+margin-top:9px;
+padding: 0px 0px 0px 0px;
+border:0px solid;
+font:normal 10px verdana,sans-serif;
+text-align:center;
+background: url(hhttp://www.deus62.com/gui/rollcount.gif) no-repeat 0 0px;
+}
+
+/* ........................................... Links in the center (text column) ............................................................... */
+#main a:link {color: #B05614; text-decoration: underline; }
+#main a:visited {color: #59595A; text-decoration: underline; background: none; padding: 0px 0px 0px 0px;}
+#main a:hover {color: #B05614; text-decoration: underline;}
+#main a:active {color: #B05614;text-decoration: underline;}
+
+#centermain a:link {color: #B05614; text-decoration: underline; }
+#centerfull a:visited {color: #000000; text-decoration: underline; background: none; padding: 0px 0px 0px 0px;}
+#centerfull a:hover {color: #B05614; text-decoration: underline;}
+#centerfull a:active {color: #B05614;text-decoration: underline;}
+
+/* ........................................... Links ............................................................... */
+
+a:link {color: #B05614; ; font-weight: normal; text-decoration: none}
+a:visited {color: #59595A; font-weight: normal; text-decoration: none; }
+a:hover {color: #B05614; font-weight: normal; text-decoration: underline overline;}
+a:active {color: #B05614;font-weight: normal; text-decoration: none}
+#leftmenu a:link {color:#FFFFFF; font-weight:bold;}
+#leftmenu a:hover {color:#B05614; font-weight:bold;}
+#leftmenu a:visited {color:#FFFFFF; font-weight:bold;}

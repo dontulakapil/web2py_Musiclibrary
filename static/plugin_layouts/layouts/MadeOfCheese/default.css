@@ -1,0 +1,134 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/img1.gif) repeat-x;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #3D515C;
+}
+
+img {
+	border: none;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-style: italic;
+	color: #8F3844;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	padding-top: 0;
+	line-height: 150%;
+}
+
+ul, ol {
+	color: #8F3844;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+ol {
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+a:link, a:active {
+	text-decoration: none;
+	color: #8F3844;
+}
+
+a:visited, a:hover {
+	text-decoration: underline;
+	color: #3D515C;
+}
+
+/* Header */
+
+#header {
+	height: 116px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	background: url(images/img2.gif) no-repeat center bottom;
+}
+
+#header * {
+	text-align: center;
+	text-decoration: none;
+	color: #8F3844;
+}
+
+#header h1 {
+	letter-spacing: -2px;
+	font-size: 48px;
+}
+
+#header h2 {
+	letter-spacing: normal;
+	font-size: 12px;
+}
+
+/* Content */
+
+#content {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#colOne {
+	float: right;
+	width: 240px;
+}
+
+#colTwo {
+	float: left;
+	width: 440px;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	padding: 20px;
+	background: #F5EDEE url(images/img1.gif) repeat-x 0px -120px;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* Boxed */
+
+.boxed {
+}
+
+.boxed .title {
+	margin: 0;
+	padding: 0;
+}
+
+.boxed .content {
+	padding: 20px;
+	background: url(images/img3.gif) repeat-x;
+}
+
+.boxed .image {
+	float: left;
+	margin: 5px 20px 0 0;
+}

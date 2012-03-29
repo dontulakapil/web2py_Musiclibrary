@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="autor" content="Breezy New Media (info@breezy.cz)" />
+<meta name="copyright" content="PointSpace - free website layout 2008" />
+<meta name="description" content=""  />
+<meta name="keywords" content="" />
+<title>PointSpace - free luxury website layout</title>
+<link rel="stylesheet" type="text/css" href="./css/default.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./css/print.css" media="print" />
+</head>
+<body>
+
+<div id="view">
+  <!-- 
+    #hlavicka vcetne loga a listy s hlavni nabidkou
+      - h1 hlavní nadpis a absolutni pozadi v logu
+      - ul seznam - hlavní menu (span odpovida cervene odrazce)
+      - aktivni zalozka oznacena v elementu li tridou "active"
+  -->
+  <div id="head">
+    <div id="logo">
+      <a href="" class="block">&nbsp;</a>
+      <h1><a href="index.html">point<span>space</span></a></h1>
+      <h2><a href="index.html">luxury free website layout</a></h2>
+    </div>
+    <hr class="hidden" />
+    <div id="mainMenu">
+      <ul>
+        <li><a href="index.html">Link 01<span></span></a></li>
+        <li><a href="#content">Link 02<span></span></a></li>
+        <li><a href="index.html">Link 03<span></span></a></li>
+        <li class="active"><a href="">Link 04<span></span></a></li>
+        <li><a href="index.html">Link 05<span></span></a></li>
+        <li><a href="index.html">Link 06<span></span></a></li>
+      </ul>
+      
+      <form action="" method="post" id="search">
+        <fieldset>
+          <input type="text" name="" value="" class="button" />
+          <input type="submit" value="" class="submit" />
+        </fieldset>
+      </form>
+    </div>
+    <hr class="hidden" />
+  </div>
+  <!-- /#hlavicka vcetne loga a listy s hlavni nabidkou -->
+  
+  <div id="content">
+    <!-- 
+      #obsahovy blok
+        - kazdy element je mozne odlisne formatovat pomoci predpripravenych trid (viz vysvetlivky v css souboru)
+        - nadpisy hlavnich clanku jsou vyjadreny elementem h2, mensi clanky el. h3
+        - kazdy clanek ulozen ve vlastni "div konstrukci" s tridou "item"
+          - vsechny "item clanky" jsou oddeleny vodorovnou carou - zruseni mozne pomoci tridy last (viz prvni clanek sablony)
+          - kazdy clanek obsahuje element p s tridou info, ktera popisuje dulezite informace ohledne vydani prislusneho clanku
+          - v obsahu clanku (i mimo "item div konstrukci") je mozne dale vytvorit:
+              - seznamy (ul, ol)
+              - tabulky (table)
+              - obrazky (img)
+    -->
+    <div id="contentBlock">
+      <div class="item last">
+        <h2>Main Heading</h2>
+        <p class="info ico ico-date">02.02.2008 - <a href="index.html">article tag</a> - <a href="index.html">14 comments</a></p>
+        <p>A spatial point is a concept used to define an exact location in space. It has no volume, area or length, making it a zero dimensional object. Points are used in the basic language of geometry, physics, vector graphics (both 2D and 3D), and many other fields. In mathematics generally, particularly in topology, any form of space is considered as made up of an infinite amount of points as basic elements.</p>
+        <ul>
+          <li>checkpoint</li>
+          <li>checkpoint</li>
+          <li>checkpoint</li>
+        </ul>
+        <table>
+          <tr class="add">
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+          </tr>
+          <tr class="even">
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+          </tr>
+          <tr class="add">
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 
+        #cols 50:50
+           Kazdou dalsi podcast je mozne rozdelit pomoci dvojice konstrukci s tridami "col1" a "col2", ktere zpusobi -
+           rozdeleni obsahu v pomeru 50:50 (uzito v pripade obrazku v sablone nize)
+      -->
+      <div class="col1">
+        <div class="item">
+          <h3>Article Heading</h3>
+          <p class="info">02.02.2008 - <a href="index.html">article tag</a> - <a href="index.html">14 comments</a></p>
+          <p>A spatial point is a concept used to define an exact location in space. It has no volume, area or length, making it a zero dimensional object.</p>
+        </div>
+        <div class="item last">
+          <h3>Article Heading</h3>
+          <p class="info">02.02.2008 - <a href="index.html">article tag</a> - <a href="index.html">14 comments</a></p>
+          <p>A spatial point is a concept used to define an exact location in space. It has no volume, area or length, making it a zero dimensional object.</p>
+        </div>
+      </div>
+      <div class="col2 right">
+        <a href="index.html"><img src="img/image.gif" width="123" height="81" alt="" class="left" /></a>
+        <a href="index.html"><img src="img/image.gif" width="123" height="81" alt="" class="right" /></a>
+        <a href="index.html"><img src="img/image.gif" width="123" height="81" alt="" class="left" /></a>
+        <a href="index.html"><img src="img/image.gif" width="123" height="81" alt="" class="right" /></a>
+      </div>
+      <!-- /#cols 50:50 -->
+    </div>
+    <!-- /#obsahovy blok -->
+    
+    <hr class="hidden" />
+    
+    <!-- #pravy blok - nabidka submenu a dalsi prvky -->
+    <div id="menuBlock">
+      <!--
+        #zachovani shodneho odsazeni boxu v prave casti obsahu
+          - uzavreni do konstrukce s tridou "box" zpusobi odsazeni nasledujiciho elementu
+          
+        #moznosti boxu prave nabidky
+          - prvni element praveho sloupce musi byt definovan i tridou "firstBox" - vykresleni stinu
+          - element obsahujici submenu musi obsahovat tridu "subMenu"
+          - element obsahujici ostatni obsahove prvky (seznamy, formulare, obrazky) musi byt zalozen na tride "boxText"
+          
+        #aktivni zalozka oznacena v elementu li tridou "active"
+      -->
+      <div class="box firstBox subMenu">
+        <h3>Categories:</h3>
+        <ul>
+          <li><a href="index.html">About me</a></li>
+          <li><a href="index.html">Photos</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li class="active"><a href="index.html">Categories</a></li>
+          <li><a href="index.html">Archive</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="box boxText">
+        <h3>Personal profile:</h3>
+        <p><strong>Name Surename</strong><br />Age:&nbsp;25&nbsp;years<br />Status:<br />email:&nbsp;<a href="index.html">email@email.com</a></p>
+      </div>
+      <div class="box subMenu">
+        <h3>Archive:</h3>
+        <ul>
+          <li><a href="index.html">January 2008</a></li>
+          <li><a href="index.html">February 2008</a></li>
+          <li><a href="index.html">March 2008</a></li>
+          <li><a href="index.html">April 2008</a></li>
+          <li><a href="index.html">May 2008</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /#pravy blok -->
+  </div>
+  
+  <!-- #pristupne prvky stranky - neodstranovat !!! -->
+  <hr class="hidden" />
+  <ul class="hidden">
+    <li><a href="#view">Nahoru</a></li>
+    <li><a href="#content">Zpět na obsah</a></li>
+  </ul>
+  <hr class="hidden" />
+  <!-- /#pristupne prvky stranky - neodstranovat !!! -->
+  
+  <div id="foot">
+    <p class="fl">&copy; all rights reserved</p>
+    
+    
+    
+    <!-- /#   LINKS AND AUTHOR-SIGNATURE CANNOT BE REMOVED !!! -->
+    <p class="fr"><a href="http://www.breezy.cz/reference/webove-sablony-zdarma" title="More free templates coming soon">Free template</a> created by <a href="http://www.breezy.cz" class="ico ico-breezy">Breezy New Media</a></p>
+  </div>
+</div>
+
+</body>
+</html>

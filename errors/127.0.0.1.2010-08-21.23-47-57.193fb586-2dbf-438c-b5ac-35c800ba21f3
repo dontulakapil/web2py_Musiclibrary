@@ -1,0 +1,18 @@
+(dp1
+S'output'
+p2
+S'Unable to open included view file: /home/chiinna/Desktop/web2py/applications/practice/views/sai.html'
+p3
+sS'layer'
+p4
+S'ParserContainer'
+p5
+sS'code'
+p6
+S'{{extend \'sai.html\'}}\r\n<h1 align=\'center\'><u>Welcome {{=firstname[0].first_name}} </u></h1>\r\n<table border=\'0\'>\r\n<tr>\r\n<td width="10%">\r\n<p align=\'center\'><img src={{=URL(r=request, c=\'default\', f=\'download\', args=[file1[0].file])}}  height="100" width="100"/></p>\r\n</td>\r\n<td>\r\n<p align=\'center\'><u>FirstName</u>:{{=firstname[0].first_name}}</p><br />\r\n<p align=\'center\'><u>LastName</u>:{{=firstname[0].last_name}}</p><br />\r\n<p align=\'center\'><u>Email-id</u>:{{=firstname[0].email}}</p><br />\r\n<br />\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h2><u>My playsits</u></h2>\r\n{{for i in form:}}\r\n    <a href={{=URL(r=request,f="playlistsongs",args=i.id)}}>{{=i.name}}</a><br />\r\n{{pass}}\r\n</td>\r\n<td width=\'30%\' align=\'center\'>\r\n<p><u>Other Users</u></p>\r\n{{for i in users:}}\r\n<a href={{=URL(r=request,f="others",args=i.id)}}>{{=i.first_name}}</a><br />\r\n{{pass}}\r\n</td>\r\n</tr>\r\n</teble>\r\n'
+p7
+sS'traceback'
+p8
+S'Traceback (most recent call last):\n  File "/home/chiinna/Desktop/web2py/gluon/template.py", line 424, in _get_file_text\n    fileobj = open(filepath, \'rb\')\nIOError: [Errno 2] No such file or directory: \'/home/chiinna/Desktop/web2py/applications/practice/views/sai.html\'\n'
+p9
+s.

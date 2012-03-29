@@ -1,0 +1,22 @@
+#header h1 { padding-bottom: 15px; }
+
+#footer li a { display: inline-block; }
+
+#footer li a { display: block; }
+
+#copyright a 
+{
+	background-image: url(images/accept.gif);
+}
+
+.post-content a
+{
+	padding-right: 0;
+	background-image: none;
+}
+
+.item a
+{
+	padding-left: 0;
+	background-image: none;
+}

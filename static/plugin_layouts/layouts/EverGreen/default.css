@@ -1,0 +1,184 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #000000 url(images/img1.gif) repeat-x;
+	font: normal small "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #2FCC61;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #FFFFFF;
+}
+
+a {
+	color: #00FF51;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Header */
+
+#header {
+	width: 750px;
+	height: 200px;
+	margin: 0 auto;
+	background: url(images/img2.jpg) no-repeat center bottom;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+}
+
+#logo * {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	color: #FFFFFF;
+}
+
+#logo h1 {
+	padding: 115px 0 0 0;
+	letter-spacing: -3px;
+	font-size: 3.5em;
+}
+
+#logo h2 {
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 164px 0 0 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover, #menu .active a {
+	background: #000000;
+}
+
+/* Content */
+
+#content {
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+/* Column One */
+
+#colOne {
+	float: left;
+	width: 500px;
+}
+
+#colOne h2 {
+	margin-top: 0;
+	font-size: 2.2em;
+}
+
+#colOne p, #colOne ul, #colOne ol {
+	line-height: 160%;
+}
+
+#colOne .credits {
+	margin-bottom: 20px;
+	padding: 5px 0 20px 8px;
+	border-bottom: 1px solid #2C2C2C;
+}
+
+#colOne .credits p {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+/* Column Two */
+
+#colTwo {
+	float: right;
+	width: 220px;
+}
+
+#colTwo ul {
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;
+}
+
+#colTwo li {
+	margin-bottom: 20px;
+}
+
+#colTwo li li {
+	margin-bottom: auto;
+}
+
+#colTwo li ul {
+	padding-left: 20px;
+	list-style: square inside;
+}
+
+#colTwo h2 {
+	padding-bottom: 5px;
+	font-size: 1em;
+	color: #FFFFFF;
+	padding-left: 20px;
+	border-bottom: 1px solid #2C2C2C;
+}
+
+#textfield1 {
+}
+
+#submit1 {
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 750px;
+	height: 60px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: smaller;
+}

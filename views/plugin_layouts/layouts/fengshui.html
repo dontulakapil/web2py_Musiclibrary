@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+ <!--
+/*
+//////////////////////////////////////////
+// feng shui
+// author: j. newing
+// website: http://binslashbash.org
+// copyright joseph newing 2006. all rights reserved.
+// email: webmaster@binslashbash.org
+//
+// about: binslashbash.org is a small web design and development company located on the north shores of Ontario, Canada.
+//        We build simple, elegant yet highly functional websites, design media and graphics for print or for digital 
+//        use, and custom tailor all of our creations to fit the needs of our clients.
+//
+// this template is free for all however your
+// MUST keep this comment intact...
+//////////////////////////////////////////
+*/
+-->
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/fengshui/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="divider">
+    <img src="images/logo.gif" alt="binslashbash.org" />
+   </div>
+   <div id="rightcol">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <div>
+     <h2>
+      {{=response.subtitle or '=response.subtitle'}}
+     </h2>
+     <div class="content">
+      <div class="flash">{{=response.flash or ''}}</div>
+      {{include}}
+     </div>
+     <h2>
+      free templates by the bushel
+     </h2>
+     <div class="content">
+      <p>
+       Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.
+      </p>
+      <p>
+       Fermentum at, varius pretium, elit. Mauris egestas scelerisque nunc. Mauris non ligula quis wisi laoreet malesuada. In commodo. Maecenas lobortis cursus dolor.
+      </p>
+      <div class="foot">
+       (posted: J. Newing on January 10, 2007 @ 2:45pm)
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="leftcol">
+    <div id="nav">
+     {{=MENU(response.menu)}}
+    </div>
+    <div id="copyright">
+     &copy; My Website. All rights reserved. Design by
+     <a href="http://binslashbash.org/about.phtml">
+      binslashbash.org
+     </a>
+     .
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

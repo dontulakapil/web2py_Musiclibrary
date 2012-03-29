@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>RAINBOW</title>
+    {{response.files.append(URL(request.application,'static','style.css'))}}
+    {{include 'web2py_ajax.html'}}
+    <script type="text/javascript" src="/Musiclibrary/static/jquery.js"></script>
+    <script type="text/javascript" src="/Musiclibrary/static/menu.js"></script>
+    <script type="text/javascript" src="/Musiclibrary/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/Musiclibrary/static/js/webwidget_slideshow_common.js"></script>
+    <script language="javascript" type="text/javascript">
+$(function() {
+$("#webwidget_slideshow_common").webwidget_slideshow_common({
+slideshow_transition_effect: 'slide_down',//option: slide_left,slide_down,fade_in
+slideshow_time_interval: '2000',
+slideshow_window_width: '200',
+slideshow_window_height: '200',
+slideshow_border_style: 'hidden',//option: dashed dotted double groove hidden inset none outset ridge solid
+slideshow_border_size: '0',
+slideshow_border_color: '#000',
+slideshow_border_radius: '15',
+slideshow_padding_size: '10',
+slideshow_background_color: '#fff'
+});
+});
+</script>
+
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+</div>
+<div id="logo">
+    <h1><a href="#">RAINBOW</a></h1>
+    <h2>Enjoy the colours of music</h2>
+    </div>
+<!-- end header -->
+<hr />
+<!-- start page -->
+<div id="page">
+
+
+    <div id="menu">
+        <ul class="menu">
+            <li><a href="#" class="parent"><span>Home</span></a>
+                <div><ul>
+                    <li><a href="#" class="parent"><span>Sub Item 1</span></a>
+                        <div><ul>
+                            <li><a href="#" class="parent"><span>Sub Item 1.1</span></a>
+                                <div><ul>
+                                <li><a href="#"><span>Sub Item 1.1.1</span></a></li>
+                                <li><a href="#"><span>Sub Item 1.1.2</span></a></li>
+                                </ul></div>
+                            </li>
+                            <li><a href="#"><span>Sub Item 1.2</span></a></li>
+                            <li><a href="#"><span>Sub Item 1.3</span></a></li>
+                            <li><a href="#"><span>Sub Item 1.4</span></a></li>
+                            <li><a href="#"><span>Sub Item 1.5</span></a></li>
+                            <li><a href="#"><span>Sub Item 1.6</span></a></li>
+                            <li><a href="#" class="parent"><span>Sub Item 1.7</span></a>
+                                <div><ul>
+                                <li><a href="#"><span>Sub Item 1.7.1</span></a></li>
+                                <li><a href="#"><span>Sub Item 1.7.2</span></a></li>
+                                </ul></div>
+                            </li>
+                        </ul></div>
+                    </li>
+                    <li><a href="#"><span>Sub Item 2</span></a></li>
+                    <li><a href="#"><span>Sub Item 3</span></a></li>
+                </ul></div>
+            </li>
+            <li><a href="#"><span>Product Info</span></a>
+                <div><ul>
+                    <li><a href="#" class="parent"><span>Sub Item 1</span></a>
+                        <div><ul>
+                        <li><a href="#"><span>Sub Item 1.1</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.2</span></a></li>
+                        </ul></div>
+                    </li>
+                    <li><a href="#" class="parent"><span>Sub Item 2</span></a>
+                        <div><ul>
+                        <li><a href="#"><span>Sub Item 2.1</span></a></li>
+                        <li><a href="#"><span>Sub Item 2.2</span></a></li>
+                        </ul></div>
+                    </li>
+                    <li><a href="#"><span>Sub Item 3</span></a></li>
+                    <li><a href="#"><span>Sub Item 4</span></a></li>
+                    <li><a href="#"><span>Sub Item 5</span></a></li>
+                    <li><a href="#"><span>Sub Item 6</span></a></li>
+                    <li><a href="#"><span>Sub Item 7</span></a></li>
+                </ul></div>
+            </li>
+            <li><a href="#"><span>Help</span></a></li>
+            <li class="last"><a href="#"><span>Contacts</span></a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- start content -->
+    <div id="content">
+        <div class="post">
+           
+             <h1 class="title"><a href="#">Welcome to Rainbow Site</a></h1>
+            <div class="entry">
+                {{include}}
+            </div>
+            
+        </div>
+    </div>
+    {{form12=db(db.album.id>0).select()}}
+
+    <!-- end content -->
+    <!-- start sidebar two -->
+    <div id="sidebar2" class="sidebar">
+<div id="webwidget_slideshow_common" class="webwidget_slideshow_common">
+<ul>
+{{for i in form12:}}
+<li><a style="line-height:20px;color:#FFF;text-decoration:none;" href="{{=URL(r=request,f="albums",args=i.id)}}" title={{=i.name}}><img border="0" src="{{=URL(r=request, c='default', f='download', args=[i.image])}}" width="150" height="150" /><br/>Title1</a></li>
+{{pass}}
+</ul>
+
+<div style="clear: both"></div>
+</div>
+    </div>
+    <!-- end sidebar two -->
+    <div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<hr />
+<!-- start footer -->
+<div id="footer">
+    
+</div>
+<!-- end footer -->
+</body>
+</html>

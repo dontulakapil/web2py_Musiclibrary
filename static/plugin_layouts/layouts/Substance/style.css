@@ -1,0 +1,315 @@
+/*  
+Theme Name: Unnamed
+Theme URI: http://www.freewpthemes.net/preview/unnamed
+Description: Widget ready and tested on WP 2.2+.
+Version: 2.0
+Author: Free WordPress Themes
+Author URI: http://www.freewpthemes.net/
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #132144 url(images/img01.jpg) repeat-x top center;
+	font-size: 13px;
+	text-align: justify;
+	color: #819CDB;
+}
+
+body, th, td, input, textarea, select, option {
+	font-family: "Trebuchet MS", "Times New Roman", Arial, Times, serif;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #819CDB;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 3em;
+}
+
+h2 {
+	letter-spacing: -1px;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	line-height: 200%;
+}
+
+blockquote {
+	padding-left: 1em;
+}
+
+blockquote p, blockquote ul, blockquote ol {
+	line-height: normal;
+	font-style: italic;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+hr {
+	display: none;
+}
+
+/* Header */
+
+#header {
+	width: 760px;
+	height: 120px;
+	margin: 0 auto;
+	padding: 50px 0 0 0px;
+	background: url(images/img02.jpg) no-repeat right top;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header h1, #header p {
+	float: left;
+	margin: 0;
+}
+
+#header h1 {
+	color: #FFB71C;
+	font-size: 36px;
+}
+
+#header p {
+	padding: 20px 0 0 10px;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#header a {
+	text-decoration: none;
+	color: #FFB71C;
+}
+
+/* Page */
+
+#page {
+	width: 760px;
+	margin: 0 auto;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 480px;
+	margin: 0;
+	background: #132245;
+	border: 10px solid #121F41;
+	margin-bottom: 30px;
+}
+
+.post {
+	padding: 20px 20px 0 20px;
+}
+
+.title {
+	margin: 0;
+	padding-bottom: 5px;
+	border-bottom: 10px solid #121F41;
+	font-size: 24px;
+}
+
+.title a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.pagetitle {
+	border-bottom: 2px solid #0F0F0F;
+}
+
+.byline {
+	margin: 0;
+	color: #646464;
+}
+
+.meta {
+	text-align: left;
+	color: #646464;
+	padding: 10px 10px;
+	background: #121F41;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.meta .more {
+	background: url(images/img03.gif) no-repeat 0px 45%;
+	padding-left: 10px;
+}
+
+.meta .comments {
+	background: url(images/img03.gif) no-repeat 0px 45%;
+	padding-left: 10px;
+}
+.meta a {
+}
+
+.navigation {
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.posts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+.posts li {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0F0F0F;
+}
+
+.posts h3 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.posts p {
+	margin: 0;
+	line-height: normal;
+}
+
+.posts a {
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 260px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0 0 20px 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding: 0px 21px 20px 10px;
+}
+
+#sidebar li li {
+	border-bottom: 1px dotted #0C162F;
+	background: url(images/img03.gif) no-repeat 0px 40%;
+	padding: 0 0 10px 15px;
+}
+
+#sidebar h2 {
+	margin: 0;
+	height: 40px;
+	background: url(images/img04.gif) no-repeat left 60%;
+	padding: 0px 0px 10px 0px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+#sidebar a {
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+}
+
+/* Search */
+
+#search input {
+	display: none;
+}
+
+#search input#s {
+	display: block;
+	width: 230px;
+	padding: 2px 5px;
+	border: 1px solid #3DD1FF;
+	background: #FFFFFF url(images/img05.gif) repeat-x;
+}
+
+#search br {
+	display: none;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar h2 {
+	margin-bottom: 15px;
+}
+
+#calendar table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#calendar caption {
+	width: 100%;
+	text-align: center;
+}
+
+#next {
+	text-align: right;
+}
+
+#prev {
+	text-align: left;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	height: 136px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) repeat-x left top;
+	border-top: 10px solid #121F41;
+	text-align: center;
+	font-size: smaller;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #819CDB;
+}
+
+#footer p {
+	padding-top: 40px;
+	text-transform: uppercase;
+}
+
+#footer p a {
+	color: #FFFFFF;
+}
+

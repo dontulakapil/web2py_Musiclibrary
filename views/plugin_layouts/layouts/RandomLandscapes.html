@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/RandomLandscapes/favicon.ico'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/RandomLandscapes/gorotron2.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="banner">
+    <div id="dashed">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <h2>
+      {{=response.subtitle or '=response.subtitle'}}
+     </h2>
+    </div>
+   </div>
+   <div id="main">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="sideBar">
+    <img src="bg2b.jpg" alt="Tropical Picture" />
+    <ul id="navBar">
+     <li>
+      <a href="index.html">
+       &raquo; Home
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       &raquo; Blog
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       &raquo; Archive
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       &raquo; Store
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       &raquo; Links
+      </a>
+     </li>
+     <li id="noLine">
+      <a href="index.html">
+       &raquo; Contact
+      </a>
+     </li>
+    </ul>
+    <p>
+     The banner up top can be replaced by a picture size 676 x 150.
+    </p>
+    <p>
+     Feel free to use this template however you like, just be sure to leave my link/credit at the bottom. Thanks!
+    </p>
+    <div id="box">
+     <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer euismod ante non diam. Sed eleifend odio sed quam. Sed vulputate, turpis at tincidunt porttitor, est elit consequat metus, non dignissim augue mauris quis arcu.
+     </p>
+    </div>
+   </div>
+   <div id="clear">
+   </div>
+  </div>
+  <div id="bottom">
+  </div>
+  <div id="copy">
+   &copy; 2007 Your Name Here. Site design by
+   <a href="http://www.gorotron.com">
+    gorotron
+   </a>
+   .
+  </div>
+ </body>
+</html>

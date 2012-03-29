@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+{{=row[0].songs.name}}
+<audio  controls="controls" autoplay="autoplay">
+<source src="{{=URL(r=request, f='download', args=[song1.file])}}" >
+</audio>

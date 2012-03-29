@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+{{for i in row:}}
+{{for j in song1:}}
+{{if i.songid == j.id:}}
+{{=i.songid}}
+<audio  controls="controls">
+<source src="{{=URL(r=request, f='download', args=[j.file])}}" >
+</audio>
+<a href={{=URL(r=request,f="rating",args=[i.songid,'1',k[0]])}}>1</a>
+<a href={{=URL(r=request,f="rating",args=[i.songid,'2',k[0]])}}>2</a>
+{{pass}}
+{{pass}}
+{{pass}}

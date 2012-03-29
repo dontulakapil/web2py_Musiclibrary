@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Black Berry
+Description: A fixed-width design suitable for small sites and blogs.
+Version    : 1.0
+Released   : 20071215
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/BlackBerry/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <div id="logo">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+   </div>
+  </div>
+  <div id="menu-wrap">
+   <div id="menu">
+    {{=MENU(response.menu)}}
+   </div>
+  </div>
+  <hr />
+  <div id="latest-post-wrap">
+   <div id="latest-post" class="post">
+    <p class="byline">
+     <span>
+      Posted on December 15th, 2007 by
+      <a href="#">
+       Someone
+      </a>
+     </span>
+    </p>
+    <h1 class="title">
+     <a href="#">
+      About This Free CSS Template
+     </a>
+    </h1>
+    <div class="entry">
+     <img src="images/img06.jpg" alt="" width="300" height="200" class="left" />
+     <p>
+      This is
+      <strong>
+       Black Berry
+      </strong>
+      , a free, fully standards-compliant CSS template designed by
+      <a href="http://www.freecsstemplates.org/">
+       Free CSS Templates
+      </a>
+      .
+     </p>
+     <p>
+      This free template is released under a
+      <a href="http://creativecommons.org/licenses/by/2.5/">
+       Creative Commons Attributions 2.5
+      </a>
+      license, so you’re pretty much free to do whatever you want with it  (even use it commercially) provided you keep the links in the footer  intact. Aside from that, have fun with it :) This design is also  available as a
+      <a href="http://www.freewpthemes.net/preview/blackberry/">
+       WordPress theme
+      </a>
+      at
+      <a href="http://www.freewpthemes.net/">
+       Free Wordpress Themes
+      </a>
+      .
+     </p>
+     <p>
+      Thanks to
+      <a href="http://www.pdphoto.org/">
+       PDPhoto.org
+      </a>
+      for the photo and
+      <a href="http://www.famfamfam.com/">
+       FAMFAMFAM
+      </a>
+      for the icons.
+     </p>
+    </div>
+    <p class="meta">
+     <a href="#" class="comments">
+      14 Comments
+     </a>
+     &nbsp;&nbsp;&nbsp;
+     <a href="#" class="permalink">
+      Permalink
+     </a>
+    </p>
+   </div>
+  </div>
+  <div id="content">
+   <div class="flash">{{=response.flash or ''}}</div>
+   {{include}}
+  </div>
+  <hr />
+  <div id="footer">
+   <p class="legal">
+    &copy;2007 All Rights Reserved. Designed by
+    <a href="http://www.freecsstemplates.org/">
+     Free CSS Templates
+    </a>
+    .
+   </p>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/DeepBlue/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="main">
+   <div id="main_left">
+    <div id="header">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+    </div>
+    <div id="navigation">
+     <ul>
+      <li>
+       <a href="index.html" accesskey="1">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="index.html" accesskey="2">
+        Archives
+       </a>
+      </li>
+      <li>
+       <a href="index.html" accesskey="3">
+        Links
+       </a>
+      </li>
+      <li>
+       <a href="index.html" accesskey="4">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+   </div>
+   <div id="main_right">
+    <div class="label">
+     Categories
+    </div>
+    <ul class="block">
+     <li>
+      <a href="index.html">
+       Some category
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       Another one
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       Third category
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       Fourth and last
+      </a>
+     </li>
+    </ul>
+    <div class="label">
+     Recent Posts
+    </div>
+    <ul class="block">
+     <li>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>

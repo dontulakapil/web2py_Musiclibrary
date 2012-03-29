@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- Template Design by TheWebhub.com | http://www.thewebhub.com | Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines -->
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/EfflorescenceGreen/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <h1>
+    {{=response.title or request.application}}
+   </h1>
+  </div>
+  <div id="menu">
+   {{=MENU(response.menu)}}
+  </div>
+  <div id="page">
+   <div id="page-top">
+    <div id="page-bottom">
+     <div>
+      <div id="sidebar">
+       <h2>
+        {{=response.subtitle or '=response.subtitle'}}
+       </h2>
+       <ul>
+        <li>
+         Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl.
+        </li>
+        <li>
+         Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum.
+        </li>
+       </ul>
+      </div>
+      <div id="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+     </div>
+     <div style="clear: both;">
+      &nbsp;
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <p>
+    Copyright © 2006 Sitename.com. Template Designed by
+    <a href="http://www.thewebhub.com">
+     TheWebHub.com
+    </a>
+    .
+   </p>
+  </div>
+ </body>
+</html>

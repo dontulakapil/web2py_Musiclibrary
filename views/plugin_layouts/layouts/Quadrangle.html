@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Quadrangle/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <h1>
+    {{=response.title or request.application}}
+   </h1>
+   <h2>
+    {{=response.subtitle or '=response.subtitle'}}
+   </h2>
+  </div>
+  <div id="content">
+   <div class="flash">{{=response.flash or ''}}</div>
+   {{include}}
+  </div>
+  <div id="footer">
+   <p>
+    Copyright &copy; 2006 Quadrangle. Designed by
+    <a href="http://www.freecsstemplates.org/">
+     <strong>
+      Free CSS Templates
+     </strong>
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

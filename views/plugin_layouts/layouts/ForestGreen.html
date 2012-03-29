@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/ForestGreen/default.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div>
+   <div class="top">
+    <div class="header">
+     <div class="left">
+      &nbsp;&nbsp;&nbsp;Forest Green
+     </div>
+     <div class="right">
+      <h2>
+       Valid XHTML 1.1 Transitional, Valid CSS 2.
+      </h2>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="navigation">
+     <a href="#" title="Home">
+      Home
+     </a>
+     <a href="#" title="Downloads">
+      Forest Green
+     </a>
+     <a href="#" title="Documentation">
+      Trees
+     </a>
+     <a href="#" title="FAQs">
+      About Us
+     </a>
+     <a href="#" title="Contact Us">
+      Contact Us
+     </a>
+     <div class="clearer">
+      <span>
+      </span>
+     </div>
+    </div>
+    <div class="main">
+     <div class="content">
+      <div class="flash">{{=response.flash or ''}}</div>
+      {{include}}
+     </div>
+     <div class="sidenav">
+      <h2>
+       FlexCMS
+      </h2>
+      <ul>
+       <li>
+        <a href="#" title="Home">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="#" title="Downloads">
+         Forest Green
+        </a>
+       </li>
+       <li>
+        <a href="http://www.flexcms.co.uk/FlexCMS_Documentation.aspx" title="Documentation">
+         Trees
+        </a>
+       </li>
+       <li>
+        <a href="#" title="FAQs">
+         About Us
+        </a>
+       </li>
+       <li>
+        <a href="http://www.flexcms.co.uk/FlexCMS_ContactUs.aspx" title="Contact Us">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+      <h2>
+       Membership
+      </h2>
+      <ul>
+       <li>
+        <a href="#">
+         Login / Register
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Forgot password?
+        </a>
+       </li>
+      </ul>
+      <h2>
+       FlexCMS Bespoke versions
+      </h2>
+      <ul>
+       <li>
+        <a href="http://www.giant-systems.co.uk/">
+         FlexCMS
+        </a>
+       </li>
+       <li>
+        <a href="http://www.giant-systems.co.uk/Ecommerce.aspx">
+         FlexEcommerce
+        </a>
+       </li>
+       <li>
+        <a href="http://www.giant-systems.co.uk/casestudies.aspx">
+         FlexCMS portal server
+        </a>
+       </li>
+       <li>
+        <a href="http://www.giant-systems.co.uk/casestudies.aspx">
+         FlexCMS Intranet
+        </a>
+       </li>
+      </ul>
+      <br />
+      <br />
+     </div>
+     <div class="clearer">
+      <span>
+      </span>
+     </div>
+    </div>
+    <div class="footer">
+     Design by
+     <a href="http://www.giant-systems.co.uk" title="Giant Systems Web design">
+      Giant Systems Ltd
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

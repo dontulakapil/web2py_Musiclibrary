@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Toader/favicon.ico'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Toader/css/site.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <div id="masthead">
+    <img src="./images/your-picture.gif" alt="Your Image Here" />
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <p>
+     Cras placerat, leo ut vestibulum imperdiet, nunc dolor auctor ipsum.
+    </p>
+    <ul>
+     <li>
+      <a href="#">
+       <strong>
+        Home
+       </strong>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <strong>
+        Blog
+       </strong>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <strong>
+        Gallery
+       </strong>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <strong>
+        Links
+       </strong>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <strong>
+        Contact
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="main">
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="footer">
+    <ul>
+     <li>
+      &copy; 2007 Your Name
+     </li>
+     <li>
+      <a href="http://www.gorotron.com">
+       CSS Template
+      </a>
+      by
+      <a href="http://www.gorotron.com">
+       gorotron
+      </a>
+      .
+     </li>
+    </ul>
+    <img src="./images/your-face.gif" alt="Your Face Here" />
+   </div>
+  </div>
+ </body>
+</html>

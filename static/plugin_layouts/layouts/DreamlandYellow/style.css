@@ -1,0 +1,201 @@
+/*
+Template Design by TheWebhub.com
+http://www.thewebhub.com
+Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px 0;
+	background: #FE9701;
+	line-height: 20px;
+	text-align: justify;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #696969;
+}
+
+h1, h2, h3 {
+	padding: 0;
+	font-weight: normal;
+	color: #FF8C00;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #FF8C00;
+}
+
+.link1 {
+	text-align: center;
+}
+
+#logo {
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+}
+#logo h1 {
+	padding-left: 20px;
+	font-size: 4em;
+	color: #FFFFFF;
+}
+
+#menu {
+	width: 800px;
+	height: 60px;
+	margin: 0 auto;
+	background: url(images/img01.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	margin: 0;
+	padding: 23px 30px 0 15px;
+	background: url(images/img04.jpg) no-repeat left 85%;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#menu li.first {
+	margin-left: 40px;
+}
+
+#content {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	background: #FFFFFF;
+}
+
+#content-wrapper-top {
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+#content-wrapper-btm {
+	background: url(images/img03.jpg) no-repeat left bottom;
+}
+
+#left {
+	float: left;
+	margin: 0;
+	padding: 20px 20px 0 30px;
+	width: 250px;
+}
+
+#right {
+	float: right;
+	margin: 0;
+	padding: 20px 30px 20px 20px;
+	width: 450px;
+}
+
+
+#menu-footer {
+	height: 60px;
+	margin: 0 auto;
+}
+
+#menu-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu-footer li {
+	float: left;
+	display: inline;
+}
+
+#menu-footer a {
+	display: block;
+	margin: 0;
+	padding: 23px 30px 0 15px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#menu-footer li.first {
+	margin-left: 40px;
+}
+
+
+#footer {
+	clear: both;
+	width: 800px;
+	height: 42px;
+	margin: 0px auto;
+	padding-top: 13px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #000000;
+}
+
+#footer .copyright {
+	margin: 0px;
+	text-align: center;
+}
+
+#footer .links {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#footer .css {
+	background: #FFFFFF;
+	border: 1px dotted #DE8202;
+	padding: 3px 10px;
+}
+
+#footer .xhtml {
+	padding: 3px 10px;
+	border: 1px dotted #DE8202;
+	background: #FFFFFF;
+}
+
+#footer a {
+	color: #000000;
+}

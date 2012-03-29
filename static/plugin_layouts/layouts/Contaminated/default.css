@@ -1,0 +1,120 @@
+/*#############################################################
+Name: Contaminated
+Date: 2007-01-04
+Description: A trash style website template
+Author: Viktor Persson
+URL: http://templates.arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+/* standard elements */
+html {min-height: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {color: #FF3;}
+a:hover {color: #AA3;}
+
+body {
+	background: #111 url(img/bg.jpg) repeat-x;
+	color: #DDD;
+	font: normal 62.5% "Trebuchet MS",Verdana,sans-serif;
+}
+
+p,code,ul {padding-bottom: 1.2em;}
+
+h1 {
+	font: normal 1.8em Tahoma,sans-serif;
+	margin-bottom: 4px;
+}
+
+h2 {background: url(img/stripes.gif) repeat-x left bottom; color: #CCC; font: normal 2em Impact,sans-serif; margin-bottom: 8px; padding-bottom: 11px; letter-spacing: 1px;}
+
+blockquote {
+	color: #CCA;
+	display: block;
+	font-weight: bold;
+	padding-left: 28px;
+}
+
+h1,h2 {padding-top: 6px;}
+
+/* misc */
+.clearer {
+	clear: both;
+	font-size: 0;
+}
+.left {float: left;}
+.right {float: right;}
+
+/* structure */
+.wrapper {
+	font-size: 1.3em;
+	margin: 0 auto;
+	width: 780px;
+}
+.container {background: url(img/header.gif) no-repeat center top;}
+
+/* title */
+.title {
+	font: normal 3em Tahoma,sans-serif;
+	text-decoration: line-through;
+}
+.olive {color: #CCA;}
+
+/* sub navigation */
+.sidenav {
+	background: url(img/sidenav.gif) no-repeat right top;
+	padding-top: 126px;
+	float: right;
+	width: 210px;
+}
+.sidenav h2 {
+	color: #9A3;
+	font-size: 1.4em;
+	line-height: 30px;
+	margin: 0;
+}
+.sidenav ul {padding: 0.5em 0 0 0.5em;}
+.sidenav li {list-style: none;}
+.sidenav li a {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: #777;
+	text-decoration: none;
+}
+.sidenav li a:hover {color: #8DCA3F;}
+
+/* content */
+.content {
+	float: left;
+	margin: 10px 0;
+	padding-top: 32px;
+	width: 531px;
+}
+.content .descr {
+	color: #8DC63F;
+	margin-bottom: 6px;
+}
+.content li {margin-left: 18px;}
+
+/* footer */
+.footer {
+	background: url(img/bgfooter.gif) repeat-x;
+	border-top: 1px dashed #333;
+	color: #777;
+	font: normal 0.9em sans-serif;
+}
+.footer a {
+	color: #784;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #AA3;
+	text-decoration: underline;
+}
+.footer .left, .footer .right {padding: 10px 0;}

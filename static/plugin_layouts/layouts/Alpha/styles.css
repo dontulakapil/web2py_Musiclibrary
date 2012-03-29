@@ -1,0 +1,229 @@
+/* alpha - a free web template by spyka webmaster
+   http://www.spyka.net
+*/
+
+/* page */
+html, * {
+	padding:0;
+	margin:0;
+}
+body {
+	background-color:#000000;
+	margin:0 auto;
+	font-size:1.0em;
+	color:#ffffff;
+	font-family:"Trebuchet MS", Verdana, Arial;
+}
+
+/* headers */
+h1 {
+	font-size:3.4em;
+	text-align:center;
+	padding-top:20px;
+	color:#ffffff;
+}
+h2 {
+	color:#D37E3D;
+}
+h3 {
+	font-size:1.4em;
+	font-weight:normal;
+	color:#85511F;
+}
+h4 {
+	background-color:#C56C28;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	padding:5px;
+	color:#FFFFFF;
+}
+
+/* paragraphs */
+p {
+	margin:2px 0 15px 0;
+	line-height:1.6em;
+}
+
+/* links */
+a {
+	color:#D37E3D;
+	text-decoration:underline;
+}
+a:hover {
+	color:#E1A77A;
+}
+div#footer a {
+	color:#ffffff;
+	border-bottom:none;
+	text-decoration:underline;
+}
+div#footer a:hover {
+	background-color:transparent;
+}
+div#sidebar ul li a { 
+	color:#ffffff;
+	background-color:#C56C28;
+	text-decoration:none;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:1.0em;
+	padding:2px;
+}
+div#sidebar ul li a:hover {
+	background-color:#85511F;
+}
+
+/* lists */
+ul, ol {
+	margin:0 0 5px 30px;
+}
+
+/* code */
+code {
+	display:block;
+	color:#C56C28;
+	border:1px solid #C56C28;
+	background-color:#EBC2A3;
+	padding:15px;
+	margin:5px;
+}
+
+/* forms */
+form {
+	padding:10px;
+	margin:0;
+	width:50%;
+	border:1px solid #333333;
+	background-image:url('images/content-bg.jpg');
+	background-repeat:repeat-x;
+	background-color:#000000;
+}
+form fieldset {
+	border:none;
+	margin:0;
+	padding:0;
+}
+form fieldset legend {
+	margin-left:-8px;
+	font-weight:bold;
+	color:#C56C28;
+	font-size:1.2em;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+form label {
+	font-weight:bold;
+}
+form input, form select, form textarea {
+	padding:4px;
+	color:#C56C28;
+	font-size:1.1em;
+	font-family:"Trebuchet MS", Verdana, Arial;
+}
+form input.button {
+	font-weight:bold;
+	color:#C56C28;
+	background-color:#EBC2A3;
+	border:none;
+}
+	
+/* container, header and nav */
+div#container {
+	width:95%;
+	padding:0 2px;
+	margin:0 auto;
+}
+div#header {
+	height:180px;
+	background-image:url('images/header-bg.jpg');
+	background-repeat:no-repeat;
+	background-position:50px bottom;
+	padding:10px;
+	border-bottom:5px solid #303030;
+}
+div#header p {
+	text-align:center;
+	padding:0;
+	margin:0;
+	font-size:0.8em;
+	color:#ffffff;
+}
+div#nav {
+	background-image:url('images/menu-item.jpg');
+	background-repeat:repeat-x;
+	height:40px;
+}
+div#nav ul {
+	margin:0 0 0 20px;
+	padding:0;
+	border-left:1px solid #CA5B00;
+	height:40px;
+	float:left;
+	border-right:1px solid #FFB475;
+}
+div#nav ul li {
+	display:block;
+	float:left;
+}
+div#nav ul li a {
+	float:left;
+	border:none;
+	padding:8px 10px 0 10px;
+	height:32px;
+	font-weight:bold;
+	border-left:1px solid #FFB475;
+	border-right:1px solid #CA5B00;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	display:block;
+}
+div#nav ul li a:hover {
+	background-image:url('images/menu-item.jpg');
+	background-repeat:repeat-x;
+	background-position:0 -40px;
+}
+/* content */
+div#content {
+	padding:20px 10px 0 10px;
+	background-image:url('images/content-bg.jpg');
+	background-repeat:repeat-x;
+}
+div#page {
+	width:67%;
+	float:left;
+}
+div#sidebar {
+	width:28%;
+	float:right;
+}
+div#sidebar p {
+	padding:3px 5px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+div#sidebar ul {
+	list-style:none;
+	margin:7px 12px;
+}
+div#sidebar ul li {
+	padding:3px 0;
+}
+
+/* footer */
+div#footer {
+	padding:5px 5px 30px 5px;
+	background-color:#C56C28;
+	color:#ffffff;
+}
+div#footer p {
+	font-size:0.7em;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	text-align:center;
+	margin:0;
+	padding:5px;
+}
+
+/* generic classes */
+.bold {
+	font-weight:bold;
+}
+.clear {
+	clear:both;
+}

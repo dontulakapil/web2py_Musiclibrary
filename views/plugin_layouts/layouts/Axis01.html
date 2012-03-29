@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Axis01/css/main.css'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Axis01/css/scheme.css'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Axis01/css/print.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- Header -->
+  <div id="header">
+   <div class="main">
+    <!-- Your logo -->
+    <h3 id="logo">
+     <a href="#">
+      Your
+      <span>
+       website
+      </span>
+      name
+     </a>
+    </h3>
+    <!-- Your slogan -->
+    <p id="slogan">
+     Place for your business slogan
+    </p>
+    <hr class="noscreen" />
+    <!-- Hidden navigation -->
+    <p class="noscreen noprint">
+     <em>
+      Quick links:
+      <a href="#content">
+       content
+      </a>
+      ,
+      <a href="#nav">
+       navigation
+      </a>
+      ,
+      <a href="#search">
+       search
+      </a>
+      .
+     </em>
+    </p>
+    <hr class="noscreen" />
+    <!-- Search form -->
+    <div id="search">
+     <form action="" method="get">
+      <div>
+       <span class="noscreen">
+        Fulltext:
+       </span>
+       <input type="text" size="30" name="query" id="search-input" />
+       <input type="submit" value="Search" id="search-submit" />
+      </div>
+     </form>
+    </div>
+    <!-- /search -->
+   </div>
+   <!-- /main -->
+  </div>
+  <!-- /header -->
+  <hr class="noscreen" />
+  <!-- Horizontal navigation -->
+  <div id="nav" class="box">
+   {{=MENU(response.menu)}}
+  </div>
+  <!-- /nav -->
+  <hr class="noscreen" />
+  <!-- 2 columns (Content and Sidebar) -->
+  <div id="cols">
+   <div class="main box">
+    <!-- Content -->
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <!-- /content -->
+    <hr class="noscreen" />
+    <!-- Sidebar -->
+    <div id="aside">
+     <h3>
+      Lorem ipsum dolor sit amet
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+     </ul>
+     <h3>
+      Lorem ipsum dolor sit amet
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Lorem ipsum sit dolor amet
+       </a>
+      </li>
+     </ul>
+     <hr class="noscreen" />
+     <h3>
+      Contact
+     </h3>
+     <address>
+      <strong>
+       Your website name
+      </strong>
+      <br />
+      Our Street 1557, Our City
+      <br />
+      <a href="#">
+       your@email.com
+      </a>
+     </address>
+    </div>
+    <!-- /aside -->
+   </div>
+   <!-- /main -->
+  </div>
+  <!-- /cols -->
+  <hr class="noscreen" />
+  <!-- Footer -->
+  <div id="footer">
+   <div class="main">
+    <!-- Do you want remove this backlinks? Look at www.nuviotemplates.com/payment.php -->
+    <p class="f-right">
+     <a href="http://www.nuviotemplates.com/">
+      Free web templates
+     </a>
+     by
+     <a href="http://www.nuvio.cz/">
+      Nuvio
+     </a>
+     &ndash; sponzored by
+     <a href="http://www.wellnesshotely.cz/">
+      wellness hotely
+     </a>
+    </p>
+    <!-- Do you want remove this backlinks? Look at www.nuviotemplates.com/payment.php -->
+    <p>
+     &copy;&nbsp;2008
+     <a href="#">
+      Your website name
+     </a>
+    </p>
+   </div>
+   <!-- /main -->
+  </div>
+  <!-- /footer -->
+ </body>
+</html>

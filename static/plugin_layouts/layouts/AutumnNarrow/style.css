@@ -1,0 +1,147 @@
+body {
+	background:#333;
+	font-family:arial, helvetica, sans-serif;
+	font-size:9pt;
+	margin:0;
+	padding:0;
+}
+
+#container {
+	width:530px;
+	background:#fff;
+	padding:10px;
+	margin:10px auto 10px auto;
+}
+
+#header {
+	background:url(images/header.jpg) top left no-repeat #fff;
+	width:530px;
+	height:150px;
+	margin:0;
+	padding:0;
+}
+
+#header h1 {
+	color:#fff;
+	margin:0;
+	padding:10px;
+	text-transform:lowercase;
+	font-weight:normal;
+	font-size:24pt;
+}
+
+#header p {
+	text-align:right;
+	padding:50px 10px 10px 10px;
+	color:#fff;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+#nav {
+	margin:10px 0 0 0;
+	padding:0 10px 0 10px;
+	height:37px;
+	width:510px;
+	background:url(images/nav_off.jpg) top left repeat-x #27cd3d;
+}
+
+#nav li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+#nav li a {
+	color:#fff;
+	font-weight:bold;
+	font-size:12pt;
+	text-decoration:none;
+	padding:0 10px 4px 10px;
+	display:block;
+	margin:0;
+	line-height:33px;
+	overflow:hidden;
+	float:left;
+}
+
+#nav li a:hover {
+	background:url(images/nav_on.jpg) top left repeat-x #f6502e;
+}
+
+#content {
+	margin-top:10px;
+}
+
+#content .date {
+	width:48px;
+	height:73px;
+	float:left;
+	font-weight:bold;
+	text-align:center;
+	padding:5px;
+	background:url(images/date_block.jpg) top left no-repeat #fff;
+	border:10px solid #fff;
+}
+
+#content h2 {
+	font-size:22pt;
+	color:#f6502e;
+	font-family:georgia, times, serif;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+}
+
+#content .post {
+	margin-left:90px;	
+}
+
+#footer {
+	border-top:1px solid #f6502e;
+	color:#f6502e;
+	margin-top:10px;
+	padding:10px;
+	text-align:center;
+	font-size:8pt;
+}
+
+p.postmeta {
+	clear:both;
+	font-size:8pt;
+	text-align:right;
+	padding:2px;
+	background:#e6f49c;
+	margin:0;
+}
+
+p.postmeta a, p.postmeta a:hover {
+	color:#000;
+	background:none;
+}
+
+a {
+	color:#128A28;
+}
+
+a:hover {
+	color:#F9502D;
+	background:#F4FBD2;
+}
+
+#photos {
+	position:relative;
+	width:370px;
+	margin:0 auto 0 auto;
+}
+
+.imgbox {
+	position:relative;
+	padding:5px;
+	border:1px solid #000;
+	margin:10px;
+	width:88px;
+	height:88px;
+	float:left;
+}

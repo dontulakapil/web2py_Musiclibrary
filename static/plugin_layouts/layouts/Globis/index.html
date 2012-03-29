@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Globis</title>
+ <style type="text/css">
+
+ /*
+  USAGE:
+  Copy and paste this one line into your site's CSS stylesheet.
+  Add comma-separated CSS selectors / element names that have transparent PNGs.
+  The path to the HTC is relative to the HTML file that includes it.
+  See below for another method of activating the script without adding CSS here.
+ */
+
+ img, div, input { behavior: url("iepngfix.htc") }
+
+
+ /*
+  Here's an example you might use in practice:
+  img, div, .pngfix, input { behavior: url("/css/iepngfix.htc") }
+ */
+
+ </style>
+
+ <script type="text/javascript">
+ //<![CDATA[
+
+ // If you don't want to put nonstandard properties in your stylesheet, here's yet
+ // another means of activating the script. This assumes that you have at least one
+ // stylesheet included already in the document above this script.
+ // To activate, delete the CSS rules above and uncomment below (remove /* and */ ).
+
+ /*
+ if (document.all && /MSIE (5\.5|6)/.test(navigator.userAgent) &&
+  document.styleSheets && document.styleSheets[0] && document.styleSheets[0].addRule)
+ {
+  document.styleSheets[0].addRule('*', 'behavior: url(iepngfix.htc)');
+  // Feel free to add rules for specific elements only, as above.
+  // You have to call this once for each selector, like so:
+  //document.styleSheets[0].addRule('img', 'behavior: url(iepngfix.htc)');
+  //document.styleSheets[0].addRule('div', 'behavior: url(iepngfix.htc)');
+ }
+ */
+
+
+ // Here's another script that disables all PNGs in IE when the page is printed.
+ /*
+ if (window.attachEvent  && /MSIE (5\.5|6)/.test(navigator.userAgent))
+ {
+  function printPNGFix(disable)
+  {
+   for (var  i = 0; i < document.all.length; i++)
+   {
+    var e = document.all[i];
+    if (e.filters['DXImageTransform.Microsoft.AlphaImageLoader'] || e._png_print)
+    {
+     if (disable)
+     {
+      e._png_print = e.style.filter;
+      e.style.filter = '';
+     }
+     else
+     {
+      e.style.filter = e._png_print;
+      e._png_print = '';
+     }
+    }
+   }
+  };
+  window.attachEvent('onbeforeprint',  function() { printPNGFix(1) });
+  window.attachEvent('onafterprint',  function() { printPNGFix(0) });
+ }
+ */
+
+ //]]>
+ </script>
+
+ <!--
+  Final word of advice: You can wrap the STYLE element above in IE conditional
+  comments like below to prevent the .HTC being downloaded by IE7+ at all.
+  It's by no means required, and will most likely break IE6 installed alongside
+  IE7 on the same computer (despite working fine in vanilla system-wide IE6).
+ -->
+ <!--[if lte IE 6]><style>/* Activate it here */</style><![endif]-->
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #284E73;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+a:link {
+	color: #8A9BAD;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #909DAD;
+}
+a:active {
+	color: #284E73;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+h1 {
+	background-image:url(images/heading.png);
+	background-repeat:no-repeat;
+	padding-left: 30px;
+	line-height: 25px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+h2 {
+	background-image:url(images/heading.png);
+	background-repeat:no-repeat;
+	padding-left: 30px;
+	line-height: 25px;
+	font-size: 18px;
+	color: #8A9BAD;
+}
+h3 {
+	background-image:url(images/heading.png);
+	background-repeat:no-repeat;
+	padding-left: 30px;
+	line-height: 25px;
+	font-size: 18px;
+	color: #284E73;
+}
+blockquote {
+border:#8A9BAD solid 1px;
+padding: 15px;
+width:auto;
+}
+-->
+</style>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0" background="images/back.jpg" bgcolor="#0E1629">
+  <tr>
+    <td><div class="top"></div>
+    <div class="left">
+      <div class="content">Main Menu</div>
+    </div>
+    <div class="right">
+      <div class="content">Welcome to Globis Template</div>
+    </div>
+    <div class="left-content"><div class="themenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Link 1</a></li>
+             <li><a href="index.html">Link 2</a></li>
+              <li><a href="index.html">Link 3</a></li>
+               <li><a href="index.html">Link 4</a></li>
+                <li><a href="index.html">Link 5</a></li>
+          </ul>
+          </div></div>
+    <div class="right-content">
+      <p>Globis Template was developed by Communivoice Communications and offers compatibility and flexibilty.</p>
+      <ul>
+        <li>Vertical CSS Menu</li>
+        <li>Left, Right, and Content layout.</li>
+        <li>Easy to customize Headings and Links</li>
+        <li>Blockquote Styling</li>
+        <li>XHTML Compliant</li>
+        </ul>
+      <p>Visit www.communivoice.com for more free templates and web design services.</p>
+    </div>
+    <div class="header">
+      <div class="content">Features of the Template</div>
+    </div>
+    <div class="content">
+      <h1>Heading 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui. </p>
+      <h2>Heading 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui. </p>
+      <h3>Heading 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui. </p>
+      <h3><strong>Blockquote</strong></h3>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui. </p>
+      </blockquote>
+      <h3><strong>Links</strong></h3>
+      <p><a href="http://www.communivoice.com">Link to Communivoice Communications.</a></p>
+      </div>
+    <div class="bottom"> <div align="center">
+      <p>&nbsp;</p>
+      <p><strong>&copy; 2008 Your Company Name. All Rights Rerserved.</strong></p>
+      <p><a href="http://www.communivoice.com">Web Template Design</a> by Communivoice.com</p>
+    </div></div>
+   </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/OurHouse/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <span>
+     is a very, very, very fine house
+    </span>
+   </div>
+   <div id="main">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="right">
+    <h2>
+     Navigation
+    </h2>
+    <div id="nav">
+     {{=MENU(response.menu)}}
+    </div>
+    <h2>
+     News
+    </h2>
+    <p>
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec placerat semper dolor. Vivamus rutrum arcu vel turpis. Donec elit. Integer volutpat tellus consequat quam auctor congue.
+     <a href="#">
+      Read More &raquo;
+     </a>
+    </p>
+   </div>
+   <div id="footer">
+    <p>
+     Copyright&copy;2007 You XHTML template by
+     <a href="http://karenblundell.com">
+      Karen Blundell
+     </a>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

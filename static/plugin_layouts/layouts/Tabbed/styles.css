@@ -1,0 +1,231 @@
+/* tabbed - a free web template by spyka webmaster
+   http://www.spyka.net
+*/
+
+/* page */
+html, * {
+	padding:0;
+	margin:0;
+}
+body {
+	background-color:#134550;
+	margin:40px auto 0 auto;
+	font-size:1.0em;
+	color:#303030;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+/* headers */
+h1 {
+	font-size:3.4em;
+	text-align:center;
+	padding-top:20px;
+	color:#ffffff;
+}
+h2 {
+	color:#B2432A;
+}
+h3 {
+	font-size:1.3em;
+	font-weight:normal;
+	color:#134550;
+	border-bottom:1px solid #DDDDDD;
+}
+h4 {
+	background-color:#134550;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	padding:5px;
+	color:#FFFFFF;
+}
+
+/* paragraphs */
+p {
+	margin:2px 0 15px 0;
+	line-height:1.3em;
+}
+
+/* links */
+a {
+	color:#134550;
+	text-decoration:underline;
+}
+a:hover {
+	color:#CE6852;
+}
+div#footer a {
+	color:#ffffff;
+	border-bottom:none;
+	text-decoration:underline;
+}
+div#footer a:hover {
+	background-color:transparent;
+}
+div#sidebar ul li a { 
+	color:#999999;
+	border-bottom:1px solid #CCCCCC;
+	text-decoration:none;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+}
+div#sidebar ul li a:hover {
+	background-color:#DDDDDD;
+}
+
+/* lists */
+ul, ol {
+	margin:0 0 5px 30px;
+}
+
+/* code */
+code {
+	display:block;
+	color:#ffffff;
+	border:1px solid #D46349;
+	background-color:#DE8673;
+	padding:15px;
+	margin:5px;
+}
+
+/* forms */
+form {
+	padding:10px 0;
+	width:50%;
+}
+form fieldset {
+	border:none;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	padding:5px;
+}
+form fieldset legend {
+	margin-left:-8px;
+	font-weight:bold;
+	color:#D46349;
+	font-size:0.8em;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+form label {
+	font-weight:bold;
+}
+form input, form select, form textarea {
+	padding:4px;
+	color:#D46349;
+	font-size:0.9em;
+	font-family:"Trebuchet MS", Verdana, Arial;
+}
+form input.button {
+	font-weight:bold;
+	color:#D46349;
+	background-color:#E8AA9C;
+	border:none;
+}
+	
+/* container, header and nav */
+div#container {
+	width:95%;
+	padding:0 2px;
+	margin:0 auto;
+}
+div#header {
+	height:120px;
+	padding:10px;
+}
+div#sitename {
+	float:right;
+	width:28%;
+}
+
+div#header p {
+	text-align:center;
+	padding:0;
+	margin:0;
+	font-size:0.8em;
+	color:#ffffff;
+}
+ul#nav {
+	width:66%;
+	float:left;
+	height:34px;
+	margin:0;
+	padding:96px 0 0 0;
+}
+ul#nav li {
+	display:block;
+	float:left;
+	background-image:url('images/menu-item-right.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin-left:5px;
+}
+ul#nav li a {
+	float:left;
+	border:none;
+	padding:9px 15px;
+	height:34px;
+	font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	background-image:url('images/menu-item-left.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+ul#nav li.selected {
+	background-image:url('images/menu-item-right-selected.jpg');
+}
+ul#nav li.selected a {
+	color:#333333;
+	background-image:url('images/menu-item-left-selected.jpg');
+}
+ul#nav li a:hover {
+	background-color:transparent;
+}
+
+/* content */
+div#content {
+	padding:20px 10px 0 10px;
+	background-color:#ffffff;
+}
+div#page {
+	width:67%;
+	float:left;
+}
+div#sidebar {
+	width:28%;
+	float:right;
+}
+div#sidebar p {
+	padding:3px 5px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+div#sidebar ul {
+	list-style:none;
+	margin:7px 12px;
+}
+div#sidebar ul li {
+	padding:3px 0;
+}
+
+/* footer */
+div#footer {
+	padding:5px 5px 30px 5px;
+	background-color:#DE8673;
+	color:#ffffff;
+}
+div#footer p {
+	font-size:0.7em;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	text-align:center;
+	margin:0;
+	padding:5px;
+}
+
+/* generic classes */
+.bold {
+	font-weight:bold;
+}
+.clear {
+	clear:both;
+}

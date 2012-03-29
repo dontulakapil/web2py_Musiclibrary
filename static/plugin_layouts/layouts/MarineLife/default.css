@@ -1,0 +1,133 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 20px 0;
+	padding: 0;
+	background: #037881;
+	color: #85EEF6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #C3F2F6;
+}
+
+p, ul, ol, blockquote {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+h2 {
+	padding-left: 30px;
+	background: url(images/img4.gif) no-repeat left center;
+}
+
+h3, #colTwo h2 {
+	padding-left: 25px;
+	background: url(images/img5.gif) no-repeat left center;
+	font-size: medium;
+}
+
+a {
+	color: #C3F2F6;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.posted {
+	padding-top: 10px;
+	border-top: 1px solid #037881;
+	font-size: x-small;
+}
+
+/* Header */
+
+#header {
+	width: 710px;
+	height: 190px;
+	margin: 0 auto 20px auto;
+	background: #03666E url(images/img1.jpg);
+}
+
+#header * {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	margin: 0;
+	padding: 130px 0 0 30px;
+}
+
+#header h2 {
+	float: left;
+	margin: 0;
+	padding: 148px 0 0 0;
+	background: none;
+	font-size: small;
+}
+
+/* Content */
+
+#content {
+	width: 710px;
+	margin: 0 auto;
+	background: url(images/img7.gif) repeat-y;
+}
+
+#colOne {
+	float: left;
+	width: 400px;
+	padding: 20px 20px 10px 20px;
+	background: #03666E url(images/img2.gif) no-repeat left top;
+}
+
+#colTwo {
+	float: right;
+	width: 210px;
+	padding: 25px 20px 0 20px;
+	background: #03666E url(images/img3.gif) no-repeat right top;
+}
+
+#colTwo ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+#colTwo h2 {
+	margin: 20px 0 10px 0;
+}
+
+#colTwo ul ul {
+	margin-left: 25px;
+}
+
+/* Footer */
+
+#footer {
+	width: 710px;
+	height: 100px;
+	margin: 0 auto;
+	background: url(images/img8.jpg) no-repeat 0px 20px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 48px 0 0 20px;
+	font-size: x-small;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

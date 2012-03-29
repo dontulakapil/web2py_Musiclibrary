@@ -1,0 +1,142 @@
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #767B7F;
+}
+h1 {
+	color: #00F;
+	margin-top: 4px;
+}
+h3 {
+	color: #90A9BD;
+}
+img {
+	border: none;
+}
+#container {
+	margin: auto;
+	width: 800px;
+	height: auto;
+	background-color: #FFF;
+	text-align: center;
+	background-image: url(bg.jpg);
+	border: thick groove Blue;
+	color: #767B7F;
+}
+#header {
+	text-align: center;
+	background-image: url(header.jpg);
+	height: 160px;
+	width: 800px;
+	margin-bottom: 0;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+#mainCell {
+	text-align: center;
+	width: 800px;
+	-moz-width:auto;
+	height: auto;	
+
+}
+#content {
+	width: 790px;
+	height: auto;
+	margin: auto;
+	text-align: left;
+}
+#footer {
+	background-image: url(footer.gif);
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 800px;
+	text-align: center;
+	font-size: 10px;
+}
+a {
+	color: #6B78A9;	
+	text-decoration: none;
+}
+a:hover {
+	color: #00F;
+	text-decoration: underline;
+}
+.news {
+	width: 160px;
+	height: auto;
+	border: thin;
+	border-color: Gray;
+	background-color: #A4BACF;
+	clear: right;
+	float: right;
+	text-align: left;
+	border-style: solid;
+	color: #000;
+	font-size: 12px;
+	padding: 2px;
+}
+.news h4 {
+	text-align: center;
+	margin-top: 4px;
+	margin-bottom: 4px;	
+}
+.news a {
+	color: #00f;	
+	text-decoration: none;
+}
+.news a:hover {
+	color:#6B78A9;
+	text-decoration: underline;
+}
+    #tabs {
+      float:left;
+      width:100%;
+      font-size:93%;
+      line-height:normal;
+
+      }
+    #tabs ul {
+	margin: 0;
+	padding: 2px 10px 0 5px;
+	list-style: none;
+}
+    #tabs li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #tabs a {
+      float:left;
+      background:url("tableft.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 7px;
+      text-decoration:none;
+      }
+    #tabs a span {
+      float:left;
+      display:block;
+      background:url("tabright.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#6B78A9;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabs a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabs a:hover span {
+      color:#6B78A9;
+      }
+    #tabs a:hover {
+      background-position:0% -42px;
+      }
+    #tabs a:hover span {
+      background-position:100% -42px;
+      }
+
+      #tabs #current a {
+              background-position:0% -42px;
+      }
+      #tabs #current a span {
+              background-position:100% -42px;
+      }
+
+

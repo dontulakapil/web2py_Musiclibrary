@@ -1,0 +1,301 @@
+/*  
+Template Name: LightSpeed
+Theme URI: http://www.thewebhub.com/2008/11/lightspeed/
+Description: A two-column, dark-themed design suitable for personal websites and blogs use. This design fits in a 1024x768 screen resolutions.
+Author: Enjay
+Author URI: http://aboutenjay.com/
+(c)2008 Enjay and TheWebHub.com
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #000 url(images/bg.png);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #999;
+}
+
+h1, h2, h3, p, ul, ol {
+	margin-top: 0;
+}
+
+h1, h2, h3 {
+	text-transform: lowercase;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 250%;
+}
+
+h2 {
+	letter-spacing: -1px;
+	font-size: 167%;
+}
+
+h3 {
+	font-size: 123.1%;
+}
+
+p, ul, ol {
+	margin-bottom: 1.8em;
+	line-height: 180%;
+}
+
+strong, em {
+	color: #ddd;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	border-bottom: 1px dotted #333;
+	color: #eee;
+}
+
+a:visited {
+	color: #ccc;
+	border-bottom: 1px dotted #666;
+}
+
+a:hover {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+a img {
+	border: none;
+}
+
+/* WRAP - Encloses everything to add the header background. */
+
+#wrap {
+	background: url(images/header_bg.png) no-repeat 50% 0;
+}
+
+/* HEADER - Contains the logo, slogan and menu. */
+
+#header {
+	width: 960px;
+	height: 150px;
+	margin: 0 auto;
+	text-transform: lowercase;
+}
+
+/* LOGO & SLOGAN */
+
+#header h1, #header h2 {
+	margin: 0;
+	text-align: center;
+	color: #000;
+}
+
+#header h1 {
+	padding-top: 35px;
+}
+
+#header a {
+	border: none;
+	color: #000;
+}
+
+#header a:hover {
+	color: #fff;
+}
+
+/* MENU */
+
+#header ul {
+	margin: 0;
+	padding: 1em 0 0 0;
+	line-height: normal;
+	list-style: none;
+	text-align: center;
+}
+
+#header li {
+	display: inline;
+}
+
+#header li a {
+	padding: 0 1em;
+	font-weight: bold;
+	color: #fff;
+}
+
+#header li a:hover {
+	background: url(images/post_entry_bg.png) repeat-x 0 50%;
+	color: #000;
+}
+
+/* PAGE - Contains the main content and the sidebar. */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* CONTENT - The main content area. */
+
+#content {
+	float: left;
+	width: 640px;
+}
+
+/* POST - Contains a section of the content. Grouping content is neat. */
+
+.post {
+	margin-bottom: 20px;
+}
+
+.post .title {
+	height: 35px;
+	margin: 0;
+	padding: 6px 0 0 20px;
+	background: url(images/post_title_bg.png) repeat-x;
+	font-size: 153.9%;
+	font-weight: normal;
+	color: #fff;
+}
+
+.post .title a {
+	border: none;
+	color: #fff;
+}
+
+.post .entry {
+	padding: 20px 20px 1px 20px;
+	background: url(images/post_entry_bg.png);
+}
+
+.post .byline {
+	font-size: smaller;
+	color: #666;
+}
+
+.post .byline a {
+	font-weight: bold;
+	color: #999;
+}
+
+.post .meta {
+	background: url(images/post_meta_bg.png);
+	border-top: 1px solid #000;
+}
+
+.post .meta p {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #000;
+	line-height: normal;
+	color: #666;
+}
+
+.post .meta a {
+	border: none;
+	color: #999;
+}
+
+.post .meta a:hover {
+	color: #fff;
+}
+
+.post .meta .tags {
+	padding-left: 30px;
+	background: url(images/tag_green.png) no-repeat 10px 50%;
+}
+
+.post .meta .tags a {
+}
+
+.post .meta .links {
+}
+
+.post .meta .links a {
+	padding-left: 22px;
+}
+
+.post .meta .comments {
+	background: url(images/comments.png) no-repeat 0 50%;
+}
+
+.post .meta .permalink {
+	background: url(images/world_link.png) no-repeat 0 50%;
+}
+
+.post .meta .more {
+	background: url(images/bullet_go.png) no-repeat 0 50%;
+}
+
+/* SIDEBAR - For extra links and ad spaces. */
+
+#sidebar {
+	float: right;
+	width: 300px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding: 20px;
+}
+
+#sidebar li li {
+	padding: 2px 0;
+	border-bottom: 1px dotted #333;
+}
+
+#sidebar li li a {
+	border: none;
+}
+
+#sidebar li li a:hover {
+	padding-left: 20px;
+	background: url(images/bullet_go.png) no-repeat 0 50%;
+	color: #fff;
+}
+
+#sidebar h2 {
+	height: 35px;
+	margin: 0;
+	padding: 6px 0 0 20px;
+	background: url(images/post_title_bg.png) repeat-x;
+	font-size: 153.9%;
+	font-weight: normal;
+	color: #fff;
+}
+
+#sidebar .pad {
+	padding: 20px;
+}
+
+/* FOOTER - For footnotes and copyright notices. */
+
+#footer {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-top: 1px solid #000;
+	text-align: center;
+	font-size: smaller;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+}
+
+#footer .legal img {
+	margin-top: 1em;
+}

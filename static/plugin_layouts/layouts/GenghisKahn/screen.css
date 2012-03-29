@@ -1,0 +1,164 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	line-height: 1.6em;
+	background-color: #000033; 
+	font: normal 13px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+}
+
+/* Links */
+
+a:link { text-decoration: none; color: #335577; font-weight: bold; padding: 0 5px; }
+
+a:visited { text-decoration: none; color: #557799; font-weight: bold; padding: 0 5px; }
+
+a:hover, a:active { color: #990000; background-color: #eae5cf; }
+
+/* HTML Elements */
+
+h1, h2, h3, h4, h5, h6 
+{ 
+	font-weight: normal; 
+	margin: 0; 
+	padding: 10px 0; 
+	color: #990000;
+}
+
+h1 { font-size: 28px; }
+
+h2 { font-size: 24px; }
+
+h3 { font-size: 20px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 16px; font-weight: bold; }
+
+h6 { font-size: 14px; text-transform: uppercase; }
+
+ul { list-style-type: square; }
+
+dl { margin: 0 20px; border-left: 5px solid #485ba8; }
+
+dt, dd { margin: 0; padding: 0 10px; }
+
+dt { padding-top: 5px; }
+
+dd { padding-top: 10px; padding-bottom: 10px; }
+
+dt.alt, dd.alt { background-color: #eeeeee; }
+
+blockquote 
+{ 
+	background-color: #eeeeee; 
+	border-left: 5px solid #485ba8; 
+	padding: 10px; 
+	margin: 5px 20px; 
+}
+
+code { color: #996633; font-family: Consolas, Verdana, "Courier New", Sans-Serif; font-size: 12px; }
+
+acronym { border-bottom: 1px dotted #000000; }
+
+/* Structure */
+
+#container { background-color: #f9f9f9; color: #000000; float: left; width: 100%; }
+
+#header { background-color: #000033; color: #f9f9f9; }
+
+#navigation { float: left; width: 100%; } 
+
+#wrapper { width: 80%; margin: 0 auto; }
+
+#content-wrapper { float: left; width: 60%; }
+
+#content { float: left; padding: 20px; }
+
+#sidebar-wrapper { float: left; width: 40%; }
+
+#sidebar { float: left; padding: 20px; }
+
+#footer 
+{
+	text-align: center; 
+	clear: both;
+	font-size: 11px; 	
+	color: #999999;
+	padding: 10px 0;
+	background-color: #000033;
+}
+
+/* Header */
+
+#header h1, #header h2 { padding-left: 10px; margin: 0; }
+
+#header h1 { padding-bottom: 0; padding-top: 20px; }
+
+#header h2 { padding-bottom: 20px; color: #999999; font-size: 16px; }
+
+#header h1 a:link, #header h1 a:visited { color: #b7bfbf; padding: 0; }
+
+#header h1 a:hover, #header h1 a:active { background-color: transparent; color: #ffce40; }
+
+/* Navigation */
+
+#navigation ul 
+{ 
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	float: left; 
+	width: 100%; 
+	background-color: #eff5e8;
+}
+
+#navigation li { float: left; margin: 0; padding: 0; }
+
+#navigation li a
+{
+	float: left;
+	display: block;
+	padding: 5px 10px; 
+}
+
+#navigation li a:hover,
+#navigation li a:active
+{
+	background-color: #000033;
+	color: #ffffff;
+}
+
+body#bhome li#home a,
+body#babout li#about a,
+body#bcontact li#contact a,
+body#bblog li#blog a,
+body#bnews li#news a
+{
+	background-color: #8c9fec;
+	color: #000033;
+}
+
+/* Content */
+
+#content a:link{ border-bottom: 1px dotted #335577; }
+
+#content a:visited { border-bottom: 1px dotted #557799; }
+
+#content a:hover, #content-wrapper a:active { border-bottom-color: #990000; }
+
+#content dt
+{
+	font-size: 24px; 
+}
+
+#content dt a:link, #content dt a:visited { border-bottom-width: 0; padding: 0; }
+
+#content dt a:hover, #content dt a:active { background-color: transparent; }
+
+/* Footer */
+
+#footer a:link, #footer a:visited { padding: 0; }
+
+#footer a:hover, #footer a:active { background-color: transparent; color: #cfcfcf; }

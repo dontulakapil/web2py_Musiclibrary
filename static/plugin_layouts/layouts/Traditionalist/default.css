@@ -1,0 +1,142 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 10px;
+	padding: 0;
+	background: #E3EFFC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	padding-top: 0;
+	letter-spacing: -1px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #356AA0;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+p, ul {
+	line-height: 18px;
+	font-size: 11px;
+}
+
+a:link {
+	color: #356AA0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Header */
+
+#header {
+	width: 760px;
+	height: 122px;
+	margin: 0 auto;
+}
+
+#header h1 {
+	float: left;
+	width: 539px;
+	height: 80px;
+	margin: 0;
+	padding: 40px 0 0 20px;
+	background: #CDEB8B url(images/img1.gif) no-repeat;
+}
+
+#header h1 a {
+	text-decoration: none;
+	color: #73880A;
+}
+
+#header h2 {
+	float: right;
+	width: 195px;
+	height: 66px;
+	margin: 0;
+	padding: 50px 0 0 0;
+	background: #FF7400 url(images/img2.gif) repeat-x;
+	border: 2px solid #FF7400;
+	text-align: center;
+	letter-spacing: normal;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#header h2 a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	padding: 5px;
+	background: #FF7400 url(images/img2.gif) repeat-x left center;
+	border: 2px solid #FF7400;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 0 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+	width: 760px;
+	margin: 0 auto;
+	background: #FFFFFF url(images/img4.gif);
+}
+
+#colOne {
+	float: left;
+	width: 559px;
+}
+
+#colTwo {
+	float: right;
+	width: 155px;
+	padding: 20px;
+	background: url(images/img3.gif) repeat-x;
+	border: 2px solid #CDEB8B;
+}
+
+#colTwo h4 {
+	color: #73880A;
+}
+
+#colTwo ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+/* Footer */
+
+#footer {
+	width: 760px;
+	margin: 0 auto;
+}

@@ -1,0 +1,5 @@
+/* Forest Green Swish Stylesheet by Will Peavy - willpeavy.net */
+
+/* IE6 and earlier versions of IE do not support % heights. Therefore, the height of the stretch div (which serves as an off-whtie background for content) must be specified in this stylesheet using an exact number pixels. If you want to support and IE6 and earlier, you may need to change the number below as the length of your page changes. */
+
+#stretch {height:714px;}

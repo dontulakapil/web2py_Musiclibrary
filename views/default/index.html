@@ -1,0 +1,62 @@
+{{extend 'layout.html'}}
+<h1 align='center' class='title'>WELCOME {{=firstname[0].first_name}} </h1>
+<table border='0'>
+<tr>
+<td width="10%">
+<p align='right'><img src={{=URL(r=request, c='default', f='download', args=[file1[0].file])}}  height="100" width="100"/></p>
+<p align='right'><u>FirstName</u>:{{=firstname[0].first_name}}</p>
+<p align='right'><u>LastName</u>:{{=firstname[0].last_name}}</p>
+<p align='right'><u>Email-id</u>:{{=firstname[0].email}}</p>
+<br />
+</td>
+<td width="45%">
+<h2 align='center'><u>My playsits</u></h2>
+{{for i in form:}}
+    <p align="center"><a href={{=URL(r=request,f="playlistsongs",args=i.id)}}>{{=i.name}}</a></p><br />
+{{pass}}
+</td>
+<td><table>
+<tr><td><p ><a href={{=URL(r=request,f="upload")}}>UPLOAD A SONG</a></p></td>
+<td> 
+</tr>
+
+  
+</table>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+jQuery(document).ready(function(){ 
+  jQuery("#list").jqGrid({
+    url:'{{=URL(r=request,f='call',args=['json','get_rows'])}}',
+    data: "{}",
+    datatype: 'json',
+    mtype: 'GET',
+    contentType: "application/json; charset=utf-8",
+    complete: function(jsondata, stat) {
+        if (stat == "success") {
+            var thegrid = jQuery("#list")[0];
+            thegrid.addJSONData(JSON.parse(jsondata.responseText).d);
+        }
+    },
+    colNames:['ID','Name','Artist'],
+    colModel :[ 
+      {name:'id',index:'id', width:55}, 
+      {name:'name', index:'name'}, 
+      {name:'artist', index:'artist'}
+    ],
+    pager: '#pager',
+    rowNum:10,
+    rowList:[10,20,30],
+    sortname: 'name',
+    sortorder: 'desc',
+    viewrecords: true,
+    caption: 'Test Grid'
+  }); 
+}); 
+</script>
+
+<table id="list"></table> 
+<div id="pager"></div>
+
+</body>

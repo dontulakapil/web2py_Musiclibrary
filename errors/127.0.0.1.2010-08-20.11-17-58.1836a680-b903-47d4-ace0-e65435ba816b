@@ -1,0 +1,17 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'/home/chiinna/Desktop/linux_web2py/applications/practice/controllers/default.py'
+p4
+sS'code'
+p5
+S'# -*- coding: utf-8 -*- \n\n#########################################################################\n## This is a samples controller\n## - index is the default action of any application\n## - user is required for authentication and authorization\n## - download is for downloading files uploaded in the db (does streaming)\n## - call exposes all registered services (none by default)\n#########################################################################  \n\ndef index():\n    """\n    example action using the internationalization operator T and flash\n    rendered by views/default/index.html or views/generic.html\n    """\n    response.flash = T(\'Welcome to web2py\')\n    file1=db().select(db.uploadpic.ALL)\n    form=db(db.playlist.userid==auth.user_id).select()\n    return dict(message=T(\'Hello World\'),file1=file1,form=form)\n\n\ndef user():\n    """\n    exposes:\n    http://..../[app]/default/user/login \n    http://..../[app]/default/user/logout\n    http://..../[app]/default/user/register\n    http://..../[app]/default/user/profile\n    http://..../[app]/default/user/retrieve_password\n    http://..../[app]/default/user/change_password\n    use @auth.requires_login()\n        @auth.requires_membership(\'group name\')\n        @auth.requires_permission(\'read\',\'table name\',record_id)\n    to decorate functions that need access control\n    """\n    return dict(form=auth())\n\n\ndef download():\n    """\n    allows downloading of uploaded files\n    http://..../[app]/default/download/[filename]\n    """\n    return response.download(request,db)\n\n\ndef call():\n    """\n    exposes services. for example:\n    http://..../[app]/default/call/jsonrpc\n    decorate with @services.jsonrpc the functions to expose\n    supports xml, json, xmlrpc, jsonrpc, amfrpc, rss, csv\n    """\n    session.forget()\n    return service()\ndef playlistsongs():\n    k=request.args(0)\n    song=db(db.like.plylist==k).select()\n    row=db().select(db.like.ALL, db.songs.ALL, left=db.like.on(db.songs.id==db.like.songid))\n    song1=db().select(db.songs.ALL)\n    return(dict(row=row,song1=song1))\ndef rating():\n    k=request.args(0)\n    form=SQLFORM(db.ratings)\n    form.vars.userid=auth_user.id\n    k1=form.vars.id\n    form.vars.songid=k\n    if form.accepts(request.vars,session):\n        response.flash = \'done\'\n    return(dict(k=k1))\ndef rating1():\n    k=request.args(0)\n    k1=request.args(1)\n    form=db().select(db.ratings.id==k1)\n    form.vars.rating=k\n    if form.accepts(request.vars,session):\n        response.flash = \'done\'\n    return\n\nresponse._vars=response._caller(rating)\n'
+p6
+sS'traceback'
+p7
+S'Traceback (most recent call last):\n  File "/home/chiinna/Desktop/linux_web2py/gluon/restricted.py", line 173, in restricted\n    exec ccode in environment\n  File "/home/chiinna/Desktop/linux_web2py/applications/practice/controllers/default.py", line 80, in <module>\n  File "/home/chiinna/Desktop/linux_web2py/gluon/globals.py", line 96, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/chiinna/Desktop/linux_web2py/applications/practice/controllers/default.py", line 65, in rating\n    form.vars.userid=auth_user.id\nNameError: global name \'auth_user\' is not defined\n'
+p8
+s.

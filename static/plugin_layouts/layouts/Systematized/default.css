@@ -1,0 +1,268 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px;
+	background: #CCCCCC;
+}
+
+body, input, textarea, select {
+	font: normal small Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #333333;
+}
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p, blockquote, ul, ol, form {
+	margin-bottom: 1.5em;
+}
+
+blockquote, ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-right: 3em;
+	font-style: italic;
+}
+
+ul {
+	list-style-type: square;
+}
+
+a {
+	color: #3366FF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF6600;
+}
+
+hr {
+	display: none;
+}
+
+.hr {
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+/* Wrapper */
+
+#wrapper {
+	width: 760px;
+	margin: 0 auto;
+	background: #2286EB;
+}
+
+/* Header */
+
+#header {
+	padding: 10px 10px 12px 10px;
+	background: url(images/img1.gif) no-repeat left bottom;
+}
+
+#header h1, #header h2 {
+	display: inline;
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#header h1 {
+}
+
+#header h2 {
+}
+
+#header a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+	background: #FFFFFF url(images/img2.gif) repeat-y;
+}
+
+/* Blog */
+
+#blog {
+	float: left;
+	width: 520px;
+	margin-top: -6px;
+	padding-left: 10px;
+}
+
+/* Post */
+
+.post {
+}
+
+.post .title {
+	height: 45px;
+	margin: 0;
+	padding: 5px 0 0 15px;
+	background: url(images/img4.gif) repeat-x;
+}
+
+.post .title a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.post .title a:hover {
+	color: #3366FF;
+}
+
+.post .date {
+	margin-top: -34px;
+	padding-right: 15px;
+	text-align: right;
+	font: bold x-small Arial, Helvetica, sans-serif;
+}
+
+.post .entry {
+	padding: 20px 15px 10px 15px;
+	line-height: 1.8em;
+}
+
+.post .meta {
+	margin-bottom: 2em;
+	padding: 0 15px;
+	text-align: right;
+	font-size: x-small;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 210px;
+	margin-top: -6px;
+	padding-right: 10px;
+}
+
+#sidebar ul {
+	margin: 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	margin-left: 1em;
+	padding: 0 15px 15px 15px;
+	list-style-type: square;
+}
+
+#sidebar li li {
+}
+
+#sidebar h2 {
+	height: 45px;
+	margin: 0;
+	padding: 12px 0 0 15px;
+	background: url(images/img4.gif) repeat-x;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+/* Search */
+
+#search {
+}
+
+#search form {
+	padding: 0 15px;
+}
+
+#search #inputtext1 {
+	width: 110px;
+	padding: 1px 2px;
+	background: url(images/img5.gif) repeat-x;
+	border: 1px solid #C4C3C4;
+}
+
+#search #inputsubmit1 {
+	background: url(images/img6.gif) repeat-x left bottom;
+	border: 1px solid #C4C3C4;
+}
+
+/* Archives */
+
+#archives {
+}
+
+/* Categories */
+
+#categories {
+}
+
+/* Blogroll */
+
+#blogroll {
+}
+
+/* Meta */
+
+#meta {
+}
+
+/* Footer */
+
+#footer {
+	background: url(images/img3.gif) no-repeat;
+}
+
+#footer p {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: x-small;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

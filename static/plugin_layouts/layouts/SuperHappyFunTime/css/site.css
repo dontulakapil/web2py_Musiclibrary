@@ -1,0 +1,198 @@
+
+/*---------------------------------------------------------
+
+template:	super happy fun time
+version:	1.0
+author:		gorotron
+website:	http://www.gorotron.com
+
+usage:		This work is licensed under a 
+					Creative Commons Attribution 3.0 United States License
+					http://creativecommons.org/licenses/by/3.0/us/
+
+---------------------------------------------------------*/
+
+
+/* Layout
+---------------------------------------------------------*/
+
+* {
+	padding:0;
+	margin:0;	
+	list-style:none;
+}
+
+body,html {
+	background:#fdfefe;
+}
+
+#wrapper {
+	background:#ededed url(../images/bg.gif) repeat-x;
+	padding:1em 1em 0;
+}
+
+#content {
+	background:#FFF;
+	width:74em;
+	margin:2em auto 0;
+	padding:1em;
+}
+
+#masthead {
+	height:15em;	
+	line-height:15em;
+	background:url(../images/masthead.gif) repeat-x;
+	text-align:center;
+	 /* 
+	 background:url(../images/yourimage.jpg) middle center no-repeat; 
+	 Uncomment this and replace with your image (150px x 740px or larger) 
+	 */
+}
+
+#nav {
+	height:2.2em;
+	width:42.7em; 	/* 	
+											You have to adjust this to keep the nav bar centered 
+											if you change the number of links.
+	
+											8.5em per link + 0.2em for IE6/7 Bug:
+	
+											3 links = 25.7em
+											4 links = 34.2em
+											5 links = 42.7em
+											6 links = 51.2em
+									*/
+	margin:0 auto;
+	position:relative;
+	top:-1em;
+}
+
+#nav li {
+	float:left;
+	text-align:center;
+}
+
+#nav li a {
+	display:block;
+	padding:0.5em;		
+	width:6em;
+	background:#FFF url(../images/li.gif) bottom repeat-x;
+	border-right:0.1em solid #EAEAEA;
+}
+
+#nav li a.noBorder {
+	border-right:0;	
+}
+
+#nav li a:hover {
+	background:#FFF url(../images/li_hover.gif) bottom repeat-x;
+	color:#000;
+}
+
+#main {
+	clear:both;	
+	padding:1em 1.5em;
+}
+
+#main ul {
+	margin-bottom:1em;	
+}
+
+#main li {
+	list-style-type:square;
+	margin:0.5em 2em;
+	padding:0;
+}
+
+#main li p {
+	margin:0;
+	padding:0;
+	color:#666;
+}
+
+p {
+	margin-bottom:1em;
+}
+
+h2 {
+	margin:1.5em 0 0.25em;	
+}
+
+h3 {
+	font-size:1.2em;
+	margin-bottom:0.5em;	
+}
+
+#subMain {
+	width:25%;
+	float:right;
+	padding:1em;
+	margin:0 0 1em 1em;
+	border:0.1em solid #EAEAEA;	
+	background:url(../images/subMain.gif) bottom repeat-x;
+}
+
+#subMain h2 {
+	margin-top:0;
+}
+
+#footer {
+	text-align:center;
+	background:#FFF url(../images/footer.gif) repeat-x;
+	clear:both;
+	height:5.1em;
+}	
+
+#footer p {
+	height:3em;
+	line-height:3em;	
+}
+
+/* Typography
+---------------------------------------------------------*/
+
+body {
+	font:62.5% georgia, times, serif;	 /* This sets the resolution for the site, 
+											currently 1em = 10px. */
+	color:#666;
+}
+
+a {
+	text-decoration:none;
+	color:#333;
+	background:url(../images/underline.gif) bottom repeat-x;
+}
+
+a:hover {
+	color:#333;
+}
+
+p, h2 {
+	font-size:1.3em;
+	line-height:1.5em;	
+}
+
+h1 {
+	font-size:3em;
+	color:#FFF;
+}
+
+blockquote {
+	margin-left:1.5em;
+	padding-left:2em;
+	border-left:0.3em solid #F90;
+	font-size:0.9em;
+	color:#333;
+}
+
+#main li {	
+	color:#F90;
+}
+
+#nav li {
+	font-size:1.2em;
+}
+
+#footer {
+	font-size:1em;
+}

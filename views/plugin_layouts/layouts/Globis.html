@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Globis/styles.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" background="images/back.jpg" bgcolor="#0E1629">
+   <tr>
+    <td>
+     <div class="top">
+     </div>
+     <div class="left">
+      <div class="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+     </div>
+     <div class="right">
+      <div class="content">
+       Welcome to Globis Template
+      </div>
+     </div>
+     <div class="left-content">
+      <div class="themenu">
+       <ul>
+        <li>
+         <a href="index.html">
+          Home
+         </a>
+        </li>
+        <li>
+         <a href="index.html">
+          Link 1
+         </a>
+        </li>
+        <li>
+         <a href="index.html">
+          Link 2
+         </a>
+        </li>
+        <li>
+         <a href="index.html">
+          Link 3
+         </a>
+        </li>
+        <li>
+         <a href="index.html">
+          Link 4
+         </a>
+        </li>
+        <li>
+         <a href="index.html">
+          Link 5
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="right-content">
+      <p>
+       Globis Template was developed by Communivoice Communications and offers compatibility and flexibilty.
+      </p>
+      <ul>
+       <li>
+        Vertical CSS Menu
+       </li>
+       <li>
+        Left, Right, and Content layout.
+       </li>
+       <li>
+        Easy to customize Headings and Links
+       </li>
+       <li>
+        Blockquote Styling
+       </li>
+       <li>
+        XHTML Compliant
+       </li>
+      </ul>
+      <p>
+       Visit www.communivoice.com for more free templates and web design services.
+      </p>
+     </div>
+     <div class="header">
+      <div class="content">
+       Features of the Template
+      </div>
+     </div>
+     <div class="content">
+      <h1>
+       {{=response.title or request.application}}
+      </h1>
+      <p>
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui.
+      </p>
+      <h2>
+       {{=response.subtitle or '=response.subtitle'}}
+      </h2>
+      <p>
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui.
+      </p>
+      <h3>
+       Heading 3
+      </h3>
+      <p>
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui.
+      </p>
+      <h3>
+       <strong>
+        Blockquote
+       </strong>
+      </h3>
+      <blockquote>
+       <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et eros.   Nullam ultricies, lorem sed facilisis suscipit, nunc neque volutpat arcu, sed   elementum ante mi nec mi. Nam in risus ac mauris ornare dapibus. Donec tempor,   enim nec cursus vehicula, eros ipsum ullamcorper ipsum, sed euismod ante elit   vel nulla. Aliquam erat volutpat. Aenean egestas mauris at est porttitor ornare.   Proin laoreet orci vel erat. Cras ligula ligula, bibendum convallis, hendrerit   ac, tristique in, lacus. Aliquam nibh sem, sollicitudin tempor, accumsan et,   sagittis id, turpis. Nunc turpis. Aenean dolor ipsum, lobortis ac, pulvinar eu,   bibendum sed, mauris. Fusce posuere luctus est. Mauris interdum ipsum nec dui.
+       </p>
+      </blockquote>
+      <h3>
+       <strong>
+        Links
+       </strong>
+      </h3>
+      <p>
+       <a href="http://www.communivoice.com">
+        Link to Communivoice Communications.
+       </a>
+      </p>
+     </div>
+     <div class="bottom">
+      <div align="center">
+       <p>
+        &nbsp;
+       </p>
+       <p>
+        <strong>
+         &copy; 2008 Your Company Name. All Rights Rerserved.
+        </strong>
+       </p>
+       <p>
+        <a href="http://www.communivoice.com">
+         Web Template Design
+        </a>
+        by Communivoice.com
+       </p>
+      </div>
+     </div>
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>

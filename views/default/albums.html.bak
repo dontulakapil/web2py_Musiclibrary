@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<h5>{{=form[0].name}}</h5>
+<p align='left'><img src={{=URL(r=request, c='default', f='download', args=[form[0].image])}}  height="300" width="300"/> </p>
+{{for i in form1:}}
+    <p align='centre'><b><u>{{=i.name}}</u></b></p>
+    <audio  controls="controls">
+<source src="{{=URL(r=request, f='download', args=[i.file])}}" >
+</audio></p></br>
+    <br />
+    ARTIST={{=i.artist}}  DURATION={{=i.duration}} YEAR={{=i.datetime1}} <a href={{=URL(r=request,f="test4",args=i.id)}}><img src="/Musiclibrary/static/rating/5_s.gif" title="RATING: 4.53" border=0 ></a> <br />
+    <a href={{=URL(r=request,f="DOWNLOAD",args=i.file)}}><u>DOWNlOAD</u></a><br/>
+    {{pass}}

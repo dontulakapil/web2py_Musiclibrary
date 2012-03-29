@@ -1,0 +1,246 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 10px;
+	background: #600; 
+	font: normal small Arial, Helvetica, sans-serif;
+	color: #900;
+}
+
+h1, h2, h3 {
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, blockquote, ul, ol {
+	margin-bottom: 1.5em;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+	font-style: italic;
+}
+
+ul {
+	list-style: square inside;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	color: #900;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+}
+
+/* Center Box */
+
+.center-box {
+	margin-bottom: 10px;
+	padding: 20px;
+	background: #fc6;
+	border-top: 5px solid #900;
+	border-right: 15px solid #c00;
+	border-bottom: 5px solid #f33;
+	border-left: 15px solid #c00;
+}
+
+.center-box .title {
+	padding: 5px 16px;
+	background: #FF9900;
+	border-left: 6px solid #CC6633;
+	border-right: 2px solid #CC6633;
+	border-bottom: 3px solid #CC9933;
+	border-top: 2px solid #996633;
+}
+
+/* Left Box */
+
+.left-box {
+	margin-bottom: 10px;
+	background: #fc6;
+	border-top: 5px solid #900;
+	border-right: 5px solid #c00;
+	border-bottom: 5px solid #f33;
+	border-left: 15px solid #c00;
+}
+
+.left-box .title {
+	padding: 5px 16px;
+	background: #FF9900;
+	border-left: 6px solid #CC6633;
+	border-right: 2px solid #CC6633;
+	border-bottom: 3px solid #CC9933;
+	border-top: 2px solid #996633;
+}
+
+.left-box .content {
+	padding: 20px 20px 0 20px;
+}
+
+/* Right Box */
+
+.right-box {
+	margin-bottom: 10px;
+	background: #fc6;
+	border-top: 5px solid #900;
+	border-left: 5px solid #c00;
+	border-bottom: 5px solid #f33;
+	border-right: 15px solid #c00;
+}
+
+.right-box .title {
+	padding: 5px 16px;
+	background: #FF9900;
+	border-right: 6px solid #CC6633;
+	border-left: 2px solid #CC6633;
+	border-bottom: 3px solid #CC9933;
+	border-top: 2px solid #996633;
+}
+
+.right-box .content {
+	padding: 20px 20px 0 20px;
+}
+
+/* Logo */
+
+#logo {
+	width: 630px;
+	margin: 0 auto 10px auto;
+}
+
+#logo h1 {
+}
+
+#logo h2 {
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+/* Content */
+
+#content {
+	width: 700px;
+	margin: 0 auto;
+}
+
+/* Content > Main */
+
+#main {
+	float: right;
+	width: 470px;
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+}
+
+/* Content > Main > Example */
+
+#example {
+	padding-bottom: 13px;
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 220px;
+}
+
+/* Content > Sidebar > Menu */
+
+#menu {
+}
+
+#menu ul {
+}
+
+#menu li {
+}
+
+#menu a {
+}
+
+#menu a:hover, #menu .active a {
+}
+
+/* Content > Sidebar > Updates */
+
+#updates {
+}
+
+#updates ul {
+}
+
+#updates h3 {
+	display: inline;
+}
+
+#updates p {
+	font-size: .8em;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 630px;
+	margin: 0 auto;
+	font-size: x-small;
+}
+
+#footer p {
+	margin: 0;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}

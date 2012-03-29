@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : astroturfd
+Description: A three-color, two-column, fixed-width design.
+Version    : 1.0
+Released   : 20081120
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Astroturfd/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="bg1">
+    <div id="bg2">
+     <div id="header">
+      <div id="logo">
+       <h1>
+        {{=response.title or request.application}}
+       </h1>
+      </div>
+      <!-- end #logo -->
+      <div id="menu">
+       {{=MENU(response.menu)}}
+      </div>
+      <!-- end #menu -->
+     </div>
+     <!-- end #header -->
+     <div id="page">
+      <div class="post" style="margin-bottom: 30px;">
+       <div class="entry">
+        <p>
+         <img src="images/homepage05.jpg" alt="" width="206" height="84" class="alignright" />
+        </p>
+        <p>
+         Asttroturfd is a free, fully standards-compliant CSS template designed by
+         <a href="http://www.nodethirtythree.com/">
+          NodeThirtyThree
+         </a>
+         for
+         <a href="http://www.freecsstemplates.org/">
+          Free CSS Templates
+         </a>
+         . All of the photos in this design are courtesy of
+         <a href="http://www.pdphoto.org/">
+          PDPhoto.org
+         </a>
+         . It also includes a
+         <a href="subpage.html">
+          second layout
+         </a>
+         . This free template is released under a
+         <a href="http://creativecommons.org/licenses/by/2.5/">
+          Creative Commons Attributions
+         </a>
+         license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact.
+							Have fun, and check out some of my commercial work at
+         <a href="http://www.4templates.com/">
+          4Templates
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <div id="content">
+       <div class="flash">{{=response.flash or ''}}</div>
+       {{include}}
+      </div>
+      <!-- end #content -->
+      <div id="sidebar">
+       <div class="post">
+        <h2 class="title color2">
+         Interdum Volutpat
+        </h2>
+        <div class="entry">
+         <ul class="list2">
+          <li class="first">
+           <a href="#">
+            Quisque suscipit quam
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Vel aliquet tincidunt eros
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Nisi ultrices interdum
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Est purus vitae leo Pellentesque
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Lectus et tortor tincidunt
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Dignissim etiam nulla sed
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Aliquam erat volutpat
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <!-- end #sidebar -->
+      <div style="clear: both;">
+       &nbsp;
+      </div>
+      <div id="footer">
+       <p>
+        (c) 2008 SiteName.com. Design by
+        <a href="http://www.nodethirtythree.com/">
+         NodeThirtyThree
+        </a>
+        and
+        <a href="http://www.freecsstemplates.org/">
+         Free CSS Templates
+        </a>
+        .
+       </p>
+      </div>
+      <!-- end #footer -->
+     </div>
+     <!-- end #page -->
+    </div>
+   </div>
+  </div>
+  <!-- end #wrapper -->
+ </body>
+</html>

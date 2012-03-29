@@ -1,0 +1,178 @@
+/************* Global *************/
+html,body {height:100%}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+font: 90%/110% Verdana,sans-serif;
+font-style: normal;
+}
+
+h1, h2 {
+margin: 5px 0;
+font: 160%/110% Georgia, "Times New Roman", serif;
+font-weight: bold;
+}
+
+ul {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+font-weight: bold;
+color: #333;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/************* Container *************/
+#container {
+height: auto !important;
+min-height: 100%;
+position: relative;
+text-align: center;
+}
+
+* html #container {
+	height: 100%;
+}
+
+/************* Header *************/
+#header {
+margin: 35px auto 15px;
+text-align: center;
+width: 750px;
+font-size: 1.4em;
+}
+
+
+/************* Menu *************/
+#menu {
+margin:0 auto;
+font: 100%/80% Georgia, "Times New Roman", serif;
+font-weight: bold;
+text-align:center;
+width: 100%;
+background: #333 url(images/menuTop.gif) repeat-x left top;
+}
+
+#menuBottom {
+width: 100%;
+height: 10px;
+background: url(images/menuBottom.gif) repeat-x left top;
+}
+
+#menu ul {
+padding: 15px 0 7px;
+}
+
+#menu li {
+display: inline;
+margin: 0 10px; 
+}
+
+#menu a {
+color: #eee;
+font-size: 1.1em;
+}
+
+/************* Content *************/
+#content {
+width: 750px;
+margin: 0 auto 30px;
+}
+
+#content:after {
+content: "."; 
+display: block; 
+clear: both; 
+height: 0;
+visibility: hidden
+}	
+
+#content p {
+letter-spacing: 0.05em;
+}
+
+#content blockquote { 
+background-color: #efefef; 
+margin: 15px 0; 
+padding: 10px 10px;
+border-top: 1px solid #cecece;
+border-bottom: 1px solid #cecece;
+}
+
+#content blockquote p {
+margin: 0;
+text-indent: 0;
+}
+
+#main {
+width: 70%;
+float: right;
+text-align: left;
+}
+
+#main p {
+margin-top: 10px;
+padding-left: 10px;
+text-indent: 2em;
+text-align: justify;
+}
+
+#main ul {
+margin: 5px 0 5px 20px;
+list-style: url(images/li.gif);
+}
+
+#sub {
+margin-right: 2%;
+width: 28%;
+float: left;
+text-align: left;
+}
+
+#sub h2 {
+margin-top: 15px;
+}
+
+#sub p {
+padding: 0 5px;
+text-indent: 10px;
+}
+
+#sub li{
+padding-right: 5px;
+}
+
+.post {
+margin-top: 20px;
+}
+
+/************* Footer *************/
+#footer {
+position: relative;	
+clear: both;
+padding: 10px 0 5px;
+width: 100%;
+background: #333 url(images/menuTop.gif) repeat-x left top;
+color: #EEE;
+}
+
+#footer p {
+text-align: center;
+}
+
+#footer a {
+color: #EEE;
+}
+
+#footer a:hover {
+text-decoration: underline;
+}

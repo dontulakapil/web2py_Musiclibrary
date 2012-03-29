@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Elf/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="navcontainer">
+   <ul id="navlist">
+    <!--navigation links -->
+    <li>
+     <a href="#">
+      LINK 1
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      LINK 2
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      LINK 3
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      LINK 4
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      LINK 5
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      LINK 6
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="wrap">
+   <div id="container">
+    <div id="main">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <!-- footer -->
+    <div id="footer">
+     <br />
+     ::&copy; 2006 YOUR NAME::
+     <br />
+     <br />
+     <br />
+     ::Template by
+     <a href="http://www.creativedistortion.com/freetemp.html">
+      Norrash
+     </a>
+     ::
+     <br />
+     <br />
+     ::Paint Shop Pro Tube by
+     <a href="http://www.sitevanpatries.nl/">
+      Patries
+     </a>
+     ::
+     <br />
+     :: Elf Art by
+     <a href="http://www.suzannegyseman.co.uk">
+      Suzanne Gyseman
+     </a>
+     ::
+     <br />
+     <br />
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

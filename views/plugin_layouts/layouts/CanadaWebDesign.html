@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/CanadaWebDesign/css/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- START LEFT MENU HERE ................................................................................................................................. -->
+  <div id="leftmenu">
+   <ul>
+    <li>
+     <a href="#">
+      navigation1
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation2
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation3
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation4
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation5
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation6
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      navigation7
+     </a>
+    </li>
+   </ul>
+  </div>
+  <!-- END LEFT MENU HERE ................................................................................................................................. -->
+  <!-- START MAIN AREA HERE ................................................................................................................................. -->
+  <div id="main">
+   <div class="flash">{{=response.flash or ''}}</div>
+   {{include}}
+  </div>
+  <!-- END MAIN AREA HERE ................................................................................................................................. -->
+  <!-- START RIGHT BAR HERE ................................................................................................................................. -->
+  <div id="rightmenu">
+   <img class="knot" src="img/knot.jpg" width="191" height="101" alt="" />
+  </div>
+  <!-- END RIGHTBAR HERE HERE ................................................................................................................................. -->
+ </body>
+</html>

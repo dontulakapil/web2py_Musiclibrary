@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/LightSpeed/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- begin wrap -->
+  <div id="wrap">
+   <!-- begin header -->
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+    <ul>
+     <li>
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Blog
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Photos
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Videos
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- end header -->
+   <!-- begin page -->
+   <div id="page">
+    <!-- begin content -->
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <!-- end content -->
+    <!-- begin sidebar -->
+    <div id="sidebar">
+     <ul>
+      <li>
+       <h2>
+        A Link List
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Sed euismod lacus at magna
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Donec at felis id eros convallis
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Aliquam auctor aliquet leo
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Maecenas facilisis orci a nisi
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Duis auctor orci vitae enim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Etiam scelerisque mauris nec nulla
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Mauris at nisl et erat volutpat
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Maecenas bibendum elit quis est
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Etiam laoreet ligula sed mi
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Phasellus venenatis egestas lacus
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Duis fermentum arcu quis urna
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Aliquam auctor mi et sem
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          In mattis ligula vitae ligula
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Fusce sodales dapibus est
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Curabitur placerat viverra felis
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        A Padded Content
+       </h2>
+       <div class="pad">
+        <p>
+         &ldquo;Morbi volutpat vehicula justo sem non libero. Aliquam erat volutpat. Nullam quis nulla vel quam egestas accumsan. Nam porttitor pulvinar ante.&rdquo;
+        </p>
+        <p style="text-align: right;">
+         &mdash;
+         <cite>
+          <a href="http://www.lipsum.com/">
+           Lipsum.com
+          </a>
+         </cite>
+        </p>
+       </div>
+      </li>
+     </ul>
+    </div>
+    <!-- end sidebar -->
+   </div>
+   <!-- end page -->
+   <!-- begin footer -->
+   <div id="footer">
+    <!-- All we ask of you is to keep this credits intact. We hope you don't mind :) -->
+    <p class="legal">
+     <a href="http://www.thewebhub.com/2008/11/lightspeed/">
+      LightSpeed Free CSS Template
+     </a>
+     by
+     <a href="http://thewebhub.com/">
+      TheWebHub.com
+     </a>
+     is licensed under a
+     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/ph/">
+      Creative Commons Attribution-Share Alike 3.0 Philippines License
+     </a>
+     .
+     <br />
+     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/ph/">
+      <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/ph/88x31.png" />
+     </a>
+    </p>
+   </div>
+   <!-- end footer -->
+  </div>
+  <!-- end wrap -->
+ </body>
+</html>

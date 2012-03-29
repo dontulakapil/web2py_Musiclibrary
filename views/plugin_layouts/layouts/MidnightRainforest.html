@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <p id="skip">
+     <a href="#content">
+      Skip To Content
+     </a>
+    </p>
+   </div>
+   <div id="wrapper">
+    <!-- Main content section -->
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+   </div>
+   <div id="navigation">
+    <!-- Menu section -->
+    <div class="navcontainer">
+     <ul class="navlist">
+      <li class="menutitle">
+       navigation
+      </li>
+      <li id="active">
+       <a href="#" id="current">
+        Item one
+       </a>
+       <ul>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#">
+        Item two
+       </a>
+       <ul>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          A sublink
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#">
+        Item three
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Item four
+       </a>
+      </li>
+      <li id="last">
+       <a href="#">
+        Item five
+       </a>
+      </li>
+     </ul>
+    </div>
+    <h2>
+     A Pitch
+    </h2>
+    <p>
+     Something relatively important that you want to put here right below the links. Maybe this is a ad area, or perhaps its a spot to sign up for a free newsletter.
+    </p>
+    <p>
+     <img src="images/grass_sm.jpg" class="sm" alt="A placer image" />
+    </p>
+   </div>
+   <div id="extra">
+    <label class="header" for="searchbox">
+     Search
+    </label>
+    <form id="contactForm" action="some.php">
+     <p style="padding:0; margin:0;">
+      <input type="text" style="width: 140px;" id="searchbox" />
+      <input type="submit" value="GO" style="margin-left: 3px; width:40px" />
+     </p>
+    </form>
+    <p>
+     <img src="images/grass_sm.jpg" class="sm" alt="A placer image" />
+    </p>
+    <h2>
+     Recent News
+    </h2>
+    <p>
+     <strong>
+      News Title:
+     </strong>
+     This is a little piece of news you could display on your site.
+    </p>
+    <p>
+     <strong>
+      News Title:
+     </strong>
+     This is a little piece of news you could display on your site.
+    </p>
+    <p>
+     <strong>
+      News Title:
+     </strong>
+     This is a little piece of news you could display on your site.
+    </p>
+    <h2>
+     Affiliates
+    </h2>
+    <ul id="affiliate">
+     <li>
+      <a href="#">
+       Offsite link / image
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Offsite link / image
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Offsite link / image
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Offsite link / image
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="footer">
+    <ul>
+     <li>
+      <a href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Accessibility Statement
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Sitemap
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Privacy Policy
+      </a>
+     </li>
+     <li>
+      Design by
+      <a href="http://www.websitestyle.com">
+       Website Style
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>

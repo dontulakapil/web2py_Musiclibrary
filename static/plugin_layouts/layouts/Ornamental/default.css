@@ -1,0 +1,356 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFFFFF url(images/img01.jpg) repeat-x;
+	font: normal small Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #586BAA;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p, blockquote, ul, ol {
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 3em;
+}
+
+ul {
+	margin-left: 3em;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	color: #586BAA;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+}
+
+/* Boxed Style */
+
+.boxed {
+	margin-bottom: 20px;
+}
+
+.boxed .title {
+	height: 27px;
+	padding: 13px 0 0 20px;
+	background: #6FBE6E url(images/img04.gif) repeat-x;
+	text-transform: lowercase;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.boxed .content {
+	padding: 20px 20px 40px 20px;
+	background: url(images/img05.gif) repeat-x;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 20px;
+}
+
+.post .title {
+	height: 27px;
+	padding: 13px 0 0 20px;
+	background: #6FBE6E url(images/img04.gif) repeat-x;
+	text-transform: lowercase;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.post .date {
+}
+
+.post .date .month {
+}
+
+.post .date .day {
+}
+
+.post .date .year {
+}
+
+.post .meta {
+}
+
+.post .meta p {
+}
+
+.post .story {
+	padding: 20px 20px 40px 20px;
+	background: url(images/img05.gif) repeat-x;
+}
+
+.post h3 {
+}
+
+.post .story p, .post .story blockquote, .post .story ul, .post .story ol {
+	margin-bottom: 1.5em;
+	line-height: 180%;
+}
+
+/* Header */
+
+#header {
+	width: 740px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 220px;
+}
+
+#logo h1 {
+	padding-top: 88px;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+}
+
+#logo h2 {
+	margin-top: -10px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#logo h2 a {
+	color: #586BAA;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding-top: 75px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 98px;
+	height: 28px;
+	margin-left: 1px;
+	padding-top: 15px;
+	background: #FFFFFF url(images/img02.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	color: #586BAA;
+}
+
+#menu a:hover {
+	height: 33px;
+	margin-top: -5px;
+}
+
+#menu .active a {
+	height: 34px;
+	margin-top: -5px;
+	background-image: url(images/img03.gif);
+	font-weight: bold;
+	color: #6FBE6E;
+}
+
+/* Content */
+
+#content {
+	width: 740px;
+	margin: 0 auto;
+}
+
+#extra {
+}
+
+/* Content > Main */
+
+#main {
+	float: right;
+	width: 505px;
+}
+
+#main a {
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+}
+
+/* Content > Main > Example */
+
+#example {
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 220px;
+}
+
+#sidebar a {
+}
+
+/* Content > Sidebar > Login */
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#login input {
+	margin-bottom: 5px;
+}
+
+#inputtext1, #inputtext2 {
+	width: 170px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+#inputsubmit1 {
+}
+
+/* Content > Sidebar > Updates*/
+
+#updates {
+}
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+/* Content > Sidebar > Partners*/
+
+#partners {
+}
+
+#partners .content {
+	padding: 10px 0;
+}
+
+#partners ul {
+	margin: 0;
+	border-bottom: 1px solid #D1BC5C;
+	list-style: none;
+	line-height: normal;
+}
+
+#partners li {
+	padding: 10px;
+	border-top: 1px solid #D1BC5C;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 740px;
+	margin: 0 auto;
+	padding: 30px 0;
+	background: url(images/img07.gif) repeat-x;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: x-small;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}

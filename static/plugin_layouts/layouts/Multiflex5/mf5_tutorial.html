@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<!--  Version: Multiflex-5.0 / Tutorial                     -->
+<!--  Date:    January 30, 2008                             -->
+<!--  Design:  www.1234.info                                -->
+<!--  License: Fully open source without restrictions.      -->
+<!--           Please keep footer credits with the words    -->
+<!--           "Design by 1234.info". Thank you!            -->
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="3600" />
+  <meta name="revisit-after" content="2 days" />
+  <meta name="robots" content="index,follow" />
+  <meta name="publisher" content="Your publisher infos here" />
+  <meta name="copyright" content="Your copyright infos here" />
+  <meta name="author" content="Designed by www.1234.info / Modified: Your Name" />
+  <meta name="distribution" content="global" />
+  <meta name="description" content="Your container description here" />
+  <meta name="keywords" content="Your keywords, keywords, keywords, here" />
+  <link rel="stylesheet" type="text/css" media="screen,projection,print" href="./css/mf5_reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen,projection,print" href="./css/mf5_grid.css" />
+  <link rel="stylesheet" type="text/css" media="screen,projection,print" href="./css/mf5_content.css" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <title>Multiflex-5.0 | Tutorial |</title>
+</head>
+
+<!-- Global IE fix to avoid layout crash when single word size wider than column width -->
+<!-- Following line MUST remain as a comment to have the proper effect -->
+<!--[if IE]><style type="text/css"> body {word-wrap: break-word;}</style><![endif]-->
+
+<body>
+  <!-- CONTAINER FOR ENTIRE PAGE -->
+  <div class="container">
+
+    <!-- A. HEADER -->         
+    <div class="corner-top"></div>
+    <div class="header">
+      <div class="header-top">
+        
+        <!-- A.1 SITENAME -->      
+        <a class="sitelogo" href="#" title="Home"></a>
+        <div class="sitename">
+          <h1><a href="index.html" title="Home">MULTIFLEX&bull;5.0</a></h1> 
+          <h2>Open Source Designs</h2>
+        </div>
+    
+        <!-- A.2 BUTTON NAVIGATION -->
+        <div class="navbutton">
+          <ul>
+            <li><a href="#" title="English"><img src="./img/icon_flag_us.gif" alt="Flag" /></a></li>
+            <li><a href="#" title="Deutsch"><img src="./img/icon_flag_de.gif" alt="Flag" /></a></li>
+            <li><a href="#" title="Svenska"><img src="./img/icon_flag_se.gif" alt="Flag" /></a></li>
+            <li><a href="#" title="RSS"><img src="./img/icon_rss.gif" alt="RSS-Button" /></a></li>
+          </ul>
+        </div>
+
+        <!-- A.3 GLOBAL NAVIGATION -->
+        <div class="navglobal">
+          <ul>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>								
+            <li><a href="#" title="">Sitemap</a></li>								                        
+            <li><a href="#" title="">Links</a></li>								            
+          </ul>
+        </div>        
+      </div>
+    
+      <!-- A.4 BREADCRUMB and SEARCHFORM -->
+      <div class="header-bottom">
+
+        <!-- Breadcrumb -->
+        <ul>
+          <li class="nobullet">You are here:&nbsp;</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Sub-Page</a></li>
+          <li><a href="#">Sub-Sub-Page</a></li>          
+        </ul>
+
+        <!-- Search form -->                  
+        <div class="searchform">
+          <form action="index.html" method="get">
+            <fieldset>
+              <input name="field" class="field"  value=" Enter search word ..." />
+              <input type="submit" name="button" class="button" value="Search" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="corner-bottom"></div>    
+    
+    <!-- B. NAVIGATION BAR -->
+    <div class="corner-top"></div>        
+    <div class="navbar">
+	
+      <!-- Navigation item -->
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+      </ul>
+      <!-- Navigation item -->
+      <ul>
+        <li><a href="mf5_tutorial.html">Tutorial</a></li>
+      </ul>           
+      <!-- Navigation item -->
+      <ul>
+        <li><a href="mf5_grid.html">Grid Toolbox</a></li>
+      </ul>
+      <!-- Navigation item -->
+      <ul>
+        <li><a href="mf5_content.html">Content Toolbox</a></li>
+      </ul>
+      <!-- Navigation item -->
+      <ul>
+        <li><a href="#">Drop-down Menu<!--[if IE 7]><!--></a><!--<![endif]-->
+          <!--[if lte IE 6]><table><tr><td><![endif]-->
+            <ul>
+              <li><a href="#">Menu subitem 1</a></li>
+              <li><a href="#">Menu subitem 2</a></li>
+              <li><a href="#">Menu subitem 3</a></li>
+              <li><a href="#">Menu subitem 4</a></li>
+              <li><a href="#">Menu subitem 5</a></li>
+            </ul>
+          <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+        </li>
+      </ul>                  
+    </div>    
+  
+    <!-- C. MAIN SECTION -->      
+    <div class="main">
+      <h1 class="pagetitle">Tutorial</h1>
+
+      <!-- C.1 CONTENT -->
+      <div class="content">
+
+        <!-- CONTENT CELL -->                
+        <a id="anchor-start"></a>
+        <div class="content-cell-corner-top"></div>                        
+        <div class="content-cell">
+          <h1>Getting Started</h1>
+          <h5>Step One</h5>
+          <p>Those familiar with XHTML and CSS will find it easy to get used to Multiflex-5. Unzip the template package file. Save a copy of the file "mf5_grid.html" under the name "mf5_mysite.html". This will be your working copy where you will assemble the grid (layout) and content (text) for your new website.</p>
+          <h5>Step Two</h5>
+          <p>Open your newly created file "mf5_mysite.html" with an HTML-editor of your choice. Please note that WYSIWYG editors like FrontPage or Dreamweaver cannot do the job you now are about to perform! You must work on code level if you want to produce a reliable and stable code. I myself use Notepad++ as code editor. It is a fantastic tool. As you open your new file you will see all the available grid components. Now simply get going with copy and paste until you have the basic grid setup you prefer. After each copy and paste step don't forget to reload the page in the browser to see if the last edit step was performed correctly, or if some error occured and the layout now breaks. If the layout breaks, undo the last edit step. When finished with copying and pasting make a quick check to see if the page also prints. However, be aware that Firefox is known to have difficulties in printing, so use Internet Explorer 6 or 7 instead.</p>
+          <h5>Step Three</h5>
+          <p>After your printing test has passed it is time to fill the various grid sections with text, image, video or audio content. To do this you open the file "mf5_content.html". Now copy the content sections you prefer and paste them into your file "mf5_mysite.html" at the appropriate place within the grid. After each paste, reload the page in your browser to see if everything worked fine. If not, undo the last edit step. Repeat the process until you have filled your page with all the content styles you need.</p>
+          <h5>Step Four</h5>
+          <p>In case you introduce video or audio content, now is the time to set up the media package. If you used the Full Template Package, then your media package is already installed and you do not need to do any further setup. If you used the Basic Template Package, you need to install some media setup files. <b>IMPORTANT:</b> Users of <b>Internet Explorer 7</b> will note that media does not play when the page is locally on the harddisk. Once you upload your webpage and media contents, IE7 plays the media as expected. For media testing purposes use Firefox instead. Once your page is online, everything will work as expected. See the <a href="mf5_tutorial.html#anchor-package">Media Package Tutorial</a> for more instructions.</p>
+          <h5>Step Five</h5>
+          <p>Now is the time to modify the header according to your needs. The header area is divided into two vertical sections, the top and bottom header. First you must decide if you want a merged header where the background covers both the top and bottom sections with the same image or color, or if you want the top and bottom headers to remain separate. Once you have made your decision, you need to know if you want an image background or a simple color background. The default template configuration is the use of separated headers using simple color backgrounds.</p>
+          <h6>Using separate headers</h6>
+          <p>If you want to use a simple color background, open the CSS-file "mf5_grid.css" in the directory "css". At the top of the CSS statements you will find ".header-top" and ".header-bottom". In each of these CSS statements go to the RGB definitions and modify the RGB values to the colors you prefer. Save and close the file. Your header is now ready.</p>
+          <p>If you want to use background images, you do not need to open the CSS-file. First produce the images for each of the header sections. The top header requires an image size of 958x100 pixels, and the bottom header 958x30 pixels. If your image only has vertical variations, but is uniform in the horizontal direction, you can use a smaller width for the image and use the repeat function for extending the background image in the horizontal direction (already activated in the default template). Name your image files "bg_header_top.jpg" and "bg_header_bottom.jpg" and place them in the directory "img". Your header is now ready.</p>
+          <h6>Using a merged header</h6>
+          <p>Open the CSS-file "mf5_grid.css" in the directory "css". At the top of the CSS statements you will find ".header-top" and ".header-bottom". In each of these CSS statements simply put an "x" at the beginning of the property name "background {...}", ie. "xbackground {...}". You have now deactivated the two separate top and bottom headers. Now you need to activate the merged header, which is defined in the CSS statement ".header".</p>
+          <p>If you want to use a simple color background please remain in the CSS file and modify the RGB values in the CSS statement ".header" under the property "background". Your header is now ready.</p>
+          <p>If you want to use a background image, you can now close and save the CSS file. Produce an image with the size 958x130 pixels. Rename your image file to "bg_header.jpg" and place it in the directory "img". Your header is now ready.</p>
+          <h6>Adapting the icons</h6>          
+          <p>There are a number of graphical icons in the header section, like the logo, flag, and RSS icons. These images have been adapted to the grey background in the default template and may no longer match your new header background appearance. To make it possible for you to adapt the graphical icons according to your needs, you need the <a href="mf5_tutorial.html#anchor-package">Graphics Package</a> to adapt the icons for your needs. For the layout to remain balanced, your new icons should have the same image heights as the default icons. Your header is now ready.</p>
+          <h5>Step Six</h5>
+          <p>Now we want to take a look at the body background, that is, the background color outside the template on the left and right sides. Especially for wide-screen users there is a substantial region to the left and right of the webpage that is not filled with information. You can decide which color you want to give this region. The default background color is grey.</p>
+          <p>If you want to change the body background color, please open the CSS file "mf5_grid.css". In the first CSS statement "body" go to the property "background" and modify the RGB values according to your needs. However, the rounded corners for the outer border of the template assume that the background is grey. If you modify the background color, the rounded corner graphics must be recreated using the graphics files in <a href="mf5_tutorial.html#anchor-package">Graphics Package</a>.</p>
+          <p>If your background color was changed to white, you do not need to recreate the rounded corners. Simply go to the directory "img" and rename the file "bg_corner_top_white.gif" to "bg_corner_top.gif", and the file "bg_corner_bottom_white.gif" to "bg_corner_bottom.gif". Of course you first backup the old files by renaming them to "bg_corner_top_grey.gif" and "bg_corner_bottom_grey.gif" respectively. Your new background and rounded corners are now ready.</p>
+          <h5>Step Seven</h5>
+          <p>In the last step we adapt the footer. In your new website file "mf5_mysite.html" go to the end of the file and enter your copyright and company name informations. Do not forget to enter your name under "Modified by". As a sign of appreciation for receiving Multiflex-5 for free, please leave the linked author credits <a href="http://1234.info">Design by 1234.info</a> in place. Thank you!</p> 
+          <p><b>Congratulations! Your template is now ready for operational use!</b></p>
+        </div> 
+        <div class="content-cell-corner-bottom"></div> 
+      
+        <!-- CONTENT CELL (subcells NOT boxes) -->                
+        <a id="anchor-code"></a>
+        <div class="content-cell-corner-top"></div>                        
+        <div class="content-cell-nobox">
+          <h1>HTML and CSS Code</h1>        
+          <!-- Subcell LEFT-->
+          <div class="content-subcell-left-nobox">
+            <h2>HTML</h2>
+            <p>The HTML code comes with four files, "index.html" containing the overview, "mf5_grid.html" the grid styles, "mf5_content.html" the content styles and "mf5_tutorial.html" the tutorial.</p>
+            <p>A special feature which makes Multiflex really flexible is that the HTML-tag coding is uniform throughout the entire content and subcontent sections. In other words, the HTML data has identical coding, and can thus easily be moved from one part of the template to another without having to change the tags. All examples given in <a href="mf5_content.html">Content Toolbox</a> use the absolutely identical HTML code, regardless of their grid (layout) positions.</p>
+          </div>                   
+          <!-- Subcell RIGHT -->          
+          <div class="content-subcell-right-nobox">            
+            <h2>CSS</h2>
+            <p>The CSS code comes packaged in three files, with "mf5_reset.css" resetting all CSS parameters to a common value in order to reduce cross-browser inconsisttencies, "mf5_grid.css" defines the grid styles, and "mf5_content" defines the content styles.</p>            
+            <h2>Browsers</h2>
+            <p>Multiflex-5 has been tested successfully for Firefox, Opera, Netscape, Safari and Internet Explorer. The template is highly robust and stable, and works safely in any modern browser environment.</p>
+          </div>
+        </div> 
+        <div class="content-cell-corner-bottom"></div>                       
+
+        <!-- CONTENT CELL (subcells NOT boxes) -->                
+        <a id="anchor-tool"></a>
+        <div class="content-cell-corner-top"></div>                        
+        <div class="content-cell-nobox">
+          <h1>Toolboxes</h1>        
+          <!-- Subcell LEFT-->
+          <div class="content-subcell-left-nobox">
+            <h2>Grid Toolbox</h2>
+            <p>The Grid Toolbox is the tool with which the basic grid structure is constructed. This serves as the backbone of the template. Go to the <a href="mf5_grid.html">Grid Toolbox</a> to see the available styles.</p>            
+          </div>          
+          <!-- Subcell RIGHT -->          
+          <div class="content-subcell-right-nobox">            
+            <h2>Content Toolbox</h2>
+            <p>The Content Toolbox is the tool with which you fill the grid with actual text, image, audio or video content. Go to the <a href="mf5_content.html">Content Toolbox</a> to see the available styles.</p>            
+          </div>
+        </div> 
+        <div class="content-cell-corner-bottom"></div>                       
+
+        <!-- CONTENT CELL (subcells NOT boxes) -->                
+        <a id="anchor-package"></a>
+        <div class="content-cell-corner-top"></div>                        
+        <div class="content-cell-nobox">
+          <h1>Template Packages</h1>        
+          <!-- Subcell LEFT-->
+          <div class="content-subcell-left-nobox">
+            <h2>Basic Template Package</h2>
+            <p>The Basic Template Package contains all the necessary HTML, CSS and image files. This corresponds to the package version available at typical open source webdesign sites. If you downloaded your package from such a site, this is most probably the package you received.</p>
+            <p>If you don't care about offering audio and video content on your site, this package is all you need! The package does not contain any files needed for media content presentation or modification of original graphics files.</p>
+            <p><b>Installation instructions</b></p>
+            <ul>
+              <li><a href="http://1234.info/webtemplates/multiflex5/">Download</a> (File size: 70 KB)</li>
+              <li>Unzip the file "mf5_basic.zip".</li>
+              <li>To build your webpage, follow the instructions in <a href="mf5_tutorial.html#anchor-start">Getting Started</a>.</li>
+            </ul>
+            <h2>Full Template Package</h2>
+            <p>The Full Template Package is an all-in-one package containing all files related to Multiflex-5, that is, the Basic Template Package, the Media Package and the Graphics Package. Here you have the option of also using audio and video content on your website. When unzipping the file, all files necessary for audio and media content are automatically installed in the right place.</p>
+            <p><b>Installation instructions</b></p>
+            <ul>
+              <li><a href="http://1234.info/webtemplates/multiflex5/">Download</a> (File size: 17.1 MB)</li>
+              <li>Unzip the file "mf5_full.zip".</li>
+              <li>To build your webpage, follow the instructions in <a href="mf5_tutorial.html#anchor-start">Getting Started</a>.</li>
+            </ul>
+          </div>          
+          <!-- Subcell RIGHT -->          
+          <div class="content-subcell-right-nobox">            
+            <h2>Media Package</h2>
+            <p>The Media Package is of interest to those persons who downloaded or have built their website using the Basic Template Package, but now would like to include audio and video content as well. The Media Package includes all the necessary files to get your media content going. As for the HTML coding, all necessary code is already in place in the Basic Template Package. The Media Package only gives the files needed for the flash player to be in place.</p>
+            <p><b>Installation instructions</b></p>
+            <ul>
+              <li><a href="http://1234.info/webtemplates/multiflex5/">Download</a> (File size: 16.1 MB)</li>
+              <li>Unzip the file "mf5_media.zip" into the folder where your HTML files are located.</li>
+              <li>You should see three new directories, namely "media", "source" and "svn".</li>
+              <li>You should see one new file, namely "player.swf".</li>
+              <li>The directory "media" contains one audio, two video demo and two image preview files. This is also where you put your own media files and preview images.</li>                            
+              <li>The flash player works for users having Adobe Flash Player 9.0 or higher, which corresponds to about 90% of the global webusers..</li>
+              <li>You are now ready to play media content.</li>
+              <li><b>IMPORTANT:</b> Users of <b>Internet Explorer 7</b> will note that media does not play when the page is locally on the harddisk. Once you upload your webpage and media contents, IE7 plays the media as expected.</li>
+            </ul>
+            
+            <h2>Graphics Package</h2>
+            <p>The Graphics Package is of interest to those persons who want to modify some or all of the graphical elements used in Multiflex-5. For this reason, files are offered in the original Corel, Adobe Photoshop or high-resolution PNG graphics formats.</p>
+            <p><b>Instructions</b></p>
+            <ul>
+              <li><a href="http://1234.info/webtemplates/multiflex5/">Download</a> (File size: 0.8 MB)</li>
+              <li>Unzip the file "mf5_graphics.zip" to any location you prefer.</li>
+              <li>Edit the graphics according to your needs.</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="content-cell-corner-bottom"></div>                       
+        
+      </div>
+                
+      <!-- C.2 SUBCONTENT -->
+      <div class="subcontent">
+
+        <!-- SUBCONTENT CELL -->
+        <div class="subcontent-cell-corner-top"></div>                        
+        <div class="subcontent-cell">
+          <h1 class="menu">Tell me about ...</h1>                    
+          <div class="sidemenu">
+          <ul>
+            <li><a href="#anchor-start">Getting Started</a></li>
+            <li><a href="#anchor-code">HTML and CSS code</a></li>
+            <li><a href="#anchor-tool">Grid Toolbox</a></li>
+            <li><a href="#anchor-tool">Content Toolbox</a></li>
+            <li><a href="#anchor-package">Basic Template Package</a></li>            
+            <li><a href="#anchor-package">Full Template Package</a></li>
+            <li><a href="#anchor-package">Media Package</a></li>
+            <li><a href="#anchor-package">Graphics Package</a></li>
+          </ul>
+          </div>
+        </div>  
+        <div class="subcontent-cell-corner-bottom"></div>
+      </div>    
+    </div>
+      
+    <!-- D. FOOTER -->      
+    <div class="footer">
+      <p>Copyright &copy; 2008 Your Company&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved</p>
+      <p class="credits">Design by <a href="http://1234.info/" title="Designer Homepage">1234.info</a> | Modified by <a href="#" title="Modifyer Homepage">Your Name</a> | Powered by <a href="#" title="CMS Homepage">Your CMS</a> | <a href="http://validator.w3.org/check?uri=referer" title="Validate XHTML code">XHTML 1.0</a> | <a href="http://jigsaw.w3.org/css-validator/" title="Validate CSS code">CSS 2.0</a></p>
+    </div>
+    <div class="corner-bottom"></div>        
+  </div> 
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Author: Reality Software
+Website: http://www.realitysoftware.ca
+Note: This is a free template released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep the link to the author intact.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Ocean/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- header -->
+  <div id="header">
+   <div id="menu">
+    {{=MENU(response.menu)}}
+   </div>
+  </div>
+  <div id="logo">
+   <div id="logo_text">
+    <a href="#">
+     Website name
+    </a>
+    <br />
+    <br />
+    Lorem ipsum dolor sit amet, consectetuer 
+      adipiscing elit. Pellentesque lobortis nibh 
+      eu mauris. Morbi arcu tortor, auctor et, 
+      facilisis nec, egestas sit amet, enim.
+   </div>
+  </div>
+  <!--end header -->
+  <!-- main -->
+  <div id="main">
+   <div class="flash">{{=response.flash or ''}}</div>
+   {{include}}
+  </div>
+  <!-- end main -->
+  <!-- footer -->
+  <div id="footer">
+   <div id="left_footer">
+    &copy; Copyright 2008
+    <b>
+     Russo
+    </b>
+   </div>
+   <div id="right_footer">
+    <!-- Please do not change or delete this link. Read the license! Thanks. :-) -->
+    Design by
+    <a href="http://www.realitysoftware.ca" title="Website Design">
+     <strong>
+      Reality Software
+     </strong>
+    </a>
+   </div>
+  </div>
+  <!-- end footer -->
+ </body>
+</html>

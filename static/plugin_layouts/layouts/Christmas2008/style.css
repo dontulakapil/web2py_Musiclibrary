@@ -1,0 +1,31 @@
+* {margin: 0; padding: 0;}
+
+body {margin: 20px 0; font: 90% Verdana, sans-serif; color: #fff; background-color: #0D881E;}
+a, a:visited { text-decoration: underline; color: #F72B28; }
+a:hover, a:active { text-decoration: none; color: #CC3333; }
+
+#container {width: 760px; margin: 0 auto; background: #fff url(images/container.png) repeat-y; color: #333;}
+
+#header {width: 760px; height:120px; background: transparent url(images/header.png) no-repeat; margin: 0 auto;}
+#header h1 {width: 760px; height: auto; background: transparent;  text-align: center; color: #0D881E; font-size: 1.8em; padding: 30px 10px 10px 10px; }
+#header h3 { text-align: center; width: 760px; font-size: 0.95em; font-style: italic; }
+
+#main { float:left; padding: 0px 10px; width: 530px; font-size: 0.95em; }
+#main h1 { font-size: 1.4em; color: #0D881E; padding-bottom: 10px; padding-left: 5px;}
+#main h2 { font-size: 1.1em; color: #0D881E; padding-bottom: 10px; padding-left: 5px;}
+#main p {padding-bottom: 10px; padding-left: 5px;}
+blockquote { margin: 10px 10px; padding: 10px; background: #FFCCCC; color: #333; border-top: 1px solid #0D881E; border-bottom: 1px solid #0D881E; font-size: 0.85em; }
+
+#right {float:left; padding: 0px 10px; width: 180px; font-size: 0.85em;}
+#right h2 { font-size: 1.2em; color: #0D881E; padding-bottom: 10px; }
+#nav {width : 180px; margin : 0 0 10px 0;}
+ul#menu {margin-left : 0; padding-left : 0; list-style-type : none;}
+#menu a {display : block; padding : 3px; width : 169px; margin-bottom : 1px; background : #0D881E; color : #fff; border-left: 2px solid #F72B28; font-weight: normal !important;}
+#menu a:link, #menu a:visited {color : #fff; background : #0D881E; text-decoration : none; }
+#menu a:hover, #menu a:active { background : #F72B28; color : #333; border-left: 2px solid #0D881E;}
+#current { background : #F72B28 !important; color : #333 !important; border-left: 2px solid #0D881E !important;} 
+
+#footer { clear:both; width: 760px; height: 120px; font-size: 0.75em; margin: 0 auto; background: transparent url(images/footer.png) no-repeat; text-align: center; }
+#footer p { padding: 50px 10px 10px 10px; }
+
+img {float: left; margin: 5px; padding: 2px; border: 1px solid #F72B28;}

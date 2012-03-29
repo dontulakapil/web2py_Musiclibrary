@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/TheBlue/css/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="head_navbar">
+    <ul>
+     <li>
+      ·
+      <a href="#">
+       home
+      </a>
+     </li>
+     <li>
+      &nbsp; ·
+      <a href="#">
+       contact us
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="company_name">
+    <a href="#">
+     REALITY
+     <span class="y">
+      DESIGN
+     </span>
+    </a>
+    <span class="y">
+    </span>
+   </div>
+   <div id="content_container">
+    <div id="main">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <div id="right">
+     <div id="search">
+      <input type="text" name="textfield" id="textfield" />
+      <a href="#">
+       SEARCH
+      </a>
+     </div>
+     <div id="categories">
+      <h1>
+       Reality
+       <span class="b">
+        Categories
+       </span>
+      </h1>
+      <div id="items">
+       <div class="item" onmouseover="this.className='item_over'" onmouseout="this.className='item'">
+        <a href="#">
+         <span class="y">
+          DIGITAL PHOTOGRAPHY
+         </span>
+        </a>
+        <span class="b">
+         creating comercial
+         <br />
+         pictures
+        </span>
+       </div>
+       <div class="item" onmouseover="this.className='item_over'" onmouseout="this.className='item'">
+        <a href="#">
+         <span class="y">
+          CREATIVE WEB DESIGN
+         </span>
+        </a>
+        <span class="b">
+         professional web
+         <br />
+         design
+        </span>
+       </div>
+       <div class="item" onmouseover="this.className='item_over'" onmouseout="this.className='item'">
+        <a href="#">
+         <span class="y">
+          PRINTS  DESIGN
+         </span>
+        </a>
+        <span class="b">
+         creating comercial
+         <br />
+         prints
+        </span>
+       </div>
+       <div class="item" onmouseover="this.className='item_over'" onmouseout="this.className='item'">
+        <a href="#">
+         <span class="y">
+          PHOTO RETOUCH
+         </span>
+        </a>
+        <span class="b">
+         amazing photo
+         <br />
+         retouch
+        </span>
+       </div>
+       <div class="item" onmouseover="this.className='item_over'" onmouseout="this.className='item'">
+        <a href="#">
+         <span class="y">
+          FLASH PROJECTS
+         </span>
+        </a>
+        <span class="b">
+         creating professional
+         <br />
+         flash projects
+        </span>
+       </div>
+      </div>
+     </div>
+     <h1>
+      Social
+      <span class="b">
+       Links
+      </span>
+     </h1>
+     <div id="links">
+      <ul>
+       <li>
+        <a href="#">
+         best designs
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         photoshop tutorials
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         digital books
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         best awards 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         photoshop tutorials
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         digital books
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="links_2">
+      <ul>
+       <li>
+        <a href="#">
+         best awards 2007
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         photoshop tutorials
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         digital books
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         best designs
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         photoshop tutorials
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         digital books
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div id="footer">
+    <div id="footer_left">
+     <a href="#">
+      home
+     </a>
+     |
+     <a href="#">
+      about us
+     </a>
+     |
+     <a href="#">
+      our team
+     </a>
+     |
+     <a href="#">
+      our people
+     </a>
+     |
+     <a href="#">
+      products
+     </a>
+     |
+     <a href="#">
+      contact us
+     </a>
+    </div>
+    <div id="footer_right">
+     ©2007 All Rights Reserved  •  Design by
+     <a href="http://www.realitysoftware.ca" title="Website Design">
+      Reality Software
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

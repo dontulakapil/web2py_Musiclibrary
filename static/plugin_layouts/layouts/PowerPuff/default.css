@@ -1,0 +1,173 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Elements */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #F1EDFF url(images/img1.jpg) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #666666;
+}
+
+h1 {
+}
+
+h2, h3 {
+	margin-top: 0;
+}
+
+h4, h5, h6 {
+}
+
+p, ol, ul, dl, blockquote {
+}
+
+a {
+	color: #3072FF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Header */
+
+#header {
+	height: 160px;
+	margin: 0 20px;
+}
+
+#header * {
+	text-decoration: none;
+	color: #FF4430;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	padding-top: 100px;
+}
+
+#logo h1 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -2px;
+	font-size: 3em;
+}
+
+#logo h2 {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 .5em;
+	font-size: 1em;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 125px 0 0 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	padding: 0 1em;
+	border-left: 1px solid #FF4430;
+}
+
+#menu a:hover {
+}
+
+#menu .first a {
+	border: none;
+}
+
+/* Content */
+
+#content {
+	padding: 20px;
+	background: #FFFFFF url(images/img5.gif) repeat-x;
+}
+
+#colOne {
+	float: left;
+	width: 23%;
+}
+
+#colTwo {
+	float: left;
+	width: 48%;
+	padding: 0 0 0 2em;
+}
+
+#colTwo h2 {
+	margin-bottom: .3em;
+	font-size: 2em;
+}
+
+#colThree {
+	float: right;
+	width: 23%;
+}
+
+/* Footer */
+
+#footer {
+	padding: 20px 0;
+	background: url(images/img4.gif) repeat-x;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+}
+
+/* Boxed */
+
+.boxed h2 {
+	margin: 0;
+	padding: 10px 0 3px 10px;
+	background: #CADAFF url(images/img2.gif) no-repeat;
+	font-size: 1.3em;
+	color: #FFFFFF;
+}
+
+.boxed h3 {
+	margin: 0;
+	font-size: 1em;
+}
+
+.boxed p, .boxed ul {
+	margin-top: 0;
+}
+
+.boxed ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-position: inside;
+	color: #CADAFF;
+}
+
+.boxed-content {
+	padding: 10px;
+	background: #EAF0FF;
+	border-left: 2px solid #CADAFF;
+}

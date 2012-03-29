@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/BlackandBlueTemplate/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div class="wrapper">
+   <div class="topnav">
+    Design By
+    <a href="http://www.freecss.info">
+     FreeCSS.info
+    </a>
+   </div>
+   <div class="bannerbg">
+    <a href="#">
+     <img src="images/logo_06.gif" alt="logo" width="413" height="89" border="0" />
+    </a>
+   </div>
+   <div class="subbannerbg">
+    <div class="subbannerbgleft">
+    </div>
+    <div class="subbannerbgmiddle">
+     <h1>
+      {{=response.title or request.application}}
+     </h1>
+     <p>
+      Thanks to freecss.info this design is now free. It is really easy to edit.
+     </p>
+    </div>
+    <div class="subbannerbgright">
+    </div>
+    <div class="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <div class="footer">
+     <div class="footerlogo">
+      <a href="http://www.freecss.info">
+       Free CSS Templates
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,137 @@
+html {
+	height: 100%;
+}
+body {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-color: #6E1300;
+	margin: 0;
+	height: 100%;
+}
+#full {
+	background-image: url(colBg.jpg);
+	background-repeat: repeat-y;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+}
+#container {
+	background-image: url(sunspot.jpg);
+	background-repeat: no-repeat;
+	height: 100%;	
+}
+#header {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-image: url(headerbg.jpg);
+	height: 160px;
+	margin-left: 160px;
+	background-repeat: repeat-x;
+ 	background-position: right;
+}
+#headerContent {
+	width: 600px;
+	height: 160px;
+}
+#header h3 {
+	color: #F2D039;
+	margin: 0;
+}
+#header p {
+	color: White;
+}
+#left {
+	width: 160px;
+	float: left;
+	height: auto;
+	text-align: center;
+	background-image: url(sun.jpg);
+	background-repeat: no-repeat;
+}
+#content {
+	background-color: transparent;
+	color:  yellow;
+	margin-left: 160px;
+	margin-right: 10px;
+
+}
+#content a {
+	color: white;
+	font-style: italic;
+}
+#content a:hover {
+	color: black;
+}
+#footer {
+	clear: both;
+	text-align: center;
+	color: white;
+	font-size: smaller;
+	font-style: italic;
+}
+#footer a {
+	color: black;
+}
+#footer a:hover {
+	color: yellow;
+}
+#search {
+	width: 260px;
+	height: 25px;
+	float: right;
+	font-size: 13px;
+}
+#navcontainer {
+	width: 100%;
+	padding: 1em 0;
+	font-family: georgia, serif;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+ul#navlist {
+	text-align: center;
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   width: 80%;
+}
+
+ul#navlist li {
+        display: block;
+        margin: 0;
+        padding: 0;
+}
+
+ul#navlist li a {
+        display: block;
+        width: 100%;
+		  padding: 4px;
+        /*padding: 0.5em 0 0.5em 2em;*/
+        border-width: 1px;
+        border-color: #ffe #aaab9c #ccc #fff;
+        border-style: solid;
+        color: black;
+        text-decoration: none;
+        background: #FFFFFF;
+}
+
+#navcontainer>ul#navlist li a { width: auto; }
+
+ul#navlist li#active a {
+        background: yellow;
+        color: red;
+}
+
+ul#navlist li a:hover, ul#navlist li#active a:hover {
+        color: red;
+        background: transparent;
+        border-color: #aaab9c #fff #fff #ccc;
+}
+.float-right {
+	float: right;
+}

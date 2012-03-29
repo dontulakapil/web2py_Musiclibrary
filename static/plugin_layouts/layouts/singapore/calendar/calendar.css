@@ -1,0 +1,57 @@
+/* singapore design by Uli Sobers::                        www.free-templates-sobers.de */
+/* calendar formattings /                 calendar script by   http://derletztekick.de  */
+/* //////////////////////////////////////////////////////////////////////////////////// */
+#calendar{
+  width:                          200px;
+  height:                         auto;
+  font-family:                    verdana, arial, helvetica, sans-serif;
+  text-align:                     left;
+	border-top:                     1px dotted #DCDCDC;
+  padding:                        8px 0 0  0;
+  }
+
+#calendar table{
+  border-collapse:                collapse;
+  padding:                        0 0 0 0;
+  }
+
+#calendar table thead th{
+  color:                          #a0a0a0;
+  font-size:                      0.75em;
+  font-weight:                    bold;
+  text-align:                     center;
+  }
+	
+#calendar table thead th.weekday{
+  color:                          #a0a0a0;
+  font-size:                      0.70em;
+  font-weight:                    bold;
+  text-align:                     center;
+	}
+  	
+#calendar table thead th.weekend{
+  color:                          #e40382;
+  font-size:                      0.70em;
+  font-weight:                    bold;
+  text-align:                     center;
+	}
+  	
+#calendar table tbody td{
+  color:                          gray;
+  font-size:                      0.8em;
+  font-weight:                    normal;
+  text-align:                     center;
+  padding:                        2px 5px 2px 5px;
+  }
+	
+#calendar table tbody td.weekend{
+  color:                          #e40382;
+/*  color:                          #a4c31a; */
+  font-weight:                    bold;
+	}
+	
+#calendar table tbody td.today{
+  color:                          #090909;
+  background-color:               #dcdcdc;
+	}
+

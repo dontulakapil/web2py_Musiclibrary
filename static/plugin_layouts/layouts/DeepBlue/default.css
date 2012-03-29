@@ -1,0 +1,202 @@
+/*#############################################################
+Name: Deep Blue
+Date: 2007-06-17
+Description: A two-column layout with a touch of blue
+Author: Viktor Persson
+URL: http://templates.arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #474747 url('img/body.gif') repeat-y center top;
+	font: normal 0.7em Tahoma,Verdana,sans-serif;	
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* headings */
+h1 {font: normal 2em sans-serif; margin-top: 1em;}
+h2 {font: normal 1.8em sans-serif; margin-top: 0.8em;}
+h3 {font: bold 1.3em sans-serif; margin-top: 0.6em;}
+h4 {font: bold 1.1em sans-serif; margin-top: 0.4em;}
+
+h1,h2,h3,h4 {color: #444;}
+
+/* misc elements */
+code {
+	background: url('img/code.gif');
+	border-left: 6px solid #1664D9;
+	border: 1px solid #F0F0F0;
+	color: #555;
+	display: block;
+	font: normal 1em "Lucida Sans Unicode",serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+blockquote {
+	background: #FAFAFA url('img/quote.gif') no-repeat;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+	color: #555;
+	display: block;
+	font: normal 1.2em sans-serif;
+	margin: 1em 0;
+	padding: 0.6em 1em 0.2em 40px;
+}
+ol {margin: 0 0 1.2em 2em;}
+
+/* structure */
+#main {
+	width: 780px;
+	border-top: 6px solid #FFF;
+	margin: 0 auto;
+}
+#main_left {
+	float: left;
+	width: 520px;
+}
+#main_right {
+	float: right;
+	width: 253px;
+}
+
+/* misc */
+.left {float: left;}
+.right {float: right;}
+span.comment {padding-left: 18px; background: url('img/icon_comment.gif') no-repeat left center;}
+.clearer {clear: both; font-size: 0; height: 0;}
+
+/* logo */
+#header {
+	background: #1664DA url('img/header.gif') repeat-x;
+	border-bottom: 6px solid #FFF;
+	height: 180px;
+}
+#header h1 {
+	font: normal 2.2em Verdana,sans-serif;
+	margin: 0;
+	padding: 124px 0 0 24px;
+}
+
+/* main navigation */
+#navigation ul,#navigation li {margin: 0; padding: 0;}
+#navigation li {list-style: none;}
+#navigation {background: #4D92E4 url('img/grdnt_blue.jpg') repeat-x;}
+#navigation a {
+	border-bottom: 1px solid #FFF;
+	display: block;
+	font: bold 1em Verdana,sans-serif;
+	height: 1.8em;
+	padding: 0.6em 0 0 1em;
+	text-decoration: none;
+}
+#navigation a:hover {background: #444;}
+
+/* sidebar label */
+.label {
+	background: #333 url('img/label.gif') no-repeat;
+	clear: both;
+	color: #EEE;
+	font: normal 2em "Lucida Sans Unicode",sans-serif;
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+	text-align: center;
+}
+
+/* lists */
+ul.block {
+	background: #2A2A2A;
+	border-top: 1px solid #3A3A3A;
+	margin: 0;
+	padding: 0;
+}
+.block li {
+	border-bottom: 1px solid #3A3A3A;
+	list-style: none;
+}
+.block a {
+	background: url('img/block.jpg') repeat-x left top;
+	color: #CCC;
+	display: block;
+	font: normal 1.2em Verdana,sans-serif;
+	padding: 0.6em 2% 0.6em 5%;
+	width: 92%;
+}
+.block a:hover {
+	background: #222;
+	color: #FFF;
+}
+.block a em {
+	color: #999;
+	display: block;
+	font: normal 0.8em Verdana,sans-serif;
+	margin-top: 0.3em;
+}
+
+
+/* content */ 
+#content {
+	color: #444;
+	font-family: Verdana,sans-serif;
+	line-height: 1.3em;
+	padding: 0 1em 1em; 
+}
+#content a {color: #1664DA;}
+#content a:hover {
+	text-decoration: underline;
+	color: #06F;
+}
+#content p {margin: 0.4em 0 1em 0;}
+#content .descr {
+	color: #666;
+	margin-bottom: 0.5em;
+}
+#content ul li {list-style: url('img/li.gif');}
+#content ul {margin-left: 1.8em;}
+
+/* footer */
+#footer {
+	color: #666;
+	clear: both;
+}
+#footer .right {color: #555;}
+#footer .right a {color: #555;}
+#footer .right a:hover {
+	color: #777;
+	text-decoration: underline;
+}
+#footer .left a {color: #777;}
+#footer .left a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+#footer .left {
+	border-top: 1px solid #F0F0F0;
+	padding: 9px 0 9px 9px;
+	width: 507px;
+}
+#footer .right {
+	margin-right: 1em;
+	padding: 0.8em 0;
+	text-align: right;
+	width: 220px;
+}
+
+/* posting */
+.post_info {
+	background: #FAFAFA;
+	border: 1px solid #EEE;
+	color: #555;
+	margin-bottom: 1em;
+	padding: 0.6em 0.7em;
+}

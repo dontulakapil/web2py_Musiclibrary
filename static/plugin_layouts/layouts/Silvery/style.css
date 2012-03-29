@@ -1,0 +1,273 @@
+/* SILVERY CSS  LFS ACES - Leave this code here please.  Template by Len Saunders  http://www.lensaunders.com */
+
+body { 
+	font:8pt verdana; 
+	background-color: #FFFFFF;
+background-image: url(bg.gif);
+background-position: top center;
+background-attachment: scroll;
+background-repeat: repeat-y;
+	margin:0;
+	padding:0;
+	}
+.style5 {color: #003366}
+.style6 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style7 {color: #FFFFFF}
+
+
+a:link {
+	text-decoration: none;
+	color: #999999;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+a:hover {
+	text-decoration: none;
+	color: #999999;
+}
+a:active {
+	text-decoration: none;
+	color: #999999;
+}
+
+
+div#navcontainer
+{
+background-color: #A6A0A0;
+border-top: solid 2px #000000;
+border-bottom: solid 2px #000000;
+}
+
+div#navcontainer ul
+{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: white;
+text-align: center;
+margin: 0;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+div#navcontainer ul li
+{
+display: inline;
+margin-left: 0px;
+}
+
+div#navcontainer ul li a
+{
+padding: 5px 10px 5px 10px;
+color: white;
+text-decoration: none;
+
+}
+
+div#navcontainer ul li a:hover
+{
+background-color: #000000;
+color: white;
+}
+
+ #navcontainerr { margin-left: 1px; }
+
+#navcontainerr ul
+{
+background-color: #000000;
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family: verdana, arial, sans-serif;
+font-weight: bold;
+}
+
+#navcontainerr li { margin: 1px; 
+}
+
+#navcontainerr a
+{
+display: block;
+color: #FFFFFF;
+width: 114px;
+padding: 2px 5px;
+text-decoration: none;
+border-top: 1px solid #000000;
+border-bottom: 1px solid #000000;
+border-left: 5px solid #ffffff;
+font-size: 12px;
+}
+
+#navcontainerr a:hover
+{
+background-color: #A6A0A0;
+color: #1F00CA;
+border-right: 5px solid #000000;
+border-left: 5px solid #A6A0A0;
+padding: 2px 1px 2px 10px;
+font-weight: bold;
+color: white;
+}
+
+#navcontainerr ul ul
+{
+margin-left: 20px;
+padding: 0;
+background-color: #00CC66;
+
+}
+
+#navcontainerr li li a
+{
+display: block;
+color: #333;
+background-color: #00CC66;
+width: 120px;
+padding: 2px 10px;
+margin: 0;
+border-top: none;
+border-bottom: none;
+border-left: 1px solid #aaa;
+text-decoration: none;
+font-size: 12px;
+}
+
+h1 {
+
+	font:28pt verdana, arial, sans-serif;
+	color:#666;
+	margin:0;
+	padding:20px;
+}
+
+h2 {
+
+	font:14pt verdana, arial, sans-serif;
+	color:#666;
+	padding:10px;
+	margin:0;
+        text-align: center;
+}
+
+h3 {
+
+	font:10pt verdana, arial, sans-serif;
+	color:#FFFFFF;
+	padding:12px;
+	margin:0;
+        text-align: left;
+        font-weight: bold;
+}
+
+h4 {
+
+	font:10pt verdana, arial, sans-serif;
+	color:#ffffff;
+	margin:0;
+        text-align: left;
+        font-weight: normal;
+}
+
+p { 
+	font: 8pt verdana; 
+	margin: 0px; 
+	text-align: justify;
+	}
+	
+#contain {
+
+	width:750px;
+	border-right:1px solid #FFFFFF;
+	border-left:1px solid #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	background: #FFF;
+        }
+	
+#header {
+        background: #FFF url('silveryheader.jpg') right no-repeat;
+	width:750px;
+        height:165px;
+	border-bottom:1px solid #CCC;
+	
+}
+
+.topbar {
+height:1px;
+position:relative;
+}
+
+#icons {
+width:100px;
+position:absolute;
+right:40px;
+bottom:40px;
+}
+
+#icons img {
+margin:0 0 0 5px;
+border:none;
+}
+
+#leftcol {
+
+	width:140px;
+	float:left;
+	padding:5px 0 5px 0;
+	background-color: #000000;
+	margin: 0;
+
+}
+
+#leftcol p {
+
+	padding:3px 18px 3px 18px;
+	margin:0;
+
+}
+
+#content {
+
+	margin-left:140px;
+	width:585px;
+
+}
+
+#content p {
+
+	padding:34px 18px 3px 18px;
+	margin:0;
+
+}
+
+#footer {
+
+	width:750px;
+	clear:left;
+	border-top:1px solid #FFFFFF;
+	border-bottom:1px solid #A6A0A0;
+	background: #FFF;
+	padding: 30px 0 3px 0;
+
+}
+
+#footer p {
+	text-align:center;
+	padding-right:8px;
+	font:8pt verdana, arial, sans-serif;
+        font-weight: normal;
+        text-align: right;
+        color: #000;
+        
+}
+
+#leftImg
+{
+float:left;
+padding: 0 0px 0px 0;
+}

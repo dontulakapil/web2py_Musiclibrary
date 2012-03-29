@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Techno
+Description: A three-column, fixed-width design suitable for news sites and blogs.
+Version    : 1.0
+Released   : 20080227
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Techno/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrapper">
+   <!-- start header -->
+   <div id="header">
+    <div id="menu">
+     {{=MENU(response.menu)}}
+    </div>
+   </div>
+   <div id="logo">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+    <h2>
+     {{=response.subtitle or '=response.subtitle'}}
+    </h2>
+   </div>
+   <!-- end header -->
+   <hr />
+   <!-- start page -->
+   <div id="page">
+    <!-- start content -->
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <!-- end content -->
+    <!-- start sidebar one -->
+    <div id="sidebar1" class="sidebar">
+     <ul>
+      <li id="recent-posts">
+       <h2>
+        Recent Posts
+       </h2>
+       <ul>
+        <li>
+         <h3>
+          <a href="#">
+           Aliquam Libero
+          </a>
+         </h3>
+         <p>
+          Nullam ante orci, eget, tempus quis, ultrices in, est. Curabitur sit amet nulla in massa lacusurna.
+         </p>
+        </li>
+        <li>
+         <h3>
+          <a href="#">
+           Semper Vestibulum
+          </a>
+         </h3>
+         <p>
+          Donec leonulla amit vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.
+         </p>
+        </li>
+        <li>
+         <h3>
+          <a href="#">
+           Etiam Malesuada
+          </a>
+         </h3>
+         <p>
+          Donec vivamus fermentum nibh in augue lacus at urna congue rutrum.
+         </p>
+        </li>
+        <li>
+         <h3>
+          <a href="#">
+           LOREM IPSUM DOLOR SIT
+          </a>
+         </h3>
+         <p>
+          Donec vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum.
+         </p>
+        </li>
+        <li>
+         <h3>
+          <a href="#">
+           FERMENTUM NIBH IN AMIT
+          </a>
+         </h3>
+         <p>
+          Donec vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum.
+         </p>
+        </li>
+       </ul>
+      </li>
+      <li>
+      </li>
+     </ul>
+    </div>
+    <!-- end sidebar one -->
+    <!-- start sidebar two -->
+    <div id="sidebar2" class="sidebar">
+     <ul>
+      <li>
+       <h2>
+        Categories
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Aliquam libero
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Consectetuer elit
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Metus pellentesque
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Suspendisse mauris
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Urnanet molestie semper
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Proin orci porttitor
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Archives
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          September
+         </a>
+         (23)
+        </li>
+        <li>
+         <a href="#">
+          August
+         </a>
+         (31)
+        </li>
+        <li>
+         <a href="#">
+          July
+         </a>
+         (31)
+        </li>
+        <li>
+         <a href="#">
+          June
+         </a>
+         (30)
+        </li>
+        <li>
+         <a href="#">
+          May
+         </a>
+         (31)
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Lorem ipsum dolor
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Aliquam libero
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Consectetuer elit
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Metus pellentesque
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Urnanet molestie semper
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Proin orci porttitor
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <h2>
+        Lorem ipsum dolor
+       </h2>
+       <ul>
+        <li>
+         <a href="#">
+          Consectetuer elit
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Metus pellentesque
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Suspendisse mauris
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </div>
+    <!-- end sidebar two -->
+    <div style="clear: both;">
+     &nbsp;
+    </div>
+   </div>
+   <!-- end page -->
+   <hr />
+   <!-- start footer -->
+   <div id="footer">
+    <p>
+     &copy; 2007 All Rights Reserved &nbsp;&bull;&nbsp; Designed by
+     <a href="http://www.freecsstemplates.org/">
+      Free CSS Templates
+     </a>
+    </p>
+   </div>
+   <!-- end footer -->
+  </div>
+ </body>
+</html>

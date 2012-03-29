@@ -1,0 +1,304 @@
+/* ------------------Designed by collin grasley - 2006
+submitted to the public domain - - no link back required, but if ya do use it let me know!
+collingrasley@gmail.com ---------------------------*/
+
+
+/*
+
+------------------------------------------------------
+template number 02
+------------------------------------------------------
+
+*/
+
+/* the style council */
+
+body {
+margin: 0 auto;
+color: #4D4D4D;
+font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+font-size: 0.8em;
+line-height: 1.8em;
+text-align: left;
+background: url(imgs/bg.gif) repeat;
+}
+
+a {
+color: #1c6ea8;
+}
+
+a:hover {
+color: #2699eb;
+}
+
+
+
+h1{
+font:30px Trebuchet MS;
+color: #1c6ea8;
+margin: 15px 0 15px 0;
+padding-left: 15px; 
+}
+
+h2 {
+font:22px Trebuchet MS;
+color: #1c6ea8;
+margin: 15px;
+}
+
+h3 {
+font:20px Trebuchet MS;
+color: #1c6ea8;
+margin: 15px;
+}
+
+p {
+margin: 5px 15px 5px 15px;
+}
+
+blockquote p {
+font:160% Georgia;
+color:#aaa;
+padding:5px;
+line-height:25px;
+}
+
+.highlight {
+color: #99cc00;
+font-weight:bold;
+}
+/* content stuff */
+
+#container {
+width: 765px;
+text-align: left;
+margin: 0px auto 0 auto;
+background: #282828;
+padding: 0 !important;
+line-height: 1.8em;
+border-left: 10px solid #000;
+border-right: 10px solid #000;
+
+}
+
+#header {
+height: 200px;
+background: url(imgs/banner.jpg) no-repeat;
+border-top: 2px solid #000;
+border-bottom: 2px solid #000;
+}
+
+#header h1 {
+float: left;
+color: #000;
+font:45px Trebuchet MS;
+margin: 40px 0 0 15px;
+background: none;
+font-weight:bold;
+
+}
+
+#content {
+float: left;
+width: 470px; 
+margin: 10px 10px 10px 10px;
+background:#282828;
+color:#787878;
+padding: 0;
+font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+border:1px dotted #888; 
+
+}
+
+
+#sidebar {
+float: right;
+width: 254px;
+margin: 10px 10px 0 0;
+padding: 0;
+background:#282828;
+color: #787878;
+border:1px dotted #888; 
+
+}
+
+/* Side bar thumbs  */
+
+.thumbs img{
+position:relative;
+padding:1px;
+margin:2px 3px 3px 2px;
+border:2px solid #aaa;
+background-color:inherit;
+
+}
+.thumbs img:hover{
+border:2px solid #2699eb;
+}
+
+/* navigation!!!!!! */
+
+#nav-top {
+float: right;
+margin: 5px 15px 0 0;
+background:inherit;
+}
+
+#nav-top ul {
+margin: 0;
+padding: 2px;
+background:inherit;
+}
+
+#nav-top li {
+display: inline;
+padding: 4px;
+}
+
+#nav-top a, #nav-top a:visited {
+color: #000;
+font-weight:bold;
+text-decoration: none;
+margin: 4px;
+}
+
+#nav-top a:hover, #nav-top a:visited:hover {
+color: #aaa;
+}
+
+/* main navigation */
+
+#mainnav {
+
+margin: 2px 16px 2px 11px;
+min-height: 30px;
+background:inherit;
+}
+
+#mainnav ul {
+height: 100%;
+margin: 0;
+padding: 0 0 0 10px;
+}
+
+#mainnav li {
+list-style-type: none;
+float: right;
+width: auto;
+margin: 7px 5px 0 5px;
+
+}
+
+#mainnav a:link, #mainnav a:visited {
+display: block;
+color: #aaa;
+text-transform:uppercase;
+font-weight: bold;
+text-decoration: none;
+padding: 1px 10px 2px 12px;
+background:inherit;
+border-bottom: 2px solid #1c6ea8;
+}
+
+#mainnav a:hover, #mainnav a:visited:hover {
+color: #FFFFFF;
+text-decoration: none;
+padding: 1px 10px 2px 12px;
+border-bottom: 2px solid #2699eb;
+background:#212121;
+}
+
+
+
+/*sub main navigation */
+
+#mainnavsub {
+clear: both;
+}
+
+#mainnavsub ul {
+margin: 0;
+padding: 0 10px 0 10px;
+}
+
+#mainnavsub li {
+list-style-type: none;
+float: right;
+margin: 4px 16px 0 2px;
+padding-left: 8px;
+}
+
+#mainnavsub li a {
+font-size:10px;
+font-weight:bold;
+text-transform:uppercase;
+text-decoration: none;
+color:#aaa;
+}
+#mainnavsub li a:hover {
+text-decoration: none;
+color:#fff;
+}
+
+/*right nav */
+
+#nav-right ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#nav-right {
+margin: 10px;
+}
+
+#nav-right li {
+display:block;
+padding:0;
+margin: 2px 0 2px 0px;
+border-bottom: 1px dotted #888; 
+}
+#nav-right li a {
+display:block;
+padding: 1px 1px 1px 6px;
+text-decoration: none;
+background:inherit;
+color: #aaa;
+}
+
+#nav-right li a:hover{
+background:#212121;
+color: #fff;
+}
+
+/* footer */
+#footer-contents {
+clear: both;
+text-align: right;
+background:inherit;
+margin: 0;
+padding: 2px 0 2px 0;
+border-top:1px dotted #aaa;
+}
+
+	
+#footer-copy {
+padding: 5px;
+background:inherit;
+margin: 4px 16px 4px 10px!important;
+color: #FFFFFF;
+}
+
+#footer-copy a,#footer-copy a:visited {
+color: #1c6ea8;
+}
+
+#footer-copy a:hover,#footer-copy a:visited:hover {
+color: #aaa;
+}
+
+#footer-links{
+font-size: 10px;
+padding: 0;
+margin: 10px 16px !important;
+}

@@ -1,0 +1,25 @@
+/* =Internet Explorer Fixes
+----------------------------------------------------------------------*/
+
+.magnify a
+{
+	position: relative;
+}
+
+.magnify a:hover
+{
+	display: block;
+	font-size: 100%;
+	z-index: 1;
+}
+
+.magnify a:hover .preview
+{
+	top: -38px;
+	left: -50px;
+}
+
+.magnify li
+{
+	position: static;
+}

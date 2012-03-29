@@ -1,0 +1,94 @@
+body {
+	background:url("blue.bmp") repeat-x;
+}
+#container {
+	padding: 5px;
+	border: 1px solid #ccc;
+	width: 600px;
+	background: white;
+	color: black;
+	height: 620px;
+	font-family: Tahoma,arial,sans-serif;
+}
+#image {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	background:url("header.bmp") repeat-x;
+	height: 168px;
+	color: white;
+	text-align: left;
+}
+#menu {
+	float: left;
+	margin: 5px;
+	font-family: Tahoma,arial,sans-serif;
+	font-size: 8pt;
+}
+#menu ul {	
+	list-style: none;
+	width: 150px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 1.1em;
+}	
+
+#menu li {
+	margin-top: 4px;
+	text-align: left;
+}
+
+#menu li a {
+	font-weight: bold;
+	padding-left: 4px;
+	height: 15px;
+	text-decoration: none;
+	color: #3399FF;
+	display: block;
+	background: #ffffff;
+	border-left: 5px solid #3399FF;
+}	
+	
+#menu li a:hover {
+	background: #3399FF;
+	color: #ffffff;
+}
+
+#main {
+	margin-top: 10px;
+	text-align: left;
+	padding: 5px;
+	float: right;
+	font-family: Tahoma,arial,sans-serif;
+	width: 420px;
+	border-left: 1px solid #ccc;
+}
+#main a {
+	text-decoration: none;
+	color: #3399FF;
+	background: white;
+}
+#main a:hover {
+	border-bottom: 1px dashed #3399FF;
+}
+#copyright {
+	margin-top: 5px;
+	padding: 5px;
+	font-family: Tahoma,arial,sans-serif;
+	border-top: 1px solid #ccc;
+	float: left;
+	width: 590px;
+}
+#copyright a {
+	color: #3399FF;
+	text-decoration: none;
+	background: white;
+}
+#copyright a:hover {
+	border-bottom: 1px dashed #3399ff;
+}
+h1 {
+	font-size: 1.4em;
+}
+h2 {
+	font-size: 1.1em;
+}

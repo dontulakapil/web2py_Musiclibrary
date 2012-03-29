@@ -1,0 +1,343 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #373737 url(images/img01.gif);
+	font: normal small Verdana, Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p, blockquote, ul, ol {
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 3em;
+}
+
+ul {
+	margin-left: 3em;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+}
+
+/* Boxed Style */
+
+.boxed {
+}
+
+.boxed .title {
+	height: 22px;
+	padding: 3px 0 0 30px;
+	background: #1C1C1C url(images/img08.jpg) no-repeat;
+	font-size: 1em;
+}
+
+.boxed .content {
+	margin-left: 12px;
+	padding: 18px;
+	background: #313131 url(images/img09.gif);
+	border-bottom: 1px solid #111111;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 25px;
+	padding: 0 15px 10px 15px;
+	background: url(images/img11.gif) repeat-x left bottom;
+}
+
+.post .title {
+	margin-bottom: 10px;
+	padding: 5px 0 5px 40px;
+	background: url(images/img10.jpg) no-repeat left center;
+	font-size: 1.5em;
+}
+
+.post h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .8em;
+}
+
+.post .story p, .post .story blockquote, .post .story ul, .post .story ol {
+	margin-bottom: 1.5em;
+	line-height: 180%;
+}
+
+/* Header */
+
+#header {
+	width: 760px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 380px;
+	height: 130px;
+	background: url(images/img02.jpg) no-repeat;
+}
+
+#logo h1 {
+	padding: 15px 0 0 135px;
+	font-size: 36px;
+}
+
+#logo h2 {
+	margin-top: -8px;
+	padding: 0 0 0 135px;
+	font-size: 11px;
+}
+
+#logo h2 a {
+	color: #B8B8B8;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 340px;
+	height: 120px;
+	padding: 10px 0 0 40px;
+	background: url(images/img03.jpg) no-repeat;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: block;
+	float: left;
+	width: 140px;
+	padding: 0 0 5px 0;
+}
+
+#menu a {
+	padding-left: 24px;
+	background: url(images/img04.gif) no-repeat left center;
+	text-decoration: none;
+	text-transform: lowercase;
+	font: bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+#menu a:hover {
+	background-image: url(images/img05.gif);
+}
+
+#menu .active a {
+	background-image: url(images/img06.gif);
+}
+
+/* Content */
+
+#content {
+	width: 660px;
+	margin: 0 auto;
+	background: #373737 url(images/img07.jpg) repeat-y;
+}
+
+#extra {
+}
+
+/* Content > Main */
+
+#main {
+	float: right;
+	width: 393px;
+	padding-right: 15px;
+}
+
+#main a {
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+}
+
+/* Content > Main > Example */
+
+#example {
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 205px;
+	padding: 8px 0 0 15px;
+}
+
+#sidebar a {
+}
+
+/* Content > Sidebar > Login */
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	display: block;
+	font-size: x-small;
+}
+
+#login input {
+	padding: 2px 5px;
+	font: normal x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputtext1, #inputtext2 {
+	width: 146px;
+	margin-bottom: 10px;
+	border: 1px solid #1A1A1A;
+}
+
+#inputsubmit1 {
+	float: right;
+	background: #1A1A1A;
+	border: none;
+	color: #FFFFFF;
+}
+
+#login p {
+	font-size: x-small;
+}
+
+/* Content > Sidebar > Updates*/
+
+#updates {
+}
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+/* Content > Sidebar > Partners*/
+
+#partners {
+}
+
+#partners .content {
+	padding: 10px 0;
+}
+
+#partners ul {
+	margin: 0;
+	border-bottom: 1px solid #D1BC5C;
+	list-style: none;
+	line-height: normal;
+}
+
+#partners li {
+	padding: 10px;
+	border-top: 1px solid #D1BC5C;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 660px;
+	margin: 0 auto;
+	padding: 30px 0;
+	background: url(images/img12.gif) repeat-x;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: x-small;
+	color: #373737;
+}
+
+#footer a {
+	color: #373737;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Natheless/master.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <h1>
+    {{=response.title or request.application}}
+   </h1>
+   <h2>
+    {{=response.subtitle or '=response.subtitle'}}
+   </h2>
+  </div>
+  <div id="navigation">
+   <ul>
+    <li>
+     <a href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Pages
+     </a>
+    </li>
+    <li class="active">
+     <a href="#">
+      Blog
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Archives
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Contact Us
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      My Account
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="wrapper">
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <div id="news">
+    <div class="item">
+     <h4>
+      <a href="http://en.wikipedia.org/wiki/Antoninus_Pius">
+       Antoninus Pius
+      </a>
+     </h4>
+     <em>
+      December 29, 2006
+     </em>
+     <p>
+      Titus Aurelius Fulvus Boionius Arrius Antoninus Pius, a Roman emperor, died 
+				from the Many Middle Names Plague.
+     </p>
+    </div>
+    <div class="item">
+     <h4>
+      <a href="http://en.wikipedia.org/wiki/Augustus">
+       Augustus
+      </a>
+     </h4>
+     <em>
+      December 29, 2006
+     </em>
+     <p>
+      One of the most important Roman Emperors ever, he at some point went 
+				by the name Gaius Julius Caeser
+      <span class="strike">
+       Octopus
+      </span>
+      Octavianus.
+     </p>
+    </div>
+    <div class="item">
+     <h4>
+      <a href="http://en.wikipedia.org/wiki/Claudius">
+       Claudius
+      </a>
+     </h4>
+     <em>
+      December 28, 2006
+     </em>
+     <p>
+      Fourth emperor of
+      <span class="strike">
+       JC Penny
+      </span>
+      the Julio-Claudian dynasty, 
+				he's another one of those people with the "Look at me, I have 208433 
+				middle names!" syndrome.
+     </p>
+    </div>
+    <div class="item">
+     <h4>
+      <a href="http://en.wikipedia.org/wiki/Diocletian">
+       Diocletian
+      </a>
+     </h4>
+     <em>
+      December 25, 2006
+     </em>
+     <p>
+      Otherwise known as Gaius Aurelius Valerius Diocletianus, he bought an 
+				end to the
+      <a href="http://en.wikipedia.org/wiki/Crisis_of_the_Third_Century">
+       Crisis of
+       <span class="strike">
+        Too Few Middle Names
+       </span>
+       the Third Century
+      </a>
+      .
+     </p>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="meta">
+    <div class="popular">
+     <h3>
+      Popular Posts
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Lorem ipsum dolor sit amet, consectetuer elit.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Etiam id sapien et arcu pharetra fermentum.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Nulla ullamcorper hendrerit nunc.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Donec semper leo non sem ultrices gravida.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Sed suscipit vehicula nunc.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Vivamus hendrerit ornare purus.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Vivamus sed justo interdum nulla scelerisque.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Morbi vehicula scelerisque enim.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Curabitur hendrerit tincidunt felis.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Praesent luctus interdum augue.
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="recent">
+     <h3>
+      Recent Posts
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Ut dignissim mi id metus.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Pellentesque volutpat arcu sed.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Aaugue malesuada volutpat.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Suspendisse interdum malesuada velit.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Donec eget massa vel nunc cursus tristique.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Nullam blandit ante non dolor.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Aenean pretium nisi nec nisi.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Donec accumsan varius dolor.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Suspendisse viverra augue quis nunc.
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Sed aliquam libero aliquet erat.
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="authors">
+     <h3>
+      Contributing Authors
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        William Shakespeare
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Aliquam Fermentum
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Ante Ateros
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Nullam Vitae
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Ligula
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Vel Sapient
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Dignissim
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Molestie
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Nisipharetra
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Conse Et Erat
+       </a>
+      </li>
+     </ul>
+    </div>
+    <hr />
+   </div>
+   <p id="copyright">
+    Natheless Design by
+    <a href="http://www.nikhedonia.com/">
+     Sadhana Ganapathiraju
+    </a>
+    |
+    <a class="valid" href="http://validator.w3.org/check/referer">
+     XHTML
+    </a>
+    |
+    <a class="valid" href="http://jigsaw.w3.org/css-validator/check/referer">
+     CSS
+    </a>
+    |
+    <a href="#">
+     RSS
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

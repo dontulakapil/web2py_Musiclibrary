@@ -1,0 +1,177 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Elements */
+
+body {
+	background: #FEE9FE;
+	margin-top: 50px;
+	text-align: justify;
+	color: #383838;
+	font: 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h2, h3 {
+	margin-top: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #383838;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+h3 {
+	margin: 0;
+	font-size: 12px;
+}
+
+h4, h5, h6 {
+}
+
+p, ol, ul, dl, blockquote {
+	margin-top: 0;
+
+}
+
+/* Header */
+
+#header {
+	width: 624px;
+	height: 78px;
+	margin: 0 auto;
+	background: url(images/img1.jpg) no-repeat left bottom;
+}
+
+#header h1 {
+	float: left;
+	margin: 0;
+	padding: 25px 0 20px 70px;
+	font-size: 32px;
+	line-height: 0px;
+}
+
+#header h2 {
+	float: right;
+	margin: 0;
+	padding: 25px 70px 0px 0;
+	font-size: 14px;
+}
+
+#header a {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Extra */
+
+.extra {
+	width: 624px;
+	margin: 0 auto;
+	background: url(images/img1.jpg);
+}
+/** MENU */
+
+#menu1 {
+	float: left;
+	width: 135px;
+	margin: 0px auto;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #383838;
+}
+
+#menu1 ul {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+#menu1 li {
+}
+
+#menu1 a {
+	color: #383838;
+	text-decoration: none;
+}
+
+#menu1 a:hover {
+	color: #383838;
+}
+
+#menu-01 {
+	margin: 0px 0px 5px 0px;
+	padding: 10px 5px 10px 15px;
+	list-style: none;
+	border: 1px solid #F4A5F4;
+}
+
+#menu-02 {
+	margin: 0px 0px 5px 0px;
+	padding: 10px 5px 10px 15px;
+	list-style: none;
+	border: 1px solid #F4A5F4;
+}
+
+#menu-03 {
+	margin: 0px 0px 5px 0px;
+	padding: 10px 5px 10px 15px;
+	list-style: none;
+	border: 1px solid #F4A5F4;
+}
+
+#menu-04 {
+	margin: 0px 0px 5px 0px;
+	padding: 10px 5px 10px 15px;
+	list-style: none;
+	border: 1px solid #F4A5F4;
+}
+
+#menu-05 {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 5px 10px 15px;
+	list-style: none;
+	border: 1px solid #F4A5F4;
+}
+
+
+/* Content */
+
+#content {
+	width: 624px;
+	margin: 0 auto;
+	background: url(images/img2.jpg);
+}
+
+#colTwo {
+	float: right;
+	width: 312px;
+	padding: 0 75px 0 25px;
+}
+
+#colOne {
+	float: left;
+	width: 137px;
+	padding: 0 0 0 75px;
+}
+
+/* Footer */
+
+#footer {
+	width: 624px;
+	height: 233px;
+	margin: 0 auto;
+	background: url(images/img3.jpg) no-repeat;
+}
+
+#footer p {
+	margin: 0px;
+	text-align: center;
+	color: #2B2B2B;
+	padding: 140px 0 0 140px;
+}

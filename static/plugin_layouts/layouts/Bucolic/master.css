@@ -1,0 +1,208 @@
+* { margin: 0; padding: 0; }
+
+html
+{
+	color: #999999;
+	background-color: #2f2a3e;
+	font: normal 76% "Trebuchet MS", "Lucida Grande", Verdana, Sans-Serif;	
+}
+
+/* Links */
+
+a { text-decoration: none; font-weight: bold; border-bottom: 1px dotted #333333; }
+
+a:link { color: #2f2a3e; border-bottom-color: #2f2a3e; } 
+
+a:visited { color: #51476a; border-bottom-color: #51476a; }
+
+a:hover, a:active { color: #000000; border-bottom-color: #000000; border-bottom-style: solid; }
+
+a.offsite { padding-right: 15px; background: transparent url(images/offsite.gif) right center no-repeat; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1.2em; }
+
+h1 { font-size: 32px; }
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 24px; }
+
+h4, h5, h6 { font-size: 20px; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: normal; border-bottom-width: 0; }
+
+/* Lists */
+
+ul, ol
+{
+	margin: 1em 0;
+	line-height: 1.8em;
+}
+
+ol li { margin-left: 2.5em; }
+
+ul { padding-left: 2em; list-style-type: square; }
+
+/* Images */
+
+.drop-shadow
+{
+	float: left;
+	position: relative;
+	margin: 10px 3px 0 10px !important;
+	margin: 10px 3px 0 5px; 
+	background: transparent url(images/drop_shadow.png) bottom right no-repeat !important;
+	background: transparent url(images/drop_shadow_ie.gif) bottom right no-repeat;
+}
+
+.drop-shadow img
+{
+	padding: 4px;
+	display: block;
+	position: relative;
+	margin: -6px 6px 6px -6px;
+	background-color: #ffffff;
+	border: 1px solid #a9a9a9;
+}
+
+.drop-shadow p
+{
+	right: 11px;
+	bottom: 0px;
+	color: #eeeeee;
+	padding: 5px 10px;
+	position: absolute; 
+	background-color: #2e333b;
+	border-top: 1px solid #111111;
+}
+
+.drop-shadow a { border-bottom-width: 0; }
+
+/* Other Html Elements */
+
+blockquote
+{
+	clear: both;
+	padding: 1em;
+	margin: 2em 3em;
+	font-size: 0.9em;
+	line-height: 1.7em;
+	background-color: #eeeeee;
+	border: 1px solid #a9a9a9;
+}
+
+code { font-family: Consolas, Monaco, Verdana, "Courier New"; font-size: .93em; }
+
+abbr, acronym, cite { border-bottom: 1px dotted #333333; cursor: help; }
+
+ins { font-weight: bold; text-decoration: none; }
+
+hr { clear: both; height: 1px; visibility: hidden; }
+
+/* Structure */
+
+body { background-color: #c1bdcc; color: #2f2a3e; }
+
+#header
+{
+	width: 100%; 
+	background-color: #000000;
+	border-top: 10px solid #31274c;	
+}
+
+#navigation
+{
+	width: 100%; 
+	float: left;
+	clear: both;
+	background-color: #51476a;
+}
+
+#about
+{
+	clear: both;
+	color: #d5cceb;
+	background-color: #73698c;
+}
+
+#content
+{
+	clear: both;
+	width: 850px;
+	margin: 0 auto;
+	padding: 25px 0; 
+	background-color: #c1bdcc;
+}
+
+#footer { color: #999999; clear: both; background-color: #2f2a3e; padding: 20px 0; text-align: center; }
+
+/* Header */
+
+#header h1
+{
+	width: 850px; 
+	height: 100px;
+	margin: 0 auto;
+	background: #000000 url(images/header.png) top left no-repeat;
+}
+
+#header h1 a
+{
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
+}
+
+/* Navigation */
+
+#navigation ul { list-style-type: none; margin: 0 auto; padding: 0; width: 850px; }
+
+#navigation li { float: left; }
+
+#navigation a
+{
+	float: left;
+	display: block;
+	color: #c5c5c5;
+	padding: 5px 8px;
+	margin-top: 10px;
+	border-bottom-width: 0;
+}
+
+#navigation li.active a
+{
+	color: #ffffff;
+	background-color: #73698c;
+}
+
+#navigation a:hover, #navigation a:active { color: #eeeeee; background-color: #645a7d; }
+
+/* About */
+
+#about dl { margin: 0 auto; width: 850px; padding: 20px 0; }
+
+#about dt { padding: 10px 0; }
+
+#about dd { padding: 5px 0; margin-left: 25px; }
+
+#about dt strong { color: #1c1927; }
+
+#about dt em { padding: 0 2px; }
+
+#about dd a { margin-left: 25px; }
+
+#about a cite { border-bottom-width: 0; }
+
+/* Content */
+
+#content .drop-shadow p { bottom: 11px; }
+
+/* Footer */
+
+#footer p { margin: 0 auto; width: 850px; padding: 5px 0; }
+
+#footer a { color: #776d91; border-bottom-color: #776d91; }
+
+#footer a:hover, #footer a:active { color: #968ab3; border-bottom-color: #968ab3; }

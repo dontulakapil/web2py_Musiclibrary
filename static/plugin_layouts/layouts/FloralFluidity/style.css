@@ -1,0 +1,94 @@
+BODY {
+	text-align: center;
+	background-image: url(daffodil.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: #FFDEAD;
+	font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+#container {
+	margin: auto;
+	width: 85%;
+	padding: 5px;
+	border: thick groove Blue;
+}
+#header {
+	height: 120px;
+	background: transparent url(FooterBg.gif);
+	margin: auto;
+}
+#header h1 {
+	color: red;
+	float: right;
+	margin: 0 10px 0 0;
+}
+#header p {
+	clear: both;
+	text-align: right;
+	color: Blue;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 0 10px 0 0;
+}
+#content {
+	margin: auto;
+	background: transparent url(bg.gif);
+	text-align: left;
+}
+#content h3 {
+	color: red;
+	margin: 0 0 0 10px;
+}
+#content p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#content a {
+	color: blue;
+	text-decoration: none;
+}
+#content a:hover {
+	color: red;
+}
+#footer {
+	margin: auto;
+	background: transparent url(FooterBg.gif);
+	font-size: 0.75em;
+	clear: both;
+	line-height: 1.15em;
+}
+.float-right {
+	clear: right;
+	float: right;
+}
+img {
+	border: none;
+}
+#menu {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+#menu ul {
+	display: inline;
+	list-style: none;
+}
+#menu ul li {
+	float: left;
+	margin-right: 2px;
+}
+#menu ul li a {
+	background-color: white;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: blue;
+}
+#menu ul li a:hover {
+	color: White;
+	background-color: Blue;
+}

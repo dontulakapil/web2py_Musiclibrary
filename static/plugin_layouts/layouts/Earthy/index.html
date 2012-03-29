@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+    <title>SimplyAwesome</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+    <!--
+    
+    body
+    {
+        margin: 0;
+        padding: 0;
+        color: #222222;
+        line-height: 1.6em;
+        background-color: #635b46;
+        font: normal 13px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+    }
+    
+    /* Links */
+    
+    a:link 
+    { 
+        text-decoration: none; 
+        color: #53584a; 
+    } 
+    
+    a:visited 
+    { 
+        text-decoration: none; 
+        color: #636958; 
+    }
+    
+    a:hover, a:active { color: #993333; }
+    
+    /* Html Elements */
+    
+    h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 10px 0; }
+    
+    /* Structure */
+    
+    #container 
+    { 
+        margin: 0 auto; 
+        width: 900px; 
+        background-color: #eeeeee; 
+        border-left: 5px solid #3c3016; 
+        border-right: 5px solid #3c3016; 
+    }
+    
+    #header-wrapper 
+    { 
+        border-top: 10px solid #7e7d51; 
+        border-bottom: 3px solid #7e7d51; 
+        width: 100%; 
+        float: left; 
+        background-color: #f7f4ee; 
+    }
+    
+    #header
+    {
+        float: left;
+        width: 40%;
+    }
+    
+    #navigation
+    {
+        float: right;
+        width: 45%;
+    }
+    
+    #wrapper
+    {
+        clear: both;
+        float: left;
+        width: 100%; 
+        background-color: #ffffff;
+        border-bottom: 3px solid #7e7d51;
+    }
+    
+    #content-wrapper
+    {
+        float: left;
+        width: 70%;
+    }
+    
+    #latest { line-height: 1.5em; }
+    
+    #content
+    {
+        float: left;
+        padding: 20px;
+    }
+    
+    #sidebar-wrapper
+    {
+        float: left;
+        width: 30%;
+    }
+    
+    #sidebar
+    {
+        float: left;
+        padding: 20px; 
+    }
+    
+    #footer
+    {
+        clear: both;
+        text-align: center; 
+        padding: 20px 0 10px; 
+        border-top: 1px solid #3c3016;
+        border-bottom: 10px solid #7e7d51; 
+        background-color: #f7f4ee; 
+        font-size: 12px; 
+        color: #636958; 
+    }
+    
+    /* Header */
+    
+    #header h1, #header h2 { padding-left: 10px; padding-right: 10px; }
+    
+    #header h2 { font-size: 12px; font-weight: bold; padding-top: 0; }
+    
+    /* Navigation */
+    
+    #navigation ul { float: left; list-style-type: none; margin: 0; padding: 0; }
+    
+    #navigation li { float: left; }
+    
+    #navigation li a:link,
+    #navigation li a:visited
+    {
+        float: left; 
+        display: block;
+        margin: 10px 5px;
+        padding: 5px 10px;
+        color: #635b46;
+        border: 1px solid #bbbbbb;
+    }
+    
+    #navigation li a:hover,
+    #navigation li a:active
+    {
+        color: #993333; 
+        background-color: #ffffff;
+        border: 1px solid #53584a;
+    }
+    
+    body#bhome #navigation li#home a, 
+    body#babout #navigation li#about a,
+    body#bcontact #navigation li#contact a,
+    body#barchives #navigation li#archives a
+    {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #333333;         
+    }
+    
+    /* Latest */
+    
+    #latest .entry
+    {
+        border-top: 1px solid #4a502e;
+        border-bottom: 1px solid #4a502e;
+        color: #ffffff;
+        background-color: #8e8568;
+    }
+    
+    #latest a:link { color: #e0e8b9; }
+    
+    #latest a:visited { color: #f8f8ec; }
+    
+    #latest a:hover, #latest a:active { color: #ffe3a4; }
+    
+    #latest .entry { padding: 10px; }
+    
+    #latest .entry-body a:link 
+    { 
+        font-weight: bold; 
+        font-size: 12px; 
+        border-bottom: 1px dotted #e0e8b9; 
+    }
+    
+    #latest .entry-body a:visited
+    {
+        font-weight: bold; 
+        font-size: 12px; 
+        border-bottom: 1px dotted #f8f8ec; 
+    }
+    
+    #latest .entry-body a:hover,
+    #latest .entry-body a:active
+    {
+        border-bottom-color: #ffe3ac;
+    }
+    
+    #latest .entry-footer
+    {
+        padding-left: 20px;
+        background: transparent url(date.png) 0 0 no-repeat;
+    }
+    
+    #latest .entry-footer a
+    {
+        font-size: 11px;
+        font-weight: bold; 
+    }
+    
+    #latest h3 
+    {
+        font-size: 24px; 
+        padding: 5px 0;
+    }
+    
+    /* Content */
+    
+    #content .entry 
+    {
+        border-top: 2px solid #636958;
+        background-color: #f8f8ec;
+        margin-bottom: 25px; 
+    }
+    
+    #content .entry h3 
+    {
+        font-size: 24px; 
+        padding-left: 10px;
+        padding-right: 10px; 
+        padding-bottom: 0;
+    }
+    
+    #content .entry-body, #content .entry-footer
+    {
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+    
+    #content .entry-footer
+    {
+        font-size: 12px;
+        color: #555555; 
+        padding-left: 30px;
+        padding-bottom: 10px; 
+        border-bottom: 1px dotted #636958;
+        background: transparent url(date.png) 10px 0 no-repeat;
+    }
+    
+    /* Sidebar */
+    
+    #sidebar .sideblock
+    {
+        border: 1px solid #636958;
+        padding: 5px;
+        margin: 0 0 16px;
+        background-color: #f8f8ec;
+    }
+    
+    #sidebar .sideblock h3
+    {
+        padding-left: 5px; 
+        padding-right: 5px;
+        padding-bottom: 0;
+        color: #993333;
+    }
+    
+    #sidebar .sideblock ul
+    {
+        line-height: 1.8em;
+        font-weight: bold;
+        font-size: 12px;
+        list-style-type: square;
+    }
+    
+    #sidebar #recently ul
+    {
+        font-weight: normal;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer a:link { color: #7e7d51; }
+    
+    #footer a:visited { color: #636958; }
+    
+    #footer a:hover,
+    #footer a:active
+    {
+        color: #53584a;
+        border-bottom: 1px dotted #7e7d51;
+    } 
+        
+    //-->
+    </style>
+
+</head>
+
+<body id="bhome">
+
+    <div id="container">
+    
+        <div id="header-wrapper">
+        
+            <div id="header">
+            
+                <h1><a href="#home">SimplyAwesome</a></h1>
+                <h2>brain.save(universe.fetch(everything_interesting));</h2>
+            
+            </div>
+            
+            <div id="navigation">
+            
+                <ul>
+                    <li id="home"><a href="#home" title="Home">Home</a></li>
+                    <li id="about"><a href="#about" title="About">About</a></li>
+                    <li id="contact"><a href="#contact" title="Contact">Contact</a></li>
+                    <li id="archives"><a href="#archives" title="Archives">Archives</a></li>
+                </ul>
+            
+            </div>
+        
+        </div>
+        
+        <div id="wrapper">
+        
+            <div id="latest">
+                
+                    <div class="entry">
+                        
+                        <h3>Lorem Ipsum Dolor Sit Amet</h3>
+                        
+                        <div class="entry-body">
+                        
+                            <p>
+                            
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut venenatis sem sit amet lacus. Praesent sed orci. 
+                                Ut laoreet. Integer et nunc. Cras vehicula viverra nulla. Mauris erat nibh, dapibus posuere, semper ac, 
+                                porttitor faucibus, arcu. Vivamus risus erat, aliquam sit amet, lobortis vitae, cursus quis, ante. Proin 
+                                imperdiet nisi nec tortor. Aliquam risus pede, dictum sit amet, dapibus nec, pharetra vitae, est. Phasellus 
+                                pharetra. 
+                                
+                            </p>
+                            
+                            <p>
+                                
+                                Ut laoreet justo non diam. Sed ante leo, convallis at, pellentesque nec, vestibulum sed, dui. Nunc 
+                                posuere tempor metus. Curabitur metus augue, pulvinar ut, vehicula eget, sodales nec, orci. Maecenas eu lectus 
+                                pellentesque justo porta aliquet. Pellentesque nisl. Nam quis ante luctus lectus malesuada placerat.    
+                            
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="entry-footer">
+                        
+                            Posted on June 30, 2006 in <a href="#21">Stuff</a>, <a href="#22">More Stuff</a>, <a href="#23">Even More Stuff</a> | 
+                            <a href="#">Comments(132)</a> | <a href="#">Trackbacks(123)</a> | <a href="#">Read More &raquo;</a>
+                        
+                        </div>
+                        
+                    </div>
+                
+                </div>
+        
+            <div id="content-wrapper">
+            
+                <div id="content">
+                
+                    <div class="entry">
+                        
+                        <h3><a href="#">Donec Ultrices Nisi Id</a></h3>
+                        
+                        <div class="entry-body">
+                        
+                            <p>
+                                
+                                Suspendisse potenti. Sed tincidunt aliquet elit. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                                nascetur ridiculus mus. Vivamus leo tortor, aliquam porttitor, hendrerit commodo, bibendum vel, magna. 
+                                
+                            </p>
+                            
+                            <p>
+                            
+                                Nunc et ligula vitae pede sollicitudin dapibus. Nunc metus. Fusce leo diam, viverra eu, tincidunt sed, sagittis ac, nisi. 
+                                Nunc erat lectus, nonummy id, ornare congue, adipiscing vel, ligula. Vestibulum ante ipsum primis in faucibus orci luctus 
+                                et ultrices posuere cubilia Curae; Aliquam elementum nisl quis diam. Suspendisse in ligula. Ut viverra. 
+                                
+                            </p>
+                            
+                            <p>
+                            
+                                Nulla iaculis libero pharetra turpis. Duis facilisis nunc non dui. Nulla vel nulla non lorem placerat pellentesque.
+                                
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="entry-footer">
+                        
+                            Posted on June 29, 2006 in <a href="#21">Eighty-Nine</a> | 
+                            <a href="#">Comments(264)</a> | <a href="#">Trackbacks(86)</a> | <a href="#">Read More &raquo;</a>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="entry">
+                    
+                        <h3><a href="#">Maecenas at Turpis</a></h3>
+                        
+                        <div class="entry-body">
+                        
+                            <p>
+                            
+                                Maecenas at turpis. Nunc tellus. Pellentesque vitae neque. In ut urna eget nulla feugiat pellentesque. 
+                                In vehicula mauris luctus justo. Pellentesque sagittis odio ac leo. Maecenas malesuada tincidunt erat. 
+                                Proin dolor. Suspendisse consequat dolor euismod orci. Etiam ipsum. Etiam eget dui. 
+                            
+                            </p>
+                            
+                            <p>
+                            
+                                Vestibulum in sem sed eros auctor porta.
+                            
+                            </p>
+                        
+                        </div>
+                        
+                        <div class="entry-footer">
+                        
+                            Posted on June 28, 2006 in <a href="#21">And More</a>, <a href="#23">Batmap</a> | 
+                            <a href="#">Comments(63)</a> | <a href="#">Trackbacks(4)</a> | <a href="#">Read More &raquo;</a>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="entry">
+                    
+                        <h3><a href="#">Turpis Potenti</a></h3>
+                        
+                        <div class="entry-body">
+                        
+                            <p>
+                            
+                                Nunc cursus, massa egat hendrerit pharetra, neque nisi ullacorper lacus, et euismod tellus dui
+                                eu nulla. Vestibulum in sem sed eros auctor porta.
+                            
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="entry-footer">
+                        
+                            Posted on June 25, 2006 in <a href="#21">What's This?</a>, <a href="#22">Sixth Sense</a>| 
+                            <a href="#">Comments(0)</a> | <a href="#">Trackbacks(0)</a> | <a href="#">Read More &raquo;</a>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <p class="pagination">
+                        <a href="#back" title="Previous Entries">&larr; Previous Entries</a>
+                    </p>
+                    
+                </div>
+                            
+            </div>
+            
+            <div id="sidebar-wrapper">
+            
+                <div id="sidebar">
+                
+                    <div class="sideblock" id="byCat">
+                    
+                        <h3>By Category</h3>
+                        
+                        <ul>
+                            <li><a href="#02">Magic</a></li>
+                            <li><a href="#03">Batmap</a></li>
+                            <li><a href="#04">1000 Clowns</a></li>
+                            <li><a href="#05">1+1=3</a></li>
+                            <li><a href="#06">Woot!</a></li>
+                            <li><a href="#07">Woot++</a></li>
+                            <li><a href="#08">Odd Man Out</a></li>
+                            <li><a href="#09">Just One More</a></li>
+                            <li><a href="#10">And Done!</a></li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="sideblock" id="byDate">
+                    
+                        <h3>By Date</h3>
+                        
+                        <ul>
+                            <li><a href="#18">July 2006</a></li>
+                            <li><a href="#17">June 2006</a></li>
+                            <li><a href="#16">May 2006</a></li>
+                            <li><a href="#15">April 2006</a></li>
+                            <li><a href="#14">March 2006</a></li>
+                            <li><a href="#13">March 2006</a></li>
+                            <li><a href="#12">February 2006</a></li>
+                            <li><a href="#11">January 2006</a></li>
+                            <li><a href="#11">December 2005</a></li>
+                            <li><a href="#11">November 2005</a></li>
+                            <li><a href="#11">October 2005</a></li>
+                            <li><a href="#11">September 2005</a></li>
+                            <li><a href="#11">August 2005</a></li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="sideblock" id="searchBox">
+                    
+                        <form method="post" id="searchForm" action="#">
+                            
+                            <div><input type="text" id="keywordsTextBox" size="20" />
+                            <input type="submit" value="Search" id="searchButton" /></div>
+                            
+                        </form>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <div id="footer">
+        
+            <p>
+                <a href="http://showcase.nikhedonia.com/free_templates/earthy/">Design</a> Copyright &copy; 2006 
+                <a href="http://www.nikhedonia.com/" title="SimplyGold">SimplyGold</a>. | 
+                <a href="http://validator.w3.org/check/referer" title="Xhtml 1.1 Strict">Xhtml Happy</a> | 
+                <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Css 2.0 Strict">Css Happy</a> | 
+                <a href="#rss" title="Rss Feeds">Rss</a> | 
+                <a href="#about" title="About">About</a> | 
+                <a href="#contact" title="Contact">Contact</a>
+            </p>
+        
+        </div>
+    
+    </div>    
+
+</body>
+</html>

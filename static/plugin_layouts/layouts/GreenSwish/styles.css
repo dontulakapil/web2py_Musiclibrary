@@ -1,0 +1,21 @@
+/* Forest Green Swish Stylesheet by Will Peavy - willpeavy.net */
+
+body {background-color:#070707;  color:#000; font-family:Verdana,sans-serif; margin-left:0; margin-right:0; font-size:15px;}
+h1 {font-family:Arial,sans-serif; margin-top:0; font-size:26px; letter-spacing:-1px; color:#222;}
+h2 {font-family:Arial,sans-serif; margin-bottom:-16px; font-size:20px; letter-spacing:-1px; color:#5e2620;}
+#container {background-image:url(swish_green.jpg); background-repeat:no-repeat; width:1000px; margin:auto; position:relative; top:10px;}
+#content {width:860px; margin:auto; position:relative; top:85px;}
+#footer {width:1000px; height:40px; margin:auto; position:relative; top:95px; background-image:url(swish_bottom.jpg); background-repeat:no-repeat; background-position:left  center; padding-left:70px; color:#333; }
+#stretch {background-image:url(swish_stretch.jpg); width:1000px; height:100%; position:absolute; top:496px; left:0px;}
+#cover {background-color:#070707; width:1000px; height:401px; position:absolute; bottom:-496px; left:0px;}
+a {text-decoration:none;}
+a:link {color:#374b66;}
+a:visited {color:#374b66;}
+a:active {color:#537099;}
+a:hover {color:#537099;}
+#link1 {position:absolute; top:22px; left:70px; font-size:26px;}
+#link2 {position:absolute; top:22px; left:210px; font-size:26px;}
+#link3 {position:absolute; top:22px; left:350px; font-size:26px;}
+#link4 {position:absolute; top:22px; left:490px; font-size:26px;}
+#link5 {position:absolute; top:22px; left:630px; font-size:26px;}
+a#logo {position:absolute; top:22px; left:760px; font-size:26px; color:#000;}

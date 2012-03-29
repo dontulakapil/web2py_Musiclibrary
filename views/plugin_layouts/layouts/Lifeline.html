@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Lifeline/http://www.nikhedonia.com/'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Lifeline/screen.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="topnav">
+   <ul>
+    <li>
+     <a href="#41">
+      Login
+     </a>
+    </li>
+    <li>
+     <a href="#42">
+      Register
+     </a>
+    </li>
+    <li>
+     <a href="#43">
+      Subscribe
+     </a>
+    </li>
+    <li id="skip">
+     <a href="#content">
+      Skip
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="header">
+   <img src="images/header.png" width="750px" height="150px" alt="LifeLine" />
+  </div>
+  <div id="wrapper">
+   <div id="content-wrapper">
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+   </div>
+   <div id="sidebar-wrapper">
+    <div id="sidebar">
+     <ul>
+      <li class="header">
+       <a href="#01">
+        Solutions
+       </a>
+      </li>
+      <li class="first">
+       <a href="#01">
+        Overview
+       </a>
+      </li>
+      <li>
+       <a href="#02">
+        Large Enterprise
+       </a>
+      </li>
+      <li>
+       <a href="#03">
+        Medium Business
+       </a>
+      </li>
+      <li>
+       <a href="#04">
+        Small Business
+       </a>
+      </li>
+      <li>
+       <a href="#05">
+        Government
+       </a>
+      </li>
+      <li>
+       <a href="#06">
+        Non-Profit
+       </a>
+      </li>
+      <li>
+       <a href="#07">
+        Home
+       </a>
+      </li>
+      <li class="header">
+       <a href="#01">
+        Support
+       </a>
+      </li>
+      <li class="first">
+       <a href="#08">
+        Submit a Ticket
+       </a>
+      </li>
+      <li>
+       <a href="#09">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a href="#10">
+        Registration
+       </a>
+      </li>
+      <li>
+       <a href="#11">
+        Activation
+       </a>
+      </li>
+      <li>
+       <a href="#12">
+        Authorized Vendors
+       </a>
+      </li>
+      <li class="header">
+       <a href="#01">
+        Services
+       </a>
+      </li>
+      <li class="first">
+       <a href="#13">
+        Affiliates
+       </a>
+      </li>
+      <li>
+       <a href="#14">
+        Resellers
+       </a>
+      </li>
+      <li>
+       <a href="#15">
+        Consultants
+       </a>
+      </li>
+      <li>
+       <a href="#16">
+        Support
+       </a>
+      </li>
+      <li>
+       <a href="#17">
+        Trainers
+       </a>
+      </li>
+      <li class="header">
+       <a href="#01">
+        About Us
+       </a>
+      </li>
+      <li class="first">
+       <a href="#19">
+        The Company
+       </a>
+      </li>
+      <li>
+       <a href="#20">
+        Leadership
+       </a>
+      </li>
+      <li>
+       <a href="#21">
+        Worldwide
+       </a>
+      </li>
+      <li>
+       <a href="#22">
+        Locations
+       </a>
+      </li>
+      <li>
+       <a href="#23">
+        Careers with Us
+       </a>
+      </li>
+      <li>
+       <a href="#24">
+        Contact Us
+       </a>
+      </li>
+      <li class="header">
+       <a href="#01">
+        News
+       </a>
+      </li>
+      <li class="first">
+       <a href="#25">
+        Announcements
+       </a>
+      </li>
+      <li>
+       <a href="#26">
+        Upcoming Events
+       </a>
+      </li>
+      <li>
+       <a href="#27">
+        Newsletters
+       </a>
+      </li>
+      <li>
+       <a href="#28">
+        Press
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="sidenotes-wrapper">
+    <div id="sidenotes">
+     <h6>
+      Upcoming Events
+     </h6>
+     <ul id="upcoming-events">
+      <li>
+       <a href="#21" title="Find Out More">
+        Entries Are Ordered
+							(August 10, 2006)
+       </a>
+      </li>
+      <li>
+       <a href="#22" title="Find Out More">
+        By Date Or Whatever
+							(August 15, 2006)
+       </a>
+      </li>
+      <li>
+       <a href="#23" title="Find Out More">
+        You Can Have As Many
+							(September 30, 2006)
+       </a>
+      </li>
+      <li>
+       <a href="#21" title="Find Out More">
+        As You Want
+							(October 10, 2006)
+       </a>
+      </li>
+      <li>
+       <a href="#21" title="Find Out More">
+        But I Suggest Less Than 10
+							(October 10, 2006)
+       </a>
+      </li>
+     </ul>
+     <h6>
+      Announcements
+     </h6>
+     <ul id="announcements">
+      <li>
+       <span class="date">
+        07.31.06
+       </span>
+       <a href="#23">
+        Something Awesome Just Happened
+       </a>
+       <span class="entry">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ut nunc. Vestibulum quis nulla. Maecenas ac ante.
+       </span>
+      </li>
+      <li class="alt">
+       <span class="date">
+        07.25.06
+       </span>
+       <a href="#23">
+        Proin Sem Lectus
+       </a>
+       <span class="entry">
+        Suspendisse ultrices odio quis neque. Pellentesque dui mi, bibendum ac, porta vel, cursus quis, odio.
+       </span>
+      </li>
+      <li>
+       <span class="date">
+        07.21.06
+       </span>
+       <a href="#23">
+        Morbi Pretium Nulla
+       </a>
+       <span class="entry">
+        onec sodales sodales nulla. In hac habitasse platea dictumst. Nulla mollis, leo vel cursus sagittis.
+       </span>
+       (
+      </li>
+      <li class="alt">
+       <span class="date">
+        07.20.06
+       </span>
+       <a href="#23">
+        Pellentesque Tempus
+       </a>
+       <span class="entry">
+        Elit eros lobortis erat, ut tempor tortor pede vel arcu. Cras congue suscipit orci.
+       </span>
+      </li>
+      <li>
+       <span class="date">
+        07.20.06
+       </span>
+       <a href="#23">
+        Vivamus Vitae Lectus
+       </a>
+       <span class="entry">
+        Vivamus mauris odio, ornare in, ultrices at, commodo vel, metus. Quisque vitae odio at dolor porta suscipit. 
+							Ut ullamcorper pretium lorem. Fusce consectetuer.
+       </span>
+      </li>
+      <li class="alt">
+       <span class="date">
+        07.20.06
+       </span>
+       <a href="#23">
+        Erosel Etiaser
+       </a>
+       <span class="entry">
+        Iquam erat volutpat. Curabitur varius justo a tortor. Nam imperdietQuisque vitae odio at dolor porta suscipit. 
+							Ut ullamcorper pretium lorem. Fusce consectetuer sem eu mauris. Fusce ornare augue eleifend magna.
+       </span>
+      </li>
+      <li>
+       <span class="date">
+        07.20.06
+       </span>
+       <a href="#23">
+        Vestibulum Rhoncus, Et.
+       </a>
+       <span class="entry">
+        Vivamus mauris odio, ornare in, ultrices at, commodo vel, metus. Quisque vitae odio at dolor porta suscipit. 
+							Ut ullamcorper pretium lorem. Fusce consectetuer sem eu mauris.
+       </span>
+      </li>
+      <li class="alt">
+       <span class="date">
+        07.20.06
+       </span>
+       <a href="#23">
+        Morbi Ulletiam
+       </a>
+       <span class="entry">
+        Morbi congue fermentum pede. Donec malesuada gravida nibh. Vivamus mauris odio, ornare in, ultrices at, commodo vel, 
+							metus. Quisque vitae odio at dolor porta suscipit. Ut ullamcorper pretium lorem. Fusce consectetuer sem eu mauris.
+       </span>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <p>
+    Copyright &copy; 1906 &ndash; 2006 LifeLine Inc. All rights reserved.
+   </p>
+   <p>
+    Design by
+    <a href="http://www.nikhedonia.com/" rel="bookmark" title="SimplyGold">
+     Sadhana Ganapathiraju
+    </a>
+    . 
+			Try more
+    <a href="http://www.nikhedonia.com/showcase/category/free_templates/" rel="bookmark" title="Other Free Templates">
+     free templates
+    </a>
+    or
+    <a href="http://www.nikhedonia.com/showcase/category/commercial_templates/" rel="bookmark" title="Commercial Templates">
+     commercial templates
+    </a>
+    .
+   </p>
+   <p>
+    <a href="#51">
+     Legal
+    </a>
+    |
+    <a href="#52">
+     Terms of Service
+    </a>
+    |
+    <a href="#53">
+     Privacy Statement
+    </a>
+    |
+    <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0 Strict">
+     Xhtml
+    </a>
+    |
+    <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Valid CSS 2.0 Strict">
+     Css
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

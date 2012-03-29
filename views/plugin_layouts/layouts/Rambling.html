@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Rambling/style.css'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrap">
+   <div id="topbar">
+    <h1>
+     {{=response.title or request.application}}
+    </h1>
+   </div>
+   <div id="header">
+    <div id="menu">
+     {{=MENU(response.menu)}}
+    </div>
+   </div>
+   <div id="mainpage">
+    <div id="content">
+     <div class="flash">{{=response.flash or ''}}</div>
+     {{include}}
+    </div>
+    <div id="sidebar">
+     <div class="sidebartop">
+      <h2>
+       Categories
+      </h2>
+     </div>
+     <div class="sidebarmain">
+      <ul>
+       <li>
+        <a href="#">
+         Web Design
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Programming
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Gadgets
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Business
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Entertainment
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Personal
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Free Downloads
+        </a>
+       </li>
+      </ul>
+      <h2>
+       Recent Posts
+       <span class="smalldesc">
+        Dummy Links Not working
+       </span>
+      </h2>
+      <ul>
+       <li>
+        <a href="#">
+         Web Design
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Programming
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Gadgets
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Business
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Entertainment
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Personal
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Free Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <p class="clear2">
+      &nbsp;
+     </p>
+     <span class="sidebarbottom">
+      &nbsp;
+     </span>
+    </div>
+    <p class="clear">
+    </p>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="footercontent">
+    <p>
+     Your Site Name &copy; All rights reserved | Valid XHTML |
+     <a href="#">
+      Put
+     </a>
+     |
+     <a href="#">
+      Any
+     </a>
+     |
+     <a href="#">
+      Links
+     </a>
+     |
+     <a href="#">
+      Here
+     </a>
+    </p>
+    <p class="smalldesc">
+     <a href="http://www.ramblingsoul.com">
+      CSS Layout
+     </a>
+     by Rambling Soul
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

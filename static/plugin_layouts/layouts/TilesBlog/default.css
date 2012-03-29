@@ -1,0 +1,289 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #FFFFFF url(images/img1.jpg);
+	text-align: justify;
+}
+
+body, input, textarea, select {
+	font: normal small "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #662C14;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1em;
+	font-weight: normal;
+	color: #6F8C45;
+}
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+p, blockquote, ul, ol, form {
+	margin-bottom: 1.5em;
+}
+
+blockquote, ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-right: 3em;
+	font-style: italic;
+}
+
+ul {
+	list-style-type: square;
+}
+
+a {
+	color: #F26C4F;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr {
+	display: none;
+}
+
+.hr {
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+/* Wrapper */
+
+#wrapper {
+	width: 700px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-left: 10px solid #C5E09D;
+	border-right: 10px solid #C5E09D;
+}
+
+html>body #wrapper {
+	height: auto;
+}
+
+/* Header */
+
+#header {
+	height: 60px;
+	padding: 20px 30px;
+	background: url(images/img2.jpg) no-repeat 20px 20px;
+	border-bottom: 10px solid #C5E09D;
+}
+
+#header h1, #header h2 {
+	margin: 0;
+}
+
+#header h1 {
+	padding-left: 60px;
+	font-size: 3em;
+}
+
+#header h2 {
+	margin-top: -5px;
+	padding-left: 60px;
+	font-size: 1em;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+/* Content */
+
+#content {
+}
+
+/* Blog */
+
+#blog {
+	float: right;
+	width: 424px;
+	padding: 20px 20px 0px 16px;
+	background: url(images/img06.gif) no-repeat;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background: url(images/img08.gif) no-repeat center bottom;
+}
+
+.post .title {
+	height: 20px;
+	margin-bottom: 15px;
+	padding: 4px 0 0 30px;
+	background: url(images/img3.jpg) no-repeat left center;
+	border: 1px solid #EEEEEE;
+	border-left: none;
+	text-transform: uppercase;
+	font-size: small;
+	font-weight: bold;
+}
+
+.post .title a {
+	text-decoration: none;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+.post .date {
+	margin-top: -35px;
+	padding-right: 15px;
+	text-align: right;
+	font-size: x-small;
+}
+
+.post .entry {
+	padding: 20px 15px 10px 15px;
+	line-height: 1.8em;
+}
+
+.post .meta {
+	margin-bottom: 2em;
+	padding: 0 15px;
+	font-size: x-small;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 204px;
+	padding: 20px 16px 0px 20px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+#sidebar ul {
+	margin: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin-bottom: 20px;
+}
+
+#sidebar li ul {
+	line-height: 1.4em;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding-left: 30px;
+}
+
+#sidebar h2 {
+	height: 20px;
+	margin-bottom: 15px;
+	padding: 4px 0 0 30px;
+	background: url(images/img3.jpg) no-repeat left center;
+	border: 1px solid #EEEEEE;
+	border-left: none;
+	text-transform: uppercase;
+	font-size: small;
+	font-weight: bold;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Search */
+
+#search {
+}
+
+#search h2 {
+}
+
+#search form {
+}
+
+#search #inputtext1 {
+}
+
+#search #inputsubmit1 {
+}
+
+/* Archives */
+
+#archives {
+}
+
+/* Categories */
+
+#categories {
+}
+
+/* Blogroll */
+
+#blogroll {
+}
+
+/* Meta */
+
+#meta {
+}
+
+/* Footer */
+
+#footer {
+	border-top: 10px solid #C5E09D;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	font-size: x-small;
+}
+
+#footer a {
+}

@@ -1,0 +1,289 @@
+html
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	background: #b7c4d3;
+	font: normal 12px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+}
+
+/* Links */
+
+a:link { color: #335577; text-decoration: none; }
+
+a:visited { color: #557799; text-decoration: none; }
+
+a:hover, a:active { color: #993333; }
+
+/* Html Elements */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 5px 0 10px; padding: 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+	font-weight: normal;
+	border-bottom-width: 0;
+}
+
+h1 { font-size: 28px; }
+
+h2 { font-size: 26px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 20px; }
+
+h5 { font-size: 18px; }
+
+h6 { font-size: 16px; }
+
+ul, ol, blockquote, pre
+{
+	color: #555555;
+	padding: 10px 30px;
+	line-height: 1.8em;
+}
+
+ul
+{
+	list-style-type: square;
+}
+
+blockquote, pre { background-color: #eeeeee; border: 1px solid #bbccdd; }
+
+ins { text-decoration: none; color: #466b85; }
+
+del { color: #555555; }
+
+/* Structure */
+
+body
+{
+	width: 750px;
+	margin: 0 auto;
+	padding: 0 25px;
+	background: #f9f9f9 url(images/bg.png) top left repeat-y;
+}
+
+#topnav
+{
+	width: 100%;
+	float: left;
+	color: #999999;
+	background-color: #2c231e;
+}
+
+#header
+{
+	clear: both;
+	border-top: 2px solid #000000;
+}
+
+#wrapper
+{
+	float: left;
+	width: 100%;	
+	color: #444444;
+}
+
+#content-wrapper
+{
+	width: 40%;
+	float: left;
+}
+
+#content
+{
+	float: left;
+	padding: 20px;
+}
+
+#sidebar-wrapper
+{
+	width: 20%;
+	float: left; 
+}
+
+#sidebar
+{
+	float: left;
+	padding: 20px 0;
+}
+
+#sidenotes-wrapper
+{
+	width: 40%;
+	float: left;
+}
+
+#sidenotes
+{
+	float: left;
+	padding: 20px;
+}
+
+#footer
+{
+	clear: both;
+	color: #777777;
+	padding: 20px 0;
+	text-align: center; 
+	background-color: #eeeeee;
+	border-top: 5px solid #e5e5e5;
+	border-bottom: 15px solid #dddddd;
+}
+
+/* Top-Nav */
+
+#topnav ul { float: right; list-style-type: none; margin: 0; padding: 0 10px; width: 95%; line-height: 1.0em; }
+
+#topnav li { float: right; margin: 0; padding: 0; }
+
+#topnav a { display: block; float: left; margin: 10px 0; padding: 0 10px; border-left: 1px solid #777777; }
+
+#topnav a:link, #topnav a:visited { color: #988d87; }
+
+#topnav a:hover, #topnav a:active { color: #ddd8d5; }
+
+#topnav li#skip a { border-left-width: 0; }
+
+/* Header */
+
+#header img
+{
+	border-bottom: 2px solid #000000;
+}
+
+/* Wrapper */
+
+#wrapper a:link { font-weight: bold; border-bottom: 1px dotted #335577; } 
+
+#wrapper a:visited { font-weight: bold; border-bottom: 1px dotted #557799; } 
+
+#wrapper a:hover, #wrapper a:active { border-bottom: 1px solid #993333; }
+
+/* Content */
+
+#content dl, 
+#content dt, 
+#content dd
+{
+	margin: 0;
+	padding: 0;	
+}
+
+#content dt
+{
+	padding: 10px;
+	font-weight: bold;
+	background-color: #cccc99;
+}
+
+#content dd
+{
+	padding: 1px 10px;
+	margin-bottom: 15px;
+	background-color: #e6e6ce;
+	border-bottom: 1px dotted #aaaaaa;
+}
+
+/* Sidebar */
+
+#sidebar ul { list-style-type: none; margin: 0; padding: 0; }
+
+#sidebar li
+{
+	border-left: 5px solid #b1bad0;
+	border-right: 5px solid #b1bad0;
+	background-color: #e3e6ee;
+}
+
+#sidebar li.header
+{
+	border-left-color: #8d9aba;
+	border-right-color: #8d9aba;
+	background-color: #b3bcd1;
+	border-top: 1px solid #687aa4;	
+}
+
+#sidebar li.first
+{
+	border-top: 1px solid #687aa4;	
+}
+
+#sidebar li a
+{
+	border-left: 1px solid #9ca8c3;
+	border-right: 1px solid #9ca8c3;
+}
+
+#sidebar li.header a
+{
+	border-left-color: #687aa4;
+	border-right-color: #687aa4;
+}
+
+#sidebar a:link,
+#sidebar a:visited
+{
+	display: block;
+	padding: 5px 20px;
+	border-bottom-width: 0;
+	border-top: 1px dotted #557799;
+}
+
+#sidebar li.header a:link,
+#sidebar li.header a:visited,
+#sidebar li.first a:link,
+#sidebar li.first a:visited
+{
+	border-top-width: 0;
+}
+
+/* Sidenotes */
+
+#sidenotes h6
+{
+	margin: 0;
+	padding: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #d9d4be;
+}
+
+#sidenotes ul
+{
+	padding: 10px 0 0;
+	margin: 0 0 20px;
+	list-style-type: none;
+	background-color: #f0ede8;
+}
+
+#sidenotes li
+{
+	padding: 5px 10px;
+}
+
+#sidenotes ul#announcements li 
+{
+	border-bottom: 1px dotted #aaaaaa;
+}
+
+#sidenotes ul#announcements li.alt
+{
+	background-color: #e0dcd7;
+}
+
+#sidenotes ul#announcements li .date,
+#sidenotes ul#announcements li .entry 
+{
+	display: block;
+}
+
+#sidenotes ul#announcements li .date
+{
+	color: #af735b;
+	font-size: 11px;
+}
+
+/* Footer */

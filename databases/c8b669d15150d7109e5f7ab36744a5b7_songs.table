@@ -1,0 +1,38 @@
+(dp1
+S'album'
+p2
+S'REFERENCES album(id) ON DELETE CASCADE'
+p3
+sS'name'
+p4
+S'CHAR(512)'
+p5
+sS'language'
+p6
+S'REFERENCES languages(id) ON DELETE CASCADE'
+p7
+sS'artist'
+p8
+S'CHAR(512)'
+p9
+sS'userid'
+p10
+S'REFERENCES auth_user(id) ON DELETE CASCADE'
+p11
+sS'datetime1'
+p12
+S'CHAR(512)'
+p13
+sS'file'
+p14
+S'CHAR(512)'
+p15
+sS'duration'
+p16
+S'INTEGER'
+p17
+sS'id'
+p18
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p19
+s.

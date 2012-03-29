@@ -1,0 +1,86 @@
+/*---------------------------------------
+Title: Oxford Sunset main css
+Version: 1.0
+Author: Dan Abrey
+Contact: danabrey@gmail.com
+----------------------------------------*/
+
+/*---------------------------------------
+GENERAL LAYOUT RULES
+----------------------------------------*/
+
+* { 							margin: 0; padding: 0; } /* sets all margin and padding (browser defaults) 
+								back to zero for ease of use */
+body { 							background: url("../display_images/bg.gif") repeat; }
+div#container { 				width: 85%; margin: 10px auto; text-align: center; 
+								background-color: #fff; border: 1px solid #aaa; }
+								/* centers layout (text-align: center for IE), defines overall 
+								width and sets background colour of main container div */
+div#container * { 				text-align: left; }
+								/* restores text-align to left in elements contained in container 
+								div */
+div#header { 					position: relative; width: 100%; height: 150px; float: left;
+								background: url(../display_images/banner.jpg) no-repeat top left; }
+								/* defines header background image (1600px x 150px image with
+								overflow: hidden) */
+div#sidebar { 					width: 18%; padding: 1%; 
+								background: #663333 url("../display_images/sidebar_bg.jpg") no-repeat top left; 
+								float: left; }
+div#content { 					width: 76%; padding: 1% 2%; float: left; }
+								/* padding+width of #sidebar and padding+width of #content must 
+								add up to 100% */
+* html div#content { 			width: 75%; }
+								/* hack for IE due to float problem (makes content div 1% 
+								narrower so it doesn't float below the sidebar) */
+div#footer { 					width: 98%; padding: 1%; clear: both; background-color: #ccc; }
+div#header div.header_text { 	position: absolute; bottom: 5px; left: 5px; color: #fff; }
+								/* position and colour of header text */
+
+/*---------------------------------------
+GENERAL STYLING
+----------------------------------------*/
+
+p { 							margin: 10px 0 0 0; line-height: 1.5; }
+h1,h2,h3,h4,h5,h6 { 			margin: 0 0 15px 0; }
+html, body, div { 				font-family: "Lucida Sans", Arial, Verdana, Helvetica, sans-serif; 
+								font-size: 95%; }
+blockquote {					padding: 2%; background-color: #fff; 
+								border: 1px solid #ccc; text-indent: 20px; }
+
+/*---------------------------------------
+DEFAULT LINK STYLES
+----------------------------------------*/
+
+a { 							color: #663333; font-weight: bold; text-decoration: none; }
+a:hover { 						text-decoration: underline; }
+
+/*---------------------------------------
+HEADER STYLES
+----------------------------------------*/
+
+div#header div.header_text a { 			color: #fff; text-decoration: none; }
+div#header div.header_text a:hover { 	border-bottom: 2px solid #fff; }
+div#header h1, div#header p { 			margin: 0px; }
+										/* overrides h1 and p default margins */
+								
+/*---------------------------------------
+SIDEBAR STYLES
+----------------------------------------*/
+
+#sidebar { 						color: #fff; }
+#sidebar a { 					color: #fff; }
+#sidebar h3 { 					color: #BEAEA5; text-align: right; border-bottom: 1px solid #BEAEA5; margin: 5px 0; }
+#sidebar p { 					line-height: 1.0; }
+ul#navigation , ul#links { 		list-style-type: none; }
+								/* set nav and links ul to display no bullets */
+ul#navigation li { 				display: block; width: 96%; border: 1px solid #663333; margin-bottom: 5px;
+								padding: 2%; background-color: #CFBFC0; }
+ul#navigation li a { 			color: #663333; }
+
+/*---------------------------------------
+CONTENT STYLES
+----------------------------------------*/
+
+div.item { 						margin-bottom: 20px; }
+div.item h3 {  					border: 1px solid #ccc; background: #eee; padding: 10px; position: relative; }
+								/* position:relative fixes random IE bug which means borders aren't displayed */

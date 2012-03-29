@@ -1,0 +1,145 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 20px 0;
+	background: #405152 url(images/img1.gif);
+	text-align: justify;
+	font-family: "Trebuchet MS",Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #407338;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #397513;
+}
+
+h3 {
+	font-size: 1.3em;
+	padding-top: .4em;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+a {
+	color: #397513;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+img { border: none; }
+
+.img1 {
+	float: left;
+	margin: 3px 15px 10px 0px;
+}
+
+/* Menu */
+
+#menu {
+	width: 640px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 126px;
+	height: 28px;
+	padding: 12px 1px 0 1px;
+	background: url(images/img3.gif) no-repeat center top;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #68B865;
+}
+
+#menu a:hover, #menu .active a {
+	color: #1E9618;
+}
+
+/* Header */
+
+#header {
+	width: 660px;
+	height: 2.25em;
+	margin: 0 auto;
+	padding: 20px;
+	background: #405152 url(images/img2.gif);
+	border-top: 2px solid #E6F0E7;
+	border-bottom: 2px solid #E6F0E7;
+	border-top: none;
+}
+
+#header * {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#header h1 {
+	float: left;
+	font-size: 2em;
+}
+
+#header h2 {
+	float: right;
+	padding-top: .25em;
+	font-size: 1.6em;
+}
+
+/* Content */
+
+#content {
+	width: 660px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #405152 url(images/img2.gif);
+	border-bottom: 2px solid #E6F0E7;
+	border-top: none;
+}
+
+#colOne {
+	float: left;
+	width: 450px;
+}
+
+#colTwo {
+	float: right;
+	width: 180px;
+}
+
+/* Footer */
+
+#footer {
+	text-align: center;
+	font-size: smaller;
+}

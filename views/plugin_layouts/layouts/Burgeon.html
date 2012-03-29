@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Burgeon/master.css'))}}
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Burgeon/#'))}}
+{{include 'web2py_ajax.html'}}
+  <style>
+   .flash {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    width: 60%;
+    height: 50px;
+    opacity: 0.75;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    border: 1px #000000 solid;
+    color: black;
+    font-size: 12pt;
+    padding: 100px 10px 10px 10px;
+    cursor: pointer;
+    background: white;
+
+}
+div.error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="content">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   <p id="logo">
+    <img src="images/logo.png" width="35" height="134" alt="Burgeon" />
+   </p>
+   <div id="sidenotes">
+    <h3>
+     Sidenotes
+    </h3>
+    <ul>
+     <li>
+      <a href="http://en.wikipedia.org/wiki/Alexander_of_Macedon">
+       <strong>
+        Alexander the Great
+       </strong>
+       <em>
+        10.03.2006
+       </em>
+       Alexander the Great, aka, Megas Alexandros, aka Alexander III. A brilliant 
+						military strategist.
+      </a>
+     </li>
+     <li>
+      <a href="http://en.wikipedia.org/wiki/Philip_III_of_Macedon">
+       <strong>
+        Philip III Arrhidaeus
+       </strong>
+       <em>
+        10.01.2006
+       </em>
+       Illegitimate son of Philip II, making him the half-brother of Alexander the 
+						Great.
+      </a>
+     </li>
+     <li>
+      <a href="http://en.wikipedia.org/wiki/Arsaces_II_of_Parthia">
+       <strong>
+        Arsaces II of Parthia
+       </strong>
+       <em>
+        09.30.2006
+       </em>
+       Known as "Artabanus" by early scholars but currently goes by the name "Arsaces."
+      </a>
+     </li>
+     <li>
+      <a href="http://en.wikipedia.org/wiki/Balash_of_Persia">
+       <strong>
+        Balash
+       </strong>
+       <em>
+        09.30.2006
+       </em>
+       "Balash [...] was the brother and successor of Peroz I of Persia (457 &ndash; 484),
+						who had died in a battle against the Hephthalites (White Huns) who invalided Persia 
+						from the east." Supposed to be new &mdash; that's new. ;-)
+      </a>
+     </li>
+     <li>
+      <a href="http://en.wikipedia.org/wiki/Yazdegerd_II_of_Persia">
+       <strong>
+        Yazdegerd II
+       </strong>
+       <em>
+        09.28.2006
+       </em>
+       His name means "made by God," which unfortuantely didn't stop him from dying. He's 
+						just except for his "strict religious policies..." So you mean he wasn't just? :p
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="meta">
+    <ul class="cats">
+     <li>
+      <a href="#01">
+       C#
+      </a>
+     </li>
+     <li>
+      <a href="#02">
+       ASP .NET
+      </a>
+     </li>
+     <li>
+      <a href="#03">
+       CSS/XHTML
+      </a>
+     </li>
+     <li>
+      <a href="#04">
+       Writing
+      </a>
+     </li>
+     <li>
+      <a href="#05">
+       Travel
+      </a>
+     </li>
+     <li>
+      <a href="#06">
+       Life
+      </a>
+     </li>
+     <li>
+      <a href="#07">
+       Microsoft
+      </a>
+     </li>
+     <li>
+      <a href="#08">
+       Apple
+      </a>
+     </li>
+     <li>
+      <a href="#09">
+       Technology
+      </a>
+     </li>
+     <li>
+      <a href="#10">
+       Procrastination
+      </a>
+     </li>
+    </ul>
+    <ul class="date">
+     <li>
+      <a href="#11">
+       October 2006
+      </a>
+     </li>
+     <li>
+      <a href="#12">
+       September 2006
+      </a>
+     </li>
+     <li>
+      <a href="#13">
+       August 2006
+      </a>
+     </li>
+     <li>
+      <a href="#14">
+       July 2006
+      </a>
+     </li>
+     <li>
+      <a href="#15">
+       June 2006
+      </a>
+     </li>
+     <li>
+      <a href="#16">
+       May 2006
+      </a>
+     </li>
+     <li>
+      <a href="#17">
+       April 2006
+      </a>
+     </li>
+     <li>
+      <a href="#18">
+       March 2006
+      </a>
+     </li>
+     <li>
+      <a href="#19">
+       February 2006
+      </a>
+     </li>
+     <li>
+      <a href="#20">
+       January 2006
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="flickr">
+    <h3>
+     Flick'r
+    </h3>
+    <img src="images/friendship.png" width="130" height="130" alt="Flickr Image" />
+    <img src="images/globe.png" width="130" height="130" alt="Flickr Image" />
+    <img src="images/kid.png" width="130" height="130" alt="Flickr Image" />
+    <img src="images/rings.png" width="130" height="130" alt="Flickr Image" />
+   </div>
+   <hr />
+   <p id="copyright">
+    Design copyright &copy; 2006
+    <a href="http://www.nikhedonia.com/" title="SimplyGold">
+     Sadhana Ganapathiraju
+    </a>
+    |
+    <a href="#showcase/free_templates/" title="More Free Templates">
+     Free Templates
+    </a>
+    |
+    <a href="#showcase/commercial_templates/" title="More Commercial Templates">
+     Commercial Templates
+    </a>
+    |
+    <a href="http://validator.w3.org/check/referer" title="Xhtml 1.1 Strict">
+     Xhtml Happy
+    </a>
+    |
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Css 2.0 Strict">
+     Css Happy
+    </a>
+   </p>
+  </div>
+ </body>
+</html>
